@@ -30,6 +30,8 @@ const corsOptions = {
     "http://localhost:3000",
     "http://localhost:3001",
     "http://localhost:3002",
+    "http://idtech.ca",
+    "http://dashboard.idtech.ca",
   ],
   credentials: true,
 };

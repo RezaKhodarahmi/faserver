@@ -311,7 +311,6 @@ const checkEnroll = async (req, res) => {
 };
 const GetCourseCheckEnroll = async (req, res) => {
   try {
-    console.log(req.body);
     const { course, user } = req.body;
 
     const { err } = Validation.GetCourseWithId(course);

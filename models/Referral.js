@@ -9,26 +9,26 @@ module.exports = (sequelize, DataTypes) => {
     referrerId: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: {
-        model: "users",
-        key: "id",
-      },
+      // references: {
+      //   model: "users",
+      //   key: "id",
+      // },
     },
     transactionId: {
       type: DataTypes.INTEGER,
       allowNull: true,
-      references: {
-        model: "transactions",
-        key: "Transaction_ID",
-      },
+      // references: {
+      //   model: "transactions",
+      //   key: "Transaction_ID",
+      // },
     },
     referredId: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: {
-        model: "users",
-        key: "id",
-      },
+      // references: {
+      // model: "users",
+      //key: "id",
+      // },
     },
     status: { type: DataTypes.STRING, allowNull: false },
     createdAt: {
