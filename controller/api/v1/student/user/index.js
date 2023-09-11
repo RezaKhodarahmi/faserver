@@ -3,6 +3,7 @@ const NewDate = new Date().getFullYear();
 const bcrypt = require("bcrypt");
 const Validation = require("../../../../../utils/dashboard/validationSchema");
 const { transporter } = require("../../../../../config/mailSender");
+const { apps } = require("../../../../../config/mailSender");
 
 const {
   getRegistrationEmailTemplate,

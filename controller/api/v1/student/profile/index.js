@@ -97,7 +97,7 @@ const profileInfo = async (req, res) => {
     return res.status(200).json({
       error: false,
       courses: courses,
-      subscription: subscriptions.data[0]?.cancel_at_period_end, // Using optional chaining in case there's no subscription
+      subscription: subscriptions.data[0]?.cancel_at_period_end,
       user: user,
       isVipValid: isVipValid,
       remainingDays: isVipValid ? remainingDays : 0,
