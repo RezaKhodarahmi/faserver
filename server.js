@@ -21,7 +21,12 @@ const cors = require("cors");
 app.use("/uploads", express.static("uploads"));
 app.use(credentials);
 app.use(express.json());
-app.use("/", express.static(path.join(__dirname, "/public")));
+app.use(
+  "/",
+  express.static(
+    path.join(__dirname, "/var/www/fanavaranServer/faserver/public")
+  )
+);
 app.use(bodyParser.raw({ type: "application/json" }));
 
 // CORS middleware configuration
@@ -32,6 +37,7 @@ const corsOptions = {
     "http://localhost:3002",
     "http://idtech.ca",
     "http://dashboard.idtech.ca",
+    "http://idtech.ca/dashbaord",
   ],
   credentials: true,
 };

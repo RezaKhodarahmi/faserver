@@ -69,9 +69,9 @@ const creteNewTest = async (req, res) => {
     }
     const newTest = await Tests.create({ ...params });
     await TestPerCycle.create({
-      testId: newTest.id,
-      courseId: params.courseId,
-      cycleId: params.cycleId,
+      testId: parseInt(newTest.id),
+      courseId: parseInt(params.courseId),
+      cycleId: parseInt(params.cycleId),
     });
     return res.status(201).json({
       error: false,
@@ -120,9 +120,9 @@ const updateTest = async (req, res) => {
       await testPerCycle.save();
     } else {
       await TestPerCycle.create({
-        testId: test.id,
-        courseId: params.courseId,
-        cycleId: params.cycleId,
+        testId: parseInt(test.id),
+        courseId: parseInt(params.courseId),
+        cycleId: parseInt(params.cycleId),
       });
     }
     return res.status(201).json({
