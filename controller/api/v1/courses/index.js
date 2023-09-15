@@ -146,7 +146,7 @@ const getCourseWithId = async (req, res) => {
 const updateCourse = async (req, res) => {
   try {
     const { cats, teacher, ...data } = req.body;
-
+    console.log(req.body);
     const { err } = Validation.UpdateCourseBodyValidation(data);
     if (err) {
       return res.status(400).json({
@@ -243,7 +243,6 @@ const updateCourse = async (req, res) => {
       message: "The course updated successfully.",
     });
   } catch (error) {
-    console.log(error);
     return res.status(500).json({
       error: true,
       message: "Server error",

@@ -44,6 +44,11 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       defaultValue: 1,
     },
+    activeList: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      defaultValue: 0,
+    },
     certificate: {
       type: DataTypes.STRING,
       allowNull: true,

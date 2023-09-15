@@ -41,7 +41,6 @@ const getTeachers = async (req, res) => {
       where: { role: 1000, status: 1 },
       attributes: { exclude: ["token", "password", "forgotToken", "contract"] },
     });
-    console.log(teachers);
     return res.status(200).json({
       error: false,
       data: teachers,

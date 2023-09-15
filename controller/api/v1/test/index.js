@@ -130,7 +130,6 @@ const updateTest = async (req, res) => {
       message: "The Test updated successfully.",
     });
   } catch (error) {
-    console.log(error);
     return res.status(500).json({
       error: true,
       message: "Server Error!",

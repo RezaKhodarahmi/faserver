@@ -82,9 +82,10 @@ const checkout = async (req, res) => {
 const createPaymentIntent = async (req, res) => {
   try {
     const { items, email, coupon, referralUser } = req.body;
-    console.log(req.body);
+
     // Calculate the order amount with the coupon discounts
     const orderAmount = calculateOrderAmount(items, coupon);
+
     //Get the cart items and save their Id into an array
     var cycles = [];
     var courses = [];
@@ -194,7 +195,6 @@ const createPaymentIntent = async (req, res) => {
       clientSecret: paymentIntent.client_secret,
     });
   } catch (error) {
-    console.log(error);
     return res.status(500).json({
       error: true,
       message: "Server error!",

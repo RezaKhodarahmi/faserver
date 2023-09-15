@@ -15,14 +15,8 @@ async function checkAndExpireEnrollments() {
       if (enrollmentDate < currentDate) {
         EnRolled.status = 0;
         await EnRolled.save();
-        console.log(
-          `Enrollment for user ${user.user} in cycle ${cycle.id} has been expired.`
-        );
       }
     } else {
-      console.log(
-        `No enrollment found for user ${user.user} in cycle ${cycle.id}.`
-      );
     }
   } catch (error) {
     console.error("Error checking and expiring enrollments:", error);

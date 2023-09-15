@@ -64,6 +64,7 @@ app.use("/api/v1/auth/refresh", require("./routes/refreshToken"));
 app.use("/api/v1/coupon", require("./routes/api/v1/coupon"));
 app.use("/api/v1/transaction", require("./routes/api/v1/transaction"));
 app.use("/api/v1/webinar", require("./routes/api/v1/webinar"));
+app.use("/api/v1/activecampaing", require("./routes/api/v1/activecampaing"));
 
 // student routes
 app.use("/api/v1/student", require("./routes/api/v1/student/user"));

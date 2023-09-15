@@ -32,7 +32,7 @@ const verifyPayment = async (req, res) => {
       if (transaction) {
         transaction.Transaction_Status = eventData.status;
         await transaction.save();
-      } //This is support the VIP member transaction
+      }
     } else if (
       eventData.object === "payment_intent" &&
       eventData.status === "succeeded"
@@ -62,6 +62,8 @@ const verifyPayment = async (req, res) => {
             Transaction_Type: "Stripe",
             coupons: null,
           });
+
+          //here add activecamp code
         } else {
           user.vip = calculateOneYearFromNow();
           await user.save();

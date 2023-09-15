@@ -211,7 +211,6 @@ const updateUserData = async (req, res) => {
     var avatar = user.avatar;
 
     if (req.file) {
-      console.log(req.file);
       avatar = process.env.BASE_URL + "/" + req.file.path;
     }
     for (const key in params) {

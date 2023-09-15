@@ -72,6 +72,7 @@ const UpdateCourseBodyValidation = (body) => {
     id: Joi.string().required(),
     title: Joi.string().required(),
     slug: Joi.string().required(),
+    activeList: Joi.string().required(),
     description: Joi.string().optional().allow(null, ""),
     abstract: Joi.string().optional().allow(null, ""),
     keywords: Joi.string().optional().allow(null, ""),
