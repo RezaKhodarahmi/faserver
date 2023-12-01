@@ -123,16 +123,16 @@ const verifyReferral = async (req, res) => {
       },
     });
     const user = await Users.findOne({ where: { email: params.user } });
-    //check if its the first transaction in website
-    // const existTransaction = await Transactions.findOne({
-    //   where: { userId: user.id },
-    // });
-    // if (existTransaction) {
-    //   return res.status(401).json({
-    //     error: true,
-    //     message: "This code only works for new users",
-    //   });
-    // }
+    // check if its the first transaction in website
+    const existTransaction = await Transactions.findOne({
+      where: { userId: user.id },
+    });
+    if (existTransaction) {
+      return res.status(401).json({
+        error: true,
+        message: "This code only works for new users",
+      });
+    }
     if (!existedCode) {
       return res.status(401).json({
         error: true,

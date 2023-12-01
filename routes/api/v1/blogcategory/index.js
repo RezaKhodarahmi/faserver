@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const BlogCategoryControler = require("../../../../controller/api/v1/blogcategory");
+const BlogCategoryController = require("../../../../controller/api/v1/blogcategory");
 const { checkToken } = require("../../../../utils/verifyAccessToken");
 const multer = require("multer");
 const storage = multer.diskStorage({
@@ -12,25 +12,25 @@ const storage = multer.diskStorage({
   },
 });
 const upload = multer({ storage: storage });
-router.get("/", checkToken, BlogCategoryControler.getCategories);
+router.get("/", checkToken, BlogCategoryController.getCategories);
 router.post(
   "/create",
   checkToken,
   upload.single("image"),
-  BlogCategoryControler.createCategory
+  BlogCategoryController.createCategory
 );
-router.get("/:id", BlogCategoryControler.getCategoryWithId);
+router.get("/:id", BlogCategoryController.getCategoryWithId);
 router.patch(
   "/update",
   checkToken,
   upload.single("image"),
-  BlogCategoryControler.updateCategory
+  BlogCategoryController.updateCategory
 );
-router.delete("/delete/:id", checkToken, BlogCategoryControler.deleteCategory);
+router.delete("/delete/:id", checkToken, BlogCategoryController.deleteCategory);
 router.post(
   "/delete-post-cat",
   checkToken,
-  BlogCategoryControler.deletePostCategory
+  BlogCategoryController.deletePostCategory
 );
 
 module.exports = router;

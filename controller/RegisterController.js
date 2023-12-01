@@ -24,10 +24,8 @@ const handelRegister = async (req, res) => {
     return res.status(200).json({
       error: false,
       message: "The user created successfully.",
-      data: newuser,
     });
   } catch (error) {
-    console.error(error);
     return res.status(500).json({
       error: true,
       message: "Server error!",

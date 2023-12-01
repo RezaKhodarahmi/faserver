@@ -44,6 +44,7 @@ const getUserWithEmail = async (req, res) => {
           "token",
           "registerStep",
           "contract",
+          "stripeCustomerId",
         ],
       },
     });
@@ -80,7 +81,16 @@ const handelRegister = async (req, res) => {
     // Checking if user exists
     const user = await Users.findOne({
       where: { email },
-      attributes: { exclude: ["password"] },
+      attributes: {
+        exclude: [
+          "password",
+          "forgotToken",
+          "token",
+          "registerStep",
+          "contract",
+          "stripeCustomerId",
+        ],
+      },
     });
     if (user) {
       // User with email exists but not verified
@@ -171,7 +181,16 @@ const HandleTokenValidation = async (req, res) => {
     }
     const user = await Users.findOne({
       where: { token: token },
-      attributes: { exclude: ["password"] },
+      attributes: {
+        exclude: [
+          "password",
+          "forgotToken",
+          "token",
+          "registerStep",
+          "contract",
+          "stripeCustomerId",
+        ],
+      },
     });
 
     if (!user) {

@@ -1,6 +1,7 @@
 const Users = require("../../../../models").Users;
 const Validation = require("../../../../utils/dashboard/validationSchema");
 const crypto = require("crypto");
+const bcrypt = require("bcrypt");
 
 //Generate Referral code
 const generateCode = (length = 6) => {
@@ -18,7 +19,15 @@ const generateCode = (length = 6) => {
 const getUsers = async (req, res) => {
   try {
     const users = await Users.findAll({
-      attributes: { exclude: ["token", "password", "forgotToken", "contract"] },
+      attributes: {
+        exclude: [
+          "token",
+          "password",
+          "forgotToken",
+          "contract",
+          "stripeCustomerId",
+        ],
+      },
     });
     return res.json({
       error: false,
@@ -36,7 +45,15 @@ const getAuthors = async (req, res) => {
   try {
     const authors = await Users.findAll({
       where: { role: 3000, status: 1 },
-      attributes: { exclude: ["token", "password", "forgotToken", "contract"] },
+      attributes: {
+        exclude: [
+          "token",
+          "password",
+          "forgotToken",
+          "contract",
+          "stripeCustomerId",
+        ],
+      },
     });
     return res.status(200).json({
       error: false,
@@ -53,7 +70,15 @@ const getTeachers = async (req, res) => {
   try {
     const teachers = await Users.findAll({
       where: { role: 1000, status: 1 },
-      attributes: { exclude: ["token", "password", "forgotToken", "contract"] },
+      attributes: {
+        exclude: [
+          "token",
+          "password",
+          "forgotToken",
+          "contract",
+          "stripeCustomerId",
+        ],
+      },
     });
     return res.status(200).json({
       error: false,
@@ -89,26 +114,30 @@ const createUser = async (req, res) => {
     if (req.file) {
       imageData = process.env.BASE_URL + "/" + req.file.path;
     }
+
+    // Hash the password
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(data.password, salt);
+
     const referralCode = generateCode();
     const user = await Users.create({
       ...data,
+      password: hashedPassword,
       referralCode,
       avatar: imageData,
-      attributes: { exclude: ["token", "password", "forgotToken", "contract"] },
     });
     return res.status(201).json({
       error: false,
-      data: user,
       message: "User created successfully",
     });
   } catch (error) {
-    console.log(error);
     return res.status(500).json({
       error: true,
       message: "Server Error!",
     });
   }
 };
+
 const getUserWithId = async (req, res) => {
   try {
     const id = req.params.id;
@@ -125,6 +154,7 @@ const getUserWithId = async (req, res) => {
           "timezone",
           "createdAt",
           "updatedAt",
+          "stripeCustomerId",
         ],
       },
     });
@@ -142,6 +172,7 @@ const getUserWithId = async (req, res) => {
     });
   }
 };
+
 const updateUser = async (req, res) => {
   try {
     const data = req.body;
@@ -151,6 +182,20 @@ const updateUser = async (req, res) => {
         error: true,
         message: error.details[0].message,
       });
+    }
+
+    var user = await Users.findOne({ where: { id: data.id } });
+    if (!user) {
+      return res.status(400).json({
+        error: true,
+        message: "User not found!",
+      });
+    }
+
+    if (data.password) {
+      // Hash the new password
+      const salt = await bcrypt.genSalt(10);
+      data.password = await bcrypt.hash(data.password, salt);
     }
 
     if (req.file) {
@@ -176,6 +221,7 @@ const updateUser = async (req, res) => {
         user[key] = data[key];
       }
     }
+
     await user.save();
     return res.status(201).json({
       error: false,
@@ -188,6 +234,7 @@ const updateUser = async (req, res) => {
     });
   }
 };
+
 const deleteUser = async (req, res) => {
   try {
     const id = req.params.id;
@@ -201,7 +248,7 @@ const deleteUser = async (req, res) => {
     await user.destroy();
     return res.status(201).json({
       error: false,
-      message: "User deleted successfuly",
+      message: "User deleted successfully",
     });
   } catch (error) {
     return res.status(500).json({

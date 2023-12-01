@@ -1,12 +1,12 @@
 const express = require("express");
 const router = express.Router();
-const AnswerControler = require("../../../../controller/api/v1/answer");
+const AnswerController = require("../../../../controller/api/v1/answer");
 const { checkToken } = require("../../../../utils/verifyAccessToken");
 
-router.get("/:id", checkToken, AnswerControler.getAnswers);
-router.post("/create", checkToken, AnswerControler.createNewAnswer);
-router.patch("/update", checkToken, AnswerControler.updateAnswer);
-router.get("/:id", checkToken, AnswerControler.getAnswerWithId);
-router.delete("/delete/:id", checkToken, AnswerControler.deleteAnswer);
+router.get("/:id", checkToken, AnswerController.getAnswers);
+router.post("/create", checkToken, AnswerController.createNewAnswer);
+router.patch("/update", checkToken, AnswerController.updateAnswer);
+router.get("/:id", checkToken, AnswerController.getAnswerWithId);
+router.delete("/delete/:id", checkToken, AnswerController.deleteAnswer);
 
 module.exports = router;

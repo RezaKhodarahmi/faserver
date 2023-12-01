@@ -21,6 +21,16 @@ const getTransactions = async (req, res) => {
         {
           model: Users,
           as: "user",
+          attributes: {
+            exclude: [
+              "password",
+              "forgotToken",
+              "token",
+              "registerStep",
+              "contract",
+              "stripeCustomerId",
+            ],
+          },
         },
       ],
       attributes: {
@@ -89,6 +99,16 @@ const getTransactionWithId = async (req, res) => {
         {
           model: Users,
           as: "user",
+          attributes: {
+            exclude: [
+              "password",
+              "forgotToken",
+              "token",
+              "registerStep",
+              "contract",
+              "stripeCustomerId",
+            ],
+          },
         },
       ],
       attributes: {

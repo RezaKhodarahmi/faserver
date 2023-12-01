@@ -32,6 +32,8 @@ const HandleRefreshToken = async (req, res) => {
           "updatedAt",
           "createdAt",
           "registerStep",
+          "forgotToken",
+          "stripeCustomerId",
         ],
       },
     });

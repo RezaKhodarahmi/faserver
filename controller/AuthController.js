@@ -78,11 +78,25 @@ const handelLogin = async (req, res) => {
       const { accessToken, refreshToken } = await TokenGenerator.GenerateToken(
         user
       );
+      // Filter data before send
+      const {
+        password,
+        token,
+        forgotToken,
+        contract,
+        registerStep,
+        language,
+        timezone,
+        createdAt,
+        updatedAt,
+        stripeCustomerId,
+        ...filteredData
+      } = user.dataValues;
       res.status(200).json({
         error: false,
         accessToken,
         refreshToken,
-        data: user,
+        data: filteredData,
         message: "Logged in successfully",
       });
     });
@@ -118,11 +132,26 @@ const handelUserLogin = async (req, res) => {
       const { accessToken, refreshToken } = await TokenGenerator.GenerateToken(
         user
       );
+      // Filter data before send
+      const {
+        password,
+        token,
+        forgotToken,
+        contract,
+        registerStep,
+        language,
+        timezone,
+        createdAt,
+        updatedAt,
+        stripeCustomerId,
+        ...filteredData
+      } = user.dataValues;
+
       res.status(200).json({
         error: false,
         accessToken,
         refreshToken,
-        data: user,
+        data: filteredData,
         message: "Logged in successfully",
       });
     });
@@ -198,16 +227,31 @@ const HandleVerifyForgetPass = async (req, res) => {
     const user = await Users.findOne({
       where: { forgotToken: token },
     });
+
     if (!user) {
       return res.status(401).json({
         error: true,
         message: "Invalid Token",
       });
     }
+    // Filter data before send
+    const {
+      password,
+      forgotToken,
+      contract,
+      registerStep,
+      language,
+      timezone,
+      createdAt,
+      updatedAt,
+      stripeCustomerId,
+      ...filteredData
+    } = user.dataValues;
+
     return res.status(200).json({
       error: false,
       message: "OK",
-      data: user,
+      data: filteredData,
     });
   } catch (err) {
     // Send error response
@@ -249,7 +293,6 @@ const HandleResetForgetPass = async (req, res) => {
       message: "password successfully changed",
     });
   } catch (err) {
-    console.error(err);
     // Send error response
     res.status(500).json({
       err: true,
