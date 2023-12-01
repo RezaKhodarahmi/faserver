@@ -195,6 +195,7 @@ const createPaymentIntent = async (req, res) => {
       clientSecret: paymentIntent.client_secret,
     });
   } catch (error) {
+    console.log(error);
     return res.status(500).json({
       error: true,
       message: "Server error!",

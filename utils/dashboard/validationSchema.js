@@ -560,6 +560,13 @@ const UserProfileUpdateBodyValidation = (body) => {
   });
   return bodySchema.validate(body);
 };
+const validateSearchQuery = (body) => {
+  const bodySchema = Joi.object({
+    searchTerm: Joi.string().required(),
+  });
+  return bodySchema.validate(body);
+};
+
 module.exports = {
   createNewPostBodyValidation,
   UserEditBodyValidation,
@@ -603,4 +610,5 @@ module.exports = {
   deleteWebinarValidation,
   checkCouponBodyValidation,
   UserProfileUpdateBodyValidation,
+  validateSearchQuery,
 };

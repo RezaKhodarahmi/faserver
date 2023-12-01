@@ -33,6 +33,7 @@ app.use(bodyParser.raw({ type: "application/json" }));
 const corsOptions = {
   origin: [
     "http://localhost:3000",
+    "https://localhost:3000",
     "http://localhost:3001",
     "http://localhost:3002",
     "http://idtech.ca",
@@ -70,6 +71,10 @@ app.use("/api/v1/activecampaing", require("./routes/api/v1/activecampaing"));
 app.use("/api/v1/student", require("./routes/api/v1/student/user"));
 app.use("/api/v1/student/courses", require("./routes/api/v1/student/course"));
 app.use(
+  "/api/v1/student/categories",
+  require("./routes/api/v1/student/category")
+);
+app.use(
   "/api/v1/student/transaction",
   require("./routes/api/v1/student/transaction")
 );
@@ -80,6 +85,7 @@ app.use(
   "/api/v1/student/membership",
   require("./routes/api/v1/student/membership")
 );
+app.use("/api/v1/student/search", require("./routes/api/v1/student/search"));
 
 // Handle 404 errors
 app.all("*", (req, res) => {

@@ -5,8 +5,8 @@ module.exports = {
       script: "server.js",
       env: {
         BASE_URL: "http://idtech.ca:3200",
-        APP_URL: "http://idtech.ca",
-        DASHBOARD_URL: "http://dashboard.idtech.ca",
+        APP_URL: "http://idtech.ca:3000",
+        DASHBOARD_URL: "http://idtech.ca:3001",
         ACCESS_TOKEN_SECRET:
           "650f3e68dae094bf927206aa6bd30cc23d565ff2e9adddfd88e36a8765819469e53c8310e485fd2d9eae35a27ab58492c28bb15aa2ff15d82069e5b16eab3501",
         REFRESH_TOKEN_SECRET:
