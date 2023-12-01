@@ -1,6 +1,7 @@
 const Coupon = require("../../../../../models").Coupon;
 const Referral = require("../../../../../models").Referral;
 const Users = require("../../../../../models").Users;
+const Transactions = require("../../../../../models").Transactions;
 
 //Inputs validation
 const Validation = require("../../../../../utils/dashboard/validationSchema");
@@ -62,17 +63,17 @@ const verifyCoupon = async (req, res) => {
     if (
       allowedEmails &&
       allowedEmails.length &&
-      allowedEmails.includes(params.user)
+      !allowedEmails.includes(params.user)
     ) {
       return res.status(401).json({
         error: true,
-        message: "This coupon is not valid for this email address!",
+        message: "You can't use this coupon code!",
+      });
+    } else {
+      return res.status(200).json({
+        data: existedCoupon,
       });
     }
-
-    return res.status(200).json({
-      data: existedCoupon,
-    });
   } catch (error) {
     return res.status(500).json({
       error: true,
@@ -177,6 +178,7 @@ const verifyReferral = async (req, res) => {
       });
     }
   } catch (error) {
+    console.log(error);
     return res.status(500).json({
       error: true,
       message: "Server Error!",

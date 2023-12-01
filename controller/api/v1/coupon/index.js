@@ -125,6 +125,7 @@ const updateCoupon = async (req, res) => {
   try {
     //Get the params
     const params = req.body;
+    console.log(params);
 
     //Return error if both of them are empty
     if (
