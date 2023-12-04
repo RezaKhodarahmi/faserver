@@ -103,7 +103,6 @@ const profileInfo = async (req, res) => {
       remainingDays: isVipValid ? remainingDays : 0,
     });
   } catch (error) {
-    console.error("Error fetching profile info:", error);
     return res.status(500).json({
       error: true,
       message: "Server Error!",

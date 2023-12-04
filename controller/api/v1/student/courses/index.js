@@ -190,14 +190,36 @@ const getCourseWithId = async (req, res) => {
 
 const getCartItem = async (req, res) => {
   try {
-    var { items } = req.body;
+    var { items, email, newVIP } = req.body;
 
-    //define cart items
+    // Parse the items if they are in string format
+    items = JSON.parse(items);
+
+    // Define cart items
     var cartItems = [];
 
-    //find course's
-    items = JSON.parse(items);
-    for (const item of Object(items)) {
+    // Check if the user is eligible for VIP membership and add it if necessary
+    if (email && newVIP) {
+      const user = await Users.findOne({ where: { email } });
+      // Add the VIP membership only if the user does not have one
+      if (user && user.vip === null) {
+        const vipMember = await CourseCycles.findOne({
+          where: { id: 150000, status: 1 },
+          include: [
+            {
+              model: Courses,
+              as: "course",
+            },
+          ],
+        });
+        if (vipMember) {
+          cartItems.push(vipMember);
+        }
+      }
+    }
+
+    // Find courses and add them to the cart items
+    for (const item of items) {
       const course = await CourseCycles.findOne({
         where: { id: item, status: 1 },
         include: [
@@ -207,10 +229,12 @@ const getCartItem = async (req, res) => {
           },
         ],
       });
+
       if (course) {
-        const oldItems = [...cartItems];
-        oldItems.push(course);
-        cartItems = oldItems;
+        // Check if the course is not already in the cart
+        if (!cartItems.some((ci) => ci.id === course.id)) {
+          cartItems.push(course);
+        }
       }
     }
 
@@ -232,6 +256,7 @@ const getCartItem = async (req, res) => {
     });
   }
 };
+
 const getTests = async (req, res) => {
   try {
     const { slug } = req.params;

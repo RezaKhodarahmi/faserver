@@ -86,6 +86,7 @@ app.use(
   require("./routes/api/v1/student/membership")
 );
 app.use("/api/v1/student/search", require("./routes/api/v1/student/search"));
+app.use("/api/v1/student/blog", require("./routes/api/v1/student/blog"));
 
 // Handle 404 errors
 app.all("*", (req, res) => {

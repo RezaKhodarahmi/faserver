@@ -94,11 +94,21 @@ const createPaymentIntent = async (req, res) => {
       courses.push(cycle.courseId);
     }
 
-    // Create a PaymentIntent with the order amount and currency
+    // Retrieve or create a Stripe customer for the user
+    let user = await Users.findOne({ where: { email: email } });
+    let stripeCustomerId = user.stripeCustomerId;
+    if (!stripeCustomerId) {
+      const stripeCustomer = await stripe.customers.create({ email: email });
+      stripeCustomerId = stripeCustomer.id;
+      user.stripeCustomerId = stripeCustomerId;
+      await user.save();
+    }
+
+    // Create a PaymentIntent with the order amount, currency, and customer
     const paymentIntent = await stripe.paymentIntents.create({
-      amount: orderAmount * 100,
+      amount: orderAmount * 100, // Convert to cents
       currency: "cad",
-      payment_method: "pm_card_visa",
+      customer: stripeCustomerId, // Associate the customer with the payment intent
     });
 
     //store in DB
@@ -113,10 +123,6 @@ const createPaymentIntent = async (req, res) => {
       });
     }
 
-    //Get the customerID
-    const user = await Users.findOne({
-      where: { email: email },
-    });
     const coupons = [];
     if (coupon) {
       for (const item of Object(coupon)) {
@@ -195,7 +201,6 @@ const createPaymentIntent = async (req, res) => {
       clientSecret: paymentIntent.client_secret,
     });
   } catch (error) {
-    console.log(error);
     return res.status(500).json({
       error: true,
       message: "Server error!",
@@ -241,6 +246,30 @@ const confirmPayment = async (req, res) => {
       await transaction.save();
 
       if (status === "succeeded") {
+        const user = await Users.findOne({ where: { id: transaction.userId } });
+        let stripeCustomerId = user.stripeCustomerId;
+
+        // If stripeCustomerId does not exist, create a new Stripe customer
+        if (!stripeCustomerId) {
+          const newCustomer = await stripe.customers.create({
+            email: user.email, // Assuming email is available in user model
+          });
+          stripeCustomerId = newCustomer.id;
+
+          // Update user with new Stripe customer ID
+          transaction.user.stripeCustomerId = stripeCustomerId;
+          await transaction.user.save();
+        }
+
+        // Check if the VIP membership course is part of the transaction
+        if (transaction.courseId.includes(150000)) {
+          // Create Stripe subscription for 365 days with auto-renewal
+          await stripe.subscriptions.create({
+            customer: stripeCustomerId,
+            items: [{ price: process.env.STRIPE_MEMBERSHIP_PRICE_ID }],
+            trial_end: Math.floor(Date.now() / 1000) + 365 * 24 * 60 * 60, // Set trial end to 365 days from now
+          });
+        }
         //Update the user enrollments
         const Enrolls = await Enrollments.findAll({
           where: { Transaction_ID: transaction.Stripe_Charge_ID },

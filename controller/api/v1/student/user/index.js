@@ -373,9 +373,9 @@ const getUserVipInfo = async (req, res) => {
 
     // Check if the vipDate is greater than the current date
     if (vipDate > currentDate || vipDate.getTime() === currentDate.getTime()) {
-      return res.send({ isVipValid: true }); // or however you want to return the result
+      return res.send({ isVipValid: true, user: email }); // or however you want to return the result
     } else {
-      return res.send({ isVipValid: false });
+      return res.send({ isVipValid: false, user: email });
     }
   } catch (error) {
     return res.status(500).send("Internal server error");

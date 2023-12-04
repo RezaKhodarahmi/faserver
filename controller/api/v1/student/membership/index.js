@@ -41,7 +41,6 @@ const buyVipMembership = async (req, res) => {
 
     return res.json({ sessionId: session.id });
   } catch (error) {
-    console.log(error);
     return res.status(500).send("Internal Server Error");
   }
 };

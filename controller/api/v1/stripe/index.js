@@ -45,6 +45,10 @@ const verifyPayment = async (req, res) => {
         const oldTransaction = await Transactions.findOne({
           where: { Stripe_Charge_ID: eventData.id },
         });
+        // Check if the VIP membership course is part of the transaction
+
+        user.vip = calculateOneYearFromNow();
+        await user.save();
 
         if (!oldTransaction) {
           user.vip = calculateOneYearFromNow();
