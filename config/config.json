@@ -19,6 +19,6 @@
       "database": "idtech_fanavaran_dev",
       "host": "localhost",
       "dialect": "mysql" 
-    }
+    } 
   }
   
