@@ -4,6 +4,8 @@ const app = express();
 const dbConnect = require("./models");
 const path = require("path");
 const bodyParser = require("body-parser");
+const fs = require("fs");
+const https = require("https");
 
 const credentials = require("./middlewares/credentials");
 const rateLimit = require("express-rate-limit");
@@ -16,7 +18,7 @@ const limiter = rateLimit({
 
 // Apply the rate limiting middleware to all requests
 app.use(limiter);
-const PORT = process.env.PORT || 3200;
+const PORT = 3100;
 const cors = require("cors");
 app.use("/uploads", express.static("uploads"));
 app.use(credentials);
@@ -37,6 +39,8 @@ const corsOptions = {
     "http://localhost:3001",
     "http://localhost:3002",
     "http://idtech.ca",
+    "https://idtech.ca",
+    "https://www.idtech.ca",
     "http://dashboard.idtech.ca",
     "http://idtech.ca/dashbaord",
   ],
@@ -99,6 +103,18 @@ app.all("*", (req, res) => {
     res.type("txt").send("404 Not Found");
   }
 });
+
+const options = {
+  key: fs.readFileSync("/etc/ssl/private/idtech.key"),
+  cert: fs.readFileSync("/etc/ssl/certs/idtech.crt"),
+};
+
+https
+  .createServer(options, (req, res) => {
+    res.writeHead(200);
+    res.end("hello world\n");
+  })
+  .listen(3200);
 
 //Running server
 dbConnect.sequelize.sync().then(() => {
