@@ -1,9 +1,16 @@
 const Users = require("../models").Users;
+const UserSessions = require("../models").UserSessions;
 const bodyValidation = require("../utils/validationSchema");
 const { transporter } = require("../config/mailSender");
 const TokenGenerator = require("../utils/generateToken.js");
 const { checkRole, checkUserRole } = require("../middlewares/roleCheck");
 const bcrypt = require("bcrypt");
+const geoip = require("geoip-lite");
+
+const getCountryFromIP = (ip) => {
+  const geo = geoip.lookup(ip);
+  return geo ? geo.country : null;
+};
 const {
   forgetPassReqEmailTemplate,
 } = require("../views/email-template/forgetRequest");
@@ -56,6 +63,7 @@ const handelRegister = async (req, res) => {
 const handelLogin = async (req, res) => {
   try {
     const { email, password } = req.body;
+
     const user = await Users.findOne({ where: { email } });
     if (!user) {
       return res.status(401).json({
@@ -110,6 +118,9 @@ const handelLogin = async (req, res) => {
 const handelUserLogin = async (req, res) => {
   try {
     const { email, password } = req.body;
+    const currentIP = req.ip;
+    const currentCountry = getCountryFromIP(currentIP);
+
     const user = await Users.findOne({ where: { email } });
     if (!user) {
       return res.status(401).json({
@@ -118,6 +129,21 @@ const handelUserLogin = async (req, res) => {
       });
     }
 
+    const activeSession = await UserSessions.findOne({
+      where: { userId: user.id },
+    });
+
+    if (activeSession && activeSession.country !== currentCountry) {
+      return res
+        .status(401)
+        .send("Simultaneous login from different countries is not allowed.");
+    }
+    await UserSessions.upsert({
+      userId: user.id,
+      ip: currentIP,
+      country: currentCountry,
+      lastActive: new Date(),
+    });
     const verifiedPassword = await bcrypt.compare(password, user.password);
 
     if (!verifiedPassword) {

@@ -69,7 +69,7 @@ const creteNewTest = async (req, res) => {
     }
     const newTest = await Tests.create({ ...params });
     await TestPerCycle.create({
-      testId: parseInt(newTest.id),
+      testId: parseInt(newTest.dataValues.id),
       courseId: parseInt(params.courseId),
       cycleId: parseInt(params.cycleId),
     });

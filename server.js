@@ -6,6 +6,7 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const fs = require("fs");
 const https = require("https");
+const { logger } = require("./middlewares/logEvents");
 
 const credentials = require("./middlewares/credentials");
 const rateLimit = require("express-rate-limit");
@@ -16,9 +17,12 @@ const limiter = rateLimit({
   legacyHeaders: false, // Disable the `X-RateLimit-*` headers
 });
 
+// Custom middleware logger
+app.use(logger);
+
 // Apply the rate limiting middleware to all requests
 app.use(limiter);
-const PORT = 3100;
+const PORT = 3200;
 const cors = require("cors");
 app.use("/uploads", express.static("uploads"));
 app.use(credentials);
@@ -38,7 +42,7 @@ const corsOptions = {
     "https://localhost:3000",
     "http://localhost:3001",
     "http://localhost:3002",
-    "http://idtech.ca",
+    "http://",
     "https://idtech.ca",
     "https://www.idtech.ca",
     "http://dashboard.idtech.ca",
@@ -104,17 +108,17 @@ app.all("*", (req, res) => {
   }
 });
 
-const options = {
-  key: fs.readFileSync("/etc/ssl/private/idtech.key"),
-  cert: fs.readFileSync("/etc/ssl/certs/idtech.crt"),
-};
+// const options = {
+//   key: fs.readFileSync("/etc/ssl/private/idtech.key"),
+//   cert: fs.readFileSync("/etc/ssl/certs/idtech.crt"),
+// };
 
-https
-  .createServer(options, (req, res) => {
-    res.writeHead(200);
-    res.end("hello world\n");
-  })
-  .listen(3200);
+// https
+//   .createServer(options, (req, res) => {
+//     res.writeHead(200);
+//     res.end("hello world\n");
+//   })
+//   .listen(3200);
 
 //Running server
 dbConnect.sequelize.sync().then(() => {

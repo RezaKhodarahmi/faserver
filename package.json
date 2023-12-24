@@ -20,6 +20,7 @@
     "express-rate-limit": "^6.7.0",
     "feather-icons-react": "^0.6.2",
     "firebase-admin": "^11.10.1",
+    "geoip-lite": "^1.4.9",
     "joi": "^17.8.3",
     "joi-password-complexity": "^5.1.0",
     "jsonwebtoken": "^9.0.0",

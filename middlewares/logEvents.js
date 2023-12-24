@@ -18,6 +18,7 @@ const logEvents = async (message, logName) => {
       logItem
     );
   } catch (err) {
+    console.error(err);
     return res.status(500).json({
       error: true,
       message: "Server Error",
