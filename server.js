@@ -17,24 +17,6 @@ const limiter = rateLimit({
   legacyHeaders: false, // Disable the `X-RateLimit-*` headers
 });
 
-// Custom middleware logger
-app.use(logger);
-
-// Apply the rate limiting middleware to all requests
-app.use(limiter);
-const PORT = 3200;
-const cors = require("cors");
-app.use("/uploads", express.static("uploads"));
-app.use(credentials);
-app.use(express.json());
-app.use(
-  "/",
-  express.static(
-    path.join(__dirname, "/var/www/fanavaranServer/faserver/public")
-  )
-);
-app.use(bodyParser.raw({ type: "application/json" }));
-
 // CORS middleware configuration
 const corsOptions = {
   origin: [
@@ -50,6 +32,24 @@ const corsOptions = {
   ],
   credentials: true,
 };
+
+// Custom middleware logger
+app.use(logger);
+
+// Apply the rate limiting middleware to all requests
+app.use(limiter);
+const PORT = 3200;
+const cors = require("cors");
+app.use("/uploads", cors(corsOptions), express.static("uploads"));
+app.use(credentials);
+app.use(express.json());
+app.use(
+  "/",
+  express.static(
+    path.join(__dirname, "/var/www/fanavaranServer/faserver/public")
+  )
+);
+app.use(bodyParser.raw({ type: "application/json" }));
 
 // Apply the CORS middleware to all routes
 app.use(cors(corsOptions));

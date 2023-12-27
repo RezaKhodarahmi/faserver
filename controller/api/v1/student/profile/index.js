@@ -1,9 +1,14 @@
 const Courses = require("../../../../../models").Courses;
 const Users = require("../../../../../models").Users;
 const Enrollments = require("../../../../../models").Enrollments;
+const Transactions = require("../../../../../models").Transactions;
+const CourseCycles = require("../../../../../models").CourseCycles;
 const Validation = require("../../../../../utils/dashboard/validationSchema");
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const bcrypt = require("bcrypt");
+// or, if you need to access DataTypes or Op
+const { Sequelize, DataTypes, Op } = require("sequelize");
+
 const profileInfo = async (req, res) => {
   try {
     const email = req.params.email;
@@ -93,16 +98,48 @@ const profileInfo = async (req, res) => {
     const remainingDays = Math.ceil(
       (vipDate - currentDate) / (1000 * 60 * 60 * 24)
     );
+    // First, find the transactions and get their cycleIds
+    const transactionsWithCycleIds = await Transactions.findAll({
+      where: { userId: user.id },
+      attributes: ["cycleId"], // Assuming cycleId is the column name
+    });
+
+    // Extract the cycleIds into a single array
+    const cycleIds = transactionsWithCycleIds.flatMap((t) => t.cycleId);
+
+    // Now query again to get the full transaction details with the filtered cycles
+    const transactions = await Transactions.findAll({
+      where: { userId: user.id },
+      exclude: ["Stripe_Charge_ID"],
+      include: [
+        {
+          model: Courses,
+          as: "courses",
+          include: [
+            {
+              model: CourseCycles, // Replace with your actual CourseCycles model
+              as: "cycles", // Replace with your alias
+              where: {
+                id: { [Sequelize.Op.in]: cycleIds },
+              },
+              required: false,
+            },
+          ],
+        },
+      ],
+    });
 
     return res.status(200).json({
       error: false,
       courses: courses,
       subscription: subscriptions.data[0]?.cancel_at_period_end,
       user: user,
+      transactions: transactions,
       isVipValid: isVipValid,
       remainingDays: isVipValid ? remainingDays : 0,
     });
   } catch (error) {
+    console.log(error);
     return res.status(500).json({
       error: true,
       message: "Server Error!",
