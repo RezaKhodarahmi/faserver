@@ -1,10 +1,10 @@
-const Posts = require("../../../../../models").Posts;
+const BlogCategories = require("../../../../../models").BlogCategories;
 
-const getPosts = async (req, res) => {
+const getCategories = async (req, res) => {
   try {
-    const posts = await Posts.findAll({ where: { published: 1 } });
+    const categories = await BlogCategories.findAll({ where: { status: 1 } });
     return res.status(200).json({
-      data: posts,
+      data: categories,
       error: false,
     });
   } catch (error) {
@@ -15,18 +15,20 @@ const getPosts = async (req, res) => {
     });
   }
 };
-const getSinglePost = async (req, res) => {
+const getSingleCategory = async (req, res) => {
   try {
     const { slug } = req.params;
-    const post = await Posts.findOne({ where: { slug, published: 1 } });
-    if (!post) {
+    const category = await BlogCategories.findOne({
+      where: { slug, status: 1 },
+    });
+    if (!category) {
       return res.status(404).json({
-        message: "Post not found!",
+        message: "category not found!",
         error: true,
       });
     }
     return res.status(200).json({
-      data: post,
+      data: category,
       error: false,
     });
   } catch (error) {
@@ -38,4 +40,4 @@ const getSinglePost = async (req, res) => {
   }
 };
 
-module.exports = { getPosts, getSinglePost };
+module.exports = { getCategories, getSingleCategory };

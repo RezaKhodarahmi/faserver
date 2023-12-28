@@ -76,7 +76,7 @@ app.use("/api/v1/webinar", require("./routes/api/v1/webinar"));
 app.use("/api/v1/activecampaing", require("./routes/api/v1/activecampaing"));
 
 // student routes
-app.use("/api/v1/student", require("./routes/api/v1/student/user"));
+app.use("/api/v1/student/user", require("./routes/api/v1/student/user"));
 app.use("/api/v1/student/courses", require("./routes/api/v1/student/course"));
 app.use(
   "/api/v1/student/categories",
@@ -95,6 +95,10 @@ app.use(
 );
 app.use("/api/v1/student/search", require("./routes/api/v1/student/search"));
 app.use("/api/v1/student/blog", require("./routes/api/v1/student/blog"));
+app.use(
+  "/api/v1/student/blog-category",
+  require("./routes/api/v1/student/blog-category")
+);
 
 // Handle 404 errors
 app.all("*", (req, res) => {
