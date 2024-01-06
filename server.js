@@ -99,7 +99,7 @@ app.use(
   "/api/v1/student/blog-category",
   require("./routes/api/v1/student/blog-category")
 );
-
+app.use("/api/v1/student/webinars", require("./routes/api/v1/student/webinar"));
 // Handle 404 errors
 app.all("*", (req, res) => {
   res.status(404);
