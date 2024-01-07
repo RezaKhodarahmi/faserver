@@ -7,6 +7,7 @@ const Enrollments = require("../../../../../models").Enrollments;
 const Validation = require("../../../../../utils/dashboard/validationSchema");
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 var request = require("request");
+const axios = require("axios");
 
 const calculateOrderAmount = (items, coupon) => {
   const amount = items.reduce((sum, item) => sum + item.regularPrice, 0);
@@ -102,6 +103,51 @@ const createPaymentIntent = async (req, res) => {
       stripeCustomerId = stripeCustomer.id;
       user.stripeCustomerId = stripeCustomerId;
       await user.save();
+    }
+
+    // Check if contact exists in ActiveCampaign
+    const activeCampaignApiKey =
+      "78465a755a4825860f06481b1da0d00ef5239a74a557efc9965abf85679f3d525eb0b602"; // Replace with your ActiveCampaign API Key
+    const activeCampaignApiUrl =
+      "https://geniuscamp.api-us1.com/api/3/contacts";
+
+    const contactResponse = await axios.get(
+      `${activeCampaignApiUrl}?filters[email]=${encodeURIComponent(email)}`,
+      {
+        headers: {
+          "Api-Token": activeCampaignApiKey,
+        },
+      }
+    );
+
+    // If contact does not exist, create it
+    if (contactResponse.data.contacts.length === 0) {
+      await axios.post(
+        activeCampaignApiUrl,
+        {
+          contact: {
+            email: email,
+            firstName: user.firstName,
+            lastName: user.lastName,
+            phone: user.phone,
+            mobile: user.phone,
+            fieldValues: [
+              // Replace with actual field IDs and ensure the values are correctly formatted
+              { field: "3", value: user.city },
+              { field: "34", value: user.country },
+              { field: "6", value: user.postalCode },
+
+              // Add other custom fields as necessary
+            ],
+          },
+        },
+        {
+          headers: {
+            "Api-Token": activeCampaignApiKey,
+            "Content-Type": "application/json",
+          },
+        }
+      );
     }
 
     // Create a PaymentIntent with the order amount, currency, and customer

@@ -72,8 +72,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     vip: {
       type: DataTypes.STRING,
-      allowNull: false,
-      defaultValue: "",
+      allowNull: true,
     },
     registerStep: {
       type: DataTypes.STRING,
