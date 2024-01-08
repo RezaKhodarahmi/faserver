@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const fs = require("fs");
 const https = require("https");
 const { logger } = require("./middlewares/logEvents");
-
+const cors = require("cors");
 const credentials = require("./middlewares/credentials");
 const rateLimit = require("express-rate-limit");
 const limiter = rateLimit({
@@ -42,7 +42,7 @@ app.use(logger);
 // Apply the rate limiting middleware to all requests
 // app.use(limiter);
 // const PORT = 3200;
-// const cors = require("cors");
+//
 // app.use("/uploads", cors(corsOptions), express.static("uploads"));
 // app.use(credentials);
 // app.use(express.json());
@@ -57,7 +57,7 @@ app.use(logger);
 // Apply the rate limiting middleware to all requests
 app.use(limiter);
 const PORT = 3100;
-const cors = require("cors");
+
 app.use("/uploads", express.static("uploads"));
 app.use(credentials);
 app.use(express.json());
