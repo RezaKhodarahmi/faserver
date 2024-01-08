@@ -93,6 +93,12 @@ module.exports = (sequelize, DataTypes) => {
       otherKey: "categoryId",
       as: "categories", // alias
     });
+    Courses.belongsToMany(models.Categories, {
+      through: models.CoursePerCategory,
+      foreignKey: "courseId",
+      otherKey: "categoryId",
+      as: "categories",
+    });
 
     Courses.belongsToMany(models.Users, {
       through: "TeacherPerCourse", // this is the table that will act as the junction table

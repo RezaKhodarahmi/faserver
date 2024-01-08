@@ -80,7 +80,7 @@ module.exports = (sequelize, DataTypes) => {
       },
     },
     {
-      tableName: "coupon",
+      tableName: "coupons",
     }
   );
 
