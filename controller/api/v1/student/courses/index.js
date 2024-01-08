@@ -7,6 +7,8 @@ const Answers = require("../../../../../models").Answers;
 const Enrollments = require("../../../../../models").Enrollments;
 const Tests = require("../../../../../models").Tests;
 const Questions = require("../../../../../models").Questions;
+const Comments = require("../../../../../models").Comments;
+const CommentReplies = require("../../../../../models").CommentReplies;
 
 const Validation = require("../../../../../utils/dashboard/validationSchema");
 const getCourses = async (req, res) => {
@@ -122,6 +124,11 @@ const getCourseWithId = async (req, res) => {
           model: CourseCycles,
           as: "cycles",
           required: true,
+        },
+        {
+          model: Comments,
+          as: "comments",
+          required: false,
         },
         {
           model: Categories, // Include Categories model
@@ -352,6 +359,47 @@ const GetCourseCheckEnroll = async (req, res) => {
           model: CourseCycles,
           as: "cycles",
           required: true,
+        },
+        {
+          model: Comments,
+          as: "comments",
+          required: false,
+          include: [
+            { model: CommentReplies, as: "replies", required: false },
+            {
+              model: Users,
+              as: "user",
+              required: true,
+              attributes: {
+                exclude: [
+                  "password",
+                  "email",
+                  "referralCode",
+                  "phone",
+                  "address",
+                  "postalCode",
+                  "country",
+                  "city",
+                  "role",
+                  "language",
+                  "timezone",
+                  "emailVerification",
+                  "dateOfBirth",
+                  "status",
+                  "vip",
+                  "registerStep",
+                  "token",
+                  "forgotToken",
+                  "contract",
+                  "referralCode",
+                  "credit",
+                  "updatedAt",
+                  "createdAt",
+                  "stripeCustomerId",
+                ],
+              },
+            },
+          ],
         },
         {
           model: Categories, // Include Categories model

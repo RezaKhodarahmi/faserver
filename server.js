@@ -18,29 +18,47 @@ const limiter = rateLimit({
 });
 
 // CORS middleware configuration
+// CORS middleware configuration
 const corsOptions = {
   origin: [
     "http://localhost:3000",
     "https://localhost:3000",
     "http://localhost:3001",
     "http://localhost:3002",
-    "http://",
+    "http://idtech.ca",
     "https://idtech.ca",
     "https://www.idtech.ca",
-    "http://dashboard.idtech.ca",
-    "http://idtech.ca/dashbaord",
+    "https://dashboard.idtech.ca",
+    "https://www.dashboard.idtech.ca",
   ],
   credentials: true,
 };
 
+// Apply the CORS middleware to all routes
+app.use(cors(corsOptions));
 // Custom middleware logger
 app.use(logger);
 
 // Apply the rate limiting middleware to all requests
+// app.use(limiter);
+// const PORT = 3200;
+// const cors = require("cors");
+// app.use("/uploads", cors(corsOptions), express.static("uploads"));
+// app.use(credentials);
+// app.use(express.json());
+// app.use(
+//   "/",
+//   express.static(
+//     path.join(__dirname, "/var/www/fanavaranServer/faserver/public")
+//   )
+// );
+// app.use(bodyParser.raw({ type: "application/json" }));
+
+// Apply the rate limiting middleware to all requests
 app.use(limiter);
-const PORT = 3200;
+const PORT = 3100;
 const cors = require("cors");
-app.use("/uploads", cors(corsOptions), express.static("uploads"));
+app.use("/uploads", express.static("uploads"));
 app.use(credentials);
 app.use(express.json());
 app.use(
@@ -50,9 +68,6 @@ app.use(
   )
 );
 app.use(bodyParser.raw({ type: "application/json" }));
-
-// Apply the CORS middleware to all routes
-app.use(cors(corsOptions));
 
 //Dashboard routes
 app.use("/api/v1/auth", require("./routes/auth"));
@@ -77,6 +92,7 @@ app.use("/api/v1/activecampaing", require("./routes/api/v1/activecampaing"));
 
 // student routes
 app.use("/api/v1/student/user", require("./routes/api/v1/student/user"));
+app.use("/api/v1/student/auth", require("./routes/api/v1/student/auth"));
 app.use("/api/v1/student/courses", require("./routes/api/v1/student/course"));
 app.use(
   "/api/v1/student/categories",
@@ -100,6 +116,8 @@ app.use(
   require("./routes/api/v1/student/blog-category")
 );
 app.use("/api/v1/student/webinars", require("./routes/api/v1/student/webinar"));
+app.use("/api/v1/student/comments", require("./routes/api/v1/student/comment"));
+
 // Handle 404 errors
 app.all("*", (req, res) => {
   res.status(404);
@@ -124,9 +142,33 @@ app.all("*", (req, res) => {
 //   })
 //   .listen(3200);
 
+// Running server
+// dbConnect.sequelize.sync().then(() => {
+//   app.listen(PORT, () => {
+//     console.log(`SERVER IS RUNNING ON PORT ${PORT}`);
+//   });
+// });
+
+// Handle 404 errors
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("txt").send("404 Not Found");
+  }
+});
+
+const options = {
+  key: fs.readFileSync("/etc/ssl/private/idtech.key"),
+  cert: fs.readFileSync("/etc/ssl/certs/idtech.crt"),
+};
+
 //Running server
 dbConnect.sequelize.sync().then(() => {
-  app.listen(PORT, () => {
-    console.log(`SERVER IS RUNNING ON PORT ${PORT}`);
+  https.createServer(options, app).listen(3200, () => {
+    console.log("Server is running");
   });
 });

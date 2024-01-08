@@ -106,6 +106,12 @@ module.exports = (sequelize, DataTypes) => {
       otherKey: "videoId",
       as: "videos", // alias
     });
+    Courses.belongsToMany(models.Comments, {
+      through: "CourseComments",
+      foreignKey: "courseId",
+      otherKey: "commentId",
+      as: "comments", // alias
+    });
   };
 
   return Courses;
