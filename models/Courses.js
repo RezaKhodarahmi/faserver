@@ -1,80 +1,86 @@
 module.exports = (sequelize, DataTypes) => {
-  const Courses = sequelize.define("Courses", {
-    id: {
-      type: DataTypes.BIGINT,
-      autoIncrement: true,
-      allowNull: false,
-      primaryKey: true,
+  const Courses = sequelize.define(
+    "Courses",
+    {
+      id: {
+        type: DataTypes.BIGINT,
+        autoIncrement: true,
+        allowNull: false,
+        primaryKey: true,
+      },
+      title: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      slug: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true,
+      },
+      description: {
+        type: DataTypes.TEXT,
+        allowNull: true,
+      },
+      abstract: {
+        type: DataTypes.TEXT,
+        allowNull: true,
+      },
+      image: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      keywords: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      metaTitle: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      metaDescription: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      type: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        defaultValue: 1,
+      },
+      activeList: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        defaultValue: 0,
+      },
+      certificate: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      introURL: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      introPoster: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      status: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        defaultValue: 0,
+      },
+      createdAt: {
+        type: DataTypes.DATE,
+        allowNull: true,
+      },
+      updatedAt: {
+        type: DataTypes.DATE,
+        allowNull: true,
+      },
     },
-    title: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    slug: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-    },
-    description: {
-      type: DataTypes.TEXT,
-      allowNull: true,
-    },
-    abstract: {
-      type: DataTypes.TEXT,
-      allowNull: true,
-    },
-    image: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    keywords: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    metaTitle: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    metaDescription: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    type: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      defaultValue: 1,
-    },
-    activeList: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      defaultValue: 0,
-    },
-    certificate: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    introURL: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    introPoster: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    status: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      defaultValue: 0,
-    },
-    createdAt: {
-      type: DataTypes.DATE,
-      allowNull: true,
-    },
-    updatedAt: {
-      type: DataTypes.DATE,
-      allowNull: true,
-    },
-  });
+    {
+      tableName: "courses",
+    }
+  );
 
   Courses.associate = function (models) {
     Courses.hasMany(models.CourseCycles, {

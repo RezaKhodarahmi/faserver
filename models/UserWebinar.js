@@ -1,30 +1,36 @@
 module.exports = (sequelize, DataTypes) => {
-  const UserWebinars = sequelize.define("UserWebinars", {
-    userId: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      references: {
-        model: "users",
-        key: "id",
+  const UserWebinars = sequelize.define(
+    "UserWebinars",
+    {
+      userId: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+          model: "users",
+          key: "id",
+        },
+      },
+      webinarId: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+          model: "webinars",
+          key: "id",
+        },
+      },
+      createdAt: {
+        type: DataTypes.DATE,
+        allowNull: false,
+      },
+      updatedAt: {
+        type: DataTypes.DATE,
+        allowNull: false,
       },
     },
-    webinarId: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      references: {
-        model: "webinars",
-        key: "id",
-      },
-    },
-    createdAt: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
-    updatedAt: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
-  });
+    {
+      tableName: "userwebinars",
+    }
+  );
   UserWebinars.associate = function (models) {
     UserWebinars.belongsTo(models.Users, {
       foreignKey: "userId",

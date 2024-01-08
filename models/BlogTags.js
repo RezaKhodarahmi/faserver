@@ -1,18 +1,24 @@
 module.exports = (sequelize, DataTypes) => {
-  const BlogTags = sequelize.define("BlogTags", {
-    title: {
-      type: DataTypes.STRING,
-      allowNull: false,
+  const BlogTags = sequelize.define(
+    "BlogTags",
+    {
+      title: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      createdAt: {
+        type: DataTypes.DATE,
+        allowNull: true,
+      },
+      updatedAt: {
+        type: DataTypes.DATE,
+        allowNull: true,
+      },
     },
-    createdAt: {
-      type: DataTypes.DATE,
-      allowNull: true,
-    },
-    updatedAt: {
-      type: DataTypes.DATE,
-      allowNull: true,
-    },
-  });
+    {
+      tableName: "blogtags",
+    }
+  );
   BlogTags.associate = (models) => {
     BlogTags.belongsToMany(models.Posts, {
       through: models.PostTag,
