@@ -83,9 +83,6 @@ module.exports = (sequelize, DataTypes) => {
       },
     },
     {
-      tableName: "posts",
-    },
-    {
       hooks: {
         beforeValidate: (post, options) => {
           if (!post.slug) {
