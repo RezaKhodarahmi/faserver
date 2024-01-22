@@ -143,11 +143,11 @@ app.all("*", (req, res) => {
 //   .listen(3200);
 
 //Running server
-dbConnect.sequelize.sync().then(() => {
-  app.listen(3200, () => {
-    console.log(`SERVER IS RUNNING ON PORT 3200`);
-  });
-});
+// dbConnect.sequelize.sync().then(() => {
+//   app.listen(3200, () => {
+//     console.log(`SERVER IS RUNNING ON PORT 3200`);
+//   });
+// });
 
 // Handle 404 errors
 app.all("*", (req, res) => {
@@ -161,14 +161,14 @@ app.all("*", (req, res) => {
   }
 });
 
-// const options = {
-//   key: fs.readFileSync("/etc/ssl/private/idtech.key"),
-//   cert: fs.readFileSync("/etc/ssl/certs/idtech.crt"),
-// };
+const options = {
+  key: fs.readFileSync("/etc/ssl/private/idtech.key"),
+  cert: fs.readFileSync("/etc/ssl/certs/idtech.crt"),
+};
 
 // //Running server
-// dbConnect.sequelize.sync().then(() => {
-//   https.createServer(options, app).listen(3200, () => {
-//     console.log("Server is running");
-//   });
-// });
+dbConnect.sequelize.sync().then(() => {
+  https.createServer(options, app).listen(3200, () => {
+    console.log("Server is running");
+  });
+});
