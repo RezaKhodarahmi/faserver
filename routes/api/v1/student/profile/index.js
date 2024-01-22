@@ -3,14 +3,19 @@ const router = express.Router();
 const ProfileController = require("../../../../../controller/api/v1/student/profile/");
 const { checkToken } = require("../../../../../utils/verifyAccessToken");
 const multer = require("multer");
+const { v4: uuidv4 } = require("uuid");
+const path = require("path");
+
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, "./uploads/users");
   },
   filename: function (req, file, cb) {
-    cb(null, new Date().toISOString().replace(/:/g, "-") + file.originalname);
+    // Generate a unique file name with the original extension
+    cb(null, uuidv4() + path.extname(file.originalname));
   },
 });
+
 const upload = multer({ storage: storage });
 router.get("/:email", checkToken, ProfileController.profileInfo);
 router.post("/courses", checkToken, ProfileController.getCourses);

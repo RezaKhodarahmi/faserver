@@ -43,6 +43,7 @@ const createNewAnswer = async (req, res) => {
     return res.status(200).json({ message: "Answers updated successfully" });
   } catch (error) {
     // Send an error response if needed
+    console.error(error);
     return res
       .status(500)
       .json({ message: "An error occurred while updating answers" });
@@ -77,12 +78,11 @@ const updateAnswer = async (req, res) => {
 
     return res.status(200).json({ message: "Answers updated successfully" });
   } catch (error) {
-    return res
-      .status(500)
-      .json({
-        message: "An error occurred while updating answers",
-        error: error.message,
-      });
+    console.error("UPDATEEEE:::::::::" + error);
+    return res.status(500).json({
+      message: "An error occurred while updating answers",
+      error: error.message,
+    });
   }
 };
 
