@@ -3,18 +3,18 @@ module.exports = (sequelize, DataTypes) => {
     userId: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: {
-        model: "users",
-        key: "id",
-      },
+      // references: {
+      //   model: "users",
+      //   key: "id",
+      // },
     },
     webinarId: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: {
-        model: "webinars",
-        key: "id",
-      },
+      // references: {
+      //   model: "webinars",
+      //   key: "id",
+      // },
     },
     createdAt: {
       type: DataTypes.DATE,
