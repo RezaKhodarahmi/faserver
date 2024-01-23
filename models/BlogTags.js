@@ -13,12 +13,12 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true,
     },
   });
-  BlogTags.associate = (models) => {
-    BlogTags.belongsToMany(models.Posts, {
-      through: models.PostTag,
-      foreignKey: "postId",
-      otherKey: "tagId",
-    });
-  };
+  // BlogTags.associate = (models) => {
+  //   BlogTags.belongsToMany(models.Posts, {
+  //     through: models.PostTag,
+  //     foreignKey: "postId",
+  //     otherKey: "tagId",
+  //   });
+  // };
   return BlogTags;
 };

@@ -25,17 +25,17 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
   });
-  UserWebinars.associate = function (models) {
-    UserWebinars.belongsTo(models.Users, {
-      foreignKey: "userId",
-      as: "user",
-    });
+  // UserWebinars.associate = function (models) {
+  //   UserWebinars.belongsTo(models.Users, {
+  //     foreignKey: "userId",
+  //     as: "user",
+  //   });
 
-    UserWebinars.belongsTo(models.Webinars, {
-      foreignKey: "webinarId",
-      as: "webinar",
-    });
-  };
+  //   UserWebinars.belongsTo(models.Webinars, {
+  //     foreignKey: "webinarId",
+  //     as: "webinar",
+  //   });
+  // };
 
   return UserWebinars;
 };

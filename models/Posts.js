@@ -101,18 +101,18 @@ module.exports = (sequelize, DataTypes) => {
     }
   );
 
-  Posts.associate = (models) => {
-    Posts.belongsToMany(models.BlogCategories, {
-      through: models.PostCategory,
-      foreignKey: "postId",
-      otherKey: "catId",
-    });
-    Posts.belongsToMany(models.BlogTags, {
-      through: models.PostTag,
-      foreignKey: "postId",
-      otherKey: "tagId",
-    });
-  };
+  // Posts.associate = (models) => {
+  //   Posts.belongsToMany(models.BlogCategories, {
+  //     through: models.PostCategory,
+  //     foreignKey: "postId",
+  //     otherKey: "catId",
+  //   });
+  //   Posts.belongsToMany(models.BlogTags, {
+  //     through: models.PostTag,
+  //     foreignKey: "postId",
+  //     otherKey: "tagId",
+  //   });
+  // };
 
   return Posts;
 };

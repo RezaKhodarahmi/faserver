@@ -53,12 +53,12 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true,
     },
   });
-  BlogCategories.associate = (models) => {
-    BlogCategories.belongsToMany(models.Posts, {
-      through: models.PostCategory,
-      foreignKey: "catId",
-      otherKey: "postId",
-    });
-  };
+  // BlogCategories.associate = (models) => {
+  //   BlogCategories.belongsToMany(models.Posts, {
+  //     through: models.PostCategory,
+  //     foreignKey: "catId",
+  //     otherKey: "postId",
+  //   });
+  // };
   return BlogCategories;
 };

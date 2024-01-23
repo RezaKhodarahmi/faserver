@@ -38,16 +38,16 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
-  Comments.associate = function (models) {
-    Comments.hasMany(models.CommentReplies, {
-      foreignKey: "commentId",
-      as: "replies",
-    });
-    Comments.belongsTo(models.Users, {
-      foreignKey: "userId",
-      as: "user",
-    });
-  };
+  // Comments.associate = function (models) {
+  //   Comments.hasMany(models.CommentReplies, {
+  //     foreignKey: "commentId",
+  //     as: "replies",
+  //   });
+  //   Comments.belongsTo(models.Users, {
+  //     foreignKey: "userId",
+  //     as: "user",
+  //   });
+  // };
 
   return Comments;
 };

@@ -47,13 +47,13 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true,
     },
   });
-  Categories.associate = function (models) {
-    Categories.belongsToMany(models.Courses, {
-      through: "CoursePerCategory", // this is the table that will act as the junction table
-      foreignKey: "categoryId",
-      otherKey: "courseId",
-      as: "courses", // alias
-    });
-  };
+  // Categories.associate = function (models) {
+  //   Categories.belongsToMany(models.Courses, {
+  //     through: "CoursePerCategory", // this is the table that will act as the junction table
+  //     foreignKey: "categoryId",
+  //     otherKey: "courseId",
+  //     as: "courses", // alias
+  //   });
+  // };
   return Categories;
 };

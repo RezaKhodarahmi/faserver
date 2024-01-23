@@ -21,11 +21,11 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
   // Add this block after the existing code
-  Answers.associate = function (models) {
-    Answers.belongsTo(models.Questions, {
-      foreignKey: "questionId",
-      as: "question",
-    });
-  };
+  // Answers.associate = function (models) {
+  //   Answers.belongsTo(models.Questions, {
+  //     foreignKey: "questionId",
+  //     as: "question",
+  //   });
+  // };
   return Answers;
 };

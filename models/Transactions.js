@@ -57,26 +57,26 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
   });
-  Transactions.associate = (models) => {
-    Transactions.belongsTo(models.Users, {
-      foreignKey: "userId",
-      as: "user",
-    });
+  // Transactions.associate = (models) => {
+  //   Transactions.belongsTo(models.Users, {
+  //     foreignKey: "userId",
+  //     as: "user",
+  //   });
 
-    Transactions.belongsToMany(models.Courses, {
-      through: "TransactionCourses",
-      foreignKey: "Transaction_ID",
-      otherKey: "courseId",
-      as: "courses",
-    });
+  //   Transactions.belongsToMany(models.Courses, {
+  //     through: "TransactionCourses",
+  //     foreignKey: "Transaction_ID",
+  //     otherKey: "courseId",
+  //     as: "courses",
+  //   });
 
-    Transactions.belongsToMany(models.CourseCycles, {
-      through: "TransactionCycles",
-      foreignKey: "Transaction_ID",
-      otherKey: "cycleId",
-      as: "cycles",
-    });
-  };
+  //   Transactions.belongsToMany(models.CourseCycles, {
+  //     through: "TransactionCycles",
+  //     foreignKey: "Transaction_ID",
+  //     otherKey: "cycleId",
+  //     as: "cycles",
+  //   });
+  // };
 
   return Transactions;
 };
