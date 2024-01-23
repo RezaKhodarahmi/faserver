@@ -82,43 +82,43 @@ module.exports = (sequelize, DataTypes) => {
     }
   );
 
-  // Courses.associate = function (models) {
-  //   Courses.hasMany(models.CourseCycles, {
-  //     foreignKey: "courseId",
-  //     as: "cycles",
-  //   });
-  //   Courses.belongsToMany(models.Categories, {
-  //     through: models.CoursePerCategory,
-  //     foreignKey: "courseId",
-  //     otherKey: "categoryId",
-  //     as: "categories",
-  //   });
+  Courses.associate = function (models) {
+    Courses.hasMany(models.CourseCycles, {
+      foreignKey: "courseId",
+      as: "cycles",
+    });
+    Courses.belongsToMany(models.Categories, {
+      through: models.CoursePerCategory,
+      foreignKey: "courseId",
+      otherKey: "categoryId",
+      as: "categories",
+    });
 
-  //   Courses.belongsToMany(models.Users, {
-  //     through: "TeacherPerCourse", // this is the table that will act as the junction table
-  //     foreignKey: "courseId",
-  //     otherKey: "teacherId",
-  //     as: "teachers", // alias
-  //   });
-  //   Courses.belongsToMany(models.Tests, {
-  //     through: "TestPerCycles",
-  //     foreignKey: "courseId",
-  //     otherKey: "testId",
-  //     as: "tests", // alias
-  //   });
-  //   Courses.belongsToMany(models.Videos, {
-  //     through: "VideoPerCycles",
-  //     foreignKey: "courseId",
-  //     otherKey: "videoId",
-  //     as: "videos", // alias
-  //   });
-  //   Courses.belongsToMany(models.Comments, {
-  //     through: "CourseComments",
-  //     foreignKey: "courseId",
-  //     otherKey: "commentId",
-  //     as: "comments", // alias
-  //   });
-  // };
+    Courses.belongsToMany(models.Users, {
+      through: "TeacherPerCourse", // this is the table that will act as the junction table
+      foreignKey: "courseId",
+      otherKey: "teacherId",
+      as: "teachers", // alias
+    });
+    Courses.belongsToMany(models.Tests, {
+      through: "TestPerCycles",
+      foreignKey: "courseId",
+      otherKey: "testId",
+      as: "tests", // alias
+    });
+    Courses.belongsToMany(models.Videos, {
+      through: "VideoPerCycles",
+      foreignKey: "courseId",
+      otherKey: "videoId",
+      as: "videos", // alias
+    });
+    Courses.belongsToMany(models.Comments, {
+      through: "CourseComments",
+      foreignKey: "courseId",
+      otherKey: "commentId",
+      as: "comments", // alias
+    });
+  };
 
   return Courses;
 };

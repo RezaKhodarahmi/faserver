@@ -116,28 +116,28 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
   // Add this method to your model
-  // Users.associate = function (models) {
-  //   Users.belongsToMany(models.Courses, {
-  //     through: "TeacherPerCourse",
-  //     foreignKey: "teacherId",
-  //     otherKey: "courseId",
-  //     as: "courses",
-  //   });
+  Users.associate = function (models) {
+    Users.belongsToMany(models.Courses, {
+      through: "TeacherPerCourse",
+      foreignKey: "teacherId",
+      otherKey: "courseId",
+      as: "courses",
+    });
 
-  //   Users.hasMany(models.Referral, {
-  //     foreignKey: "referrerId",
-  //     as: "referralsMade",
-  //   });
+    Users.hasMany(models.Referral, {
+      foreignKey: "referrerId",
+      as: "referralsMade",
+    });
 
-  //   Users.hasOne(models.Referral, {
-  //     foreignKey: "referredId",
-  //     as: "referralReceived",
-  //   });
-  //   Users.belongsToMany(models.Webinars, {
-  //     through: "UserWebinars", // Name of the junction table (might differ in your setup)
-  //     foreignKey: "userId",
-  //     as: "registeredWebinars",
-  //   });
-  // };
+    Users.hasOne(models.Referral, {
+      foreignKey: "referredId",
+      as: "referralReceived",
+    });
+    Users.belongsToMany(models.Webinars, {
+      through: "UserWebinars", // Name of the junction table (might differ in your setup)
+      foreignKey: "userId",
+      as: "registeredWebinars",
+    });
+  };
   return Users;
 };

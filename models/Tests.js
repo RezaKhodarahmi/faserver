@@ -52,18 +52,18 @@ module.exports = (sequelize, DataTypes) => {
       defaultValue: 1,
     },
   });
-  // Tests.associate = function (models) {
-  //   Tests.hasMany(models.Questions, {
-  //     foreignKey: "testId",
-  //     as: "questions",
-  //   });
+  Tests.associate = function (models) {
+    Tests.hasMany(models.Questions, {
+      foreignKey: "testId",
+      as: "questions",
+    });
     // Tests.belongsToMany(models.Courses, {
     //   through: "TestPerCycle",
     //   foreignKey: "testId",
     //   otherKey: "courseId",
     //   as: "tests", // alias
     // });
-  // };
+  };
 
   return Tests;
 };

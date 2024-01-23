@@ -65,12 +65,12 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
   });
-  // Webinars.associate = function (models) {
-  //   Webinars.belongsToMany(models.Users, {
-  //     through: "UserWebinars",
-  //     foreignKey: "webinarId",
-  //     as: "participants",
-  //   });
-  // };
+  Webinars.associate = function (models) {
+    Webinars.belongsToMany(models.Users, {
+      through: "UserWebinars",
+      foreignKey: "webinarId",
+      as: "participants",
+    });
+  };
   return Webinars;
 };

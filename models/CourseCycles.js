@@ -81,16 +81,16 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true,
     },
   });
-  // CourseCycles.associate = function (models) {
-  //   CourseCycles.belongsTo(models.Courses, {
-  //     foreignKey: "courseId",
-  //     as: "course",
-  //   });
-  //   CourseCycles.hasMany(models.Tests, {
-  //     foreignKey: "cycleId",
-  //     as: "tests",
-  //   });
-  // };
+  CourseCycles.associate = function (models) {
+    CourseCycles.belongsTo(models.Courses, {
+      foreignKey: "courseId",
+      as: "course",
+    });
+    CourseCycles.hasMany(models.Tests, {
+      foreignKey: "cycleId",
+      as: "tests",
+    });
+  };
 
   return CourseCycles;
 };

@@ -43,16 +43,16 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
-  // Referral.associate = (models) => {
-  //   Referral.belongsTo(models.Users, {
-  //     foreignKey: "referrerId",
-  //     as: "referrer",
-  //   });
-  //   Referral.belongsTo(models.Users, {
-  //     foreignKey: "referredId",
-  //     as: "referred",
-  //   });
-  // };
+  Referral.associate = (models) => {
+    Referral.belongsTo(models.Users, {
+      foreignKey: "referrerId",
+      as: "referrer",
+    });
+    Referral.belongsTo(models.Users, {
+      foreignKey: "referredId",
+      as: "referred",
+    });
+  };
 
   return Referral;
 };

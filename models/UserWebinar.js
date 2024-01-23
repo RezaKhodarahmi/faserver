@@ -3,18 +3,18 @@ module.exports = (sequelize, DataTypes) => {
     userId: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      // references: {
-      //   model: "users",
-      //   key: "id",
-      // },
+      references: {
+        model: "users",
+        key: "id",
+      },
     },
     webinarId: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      // references: {
-      //   model: "webinars",
-      //   key: "id",
-      // },
+      references: {
+        model: "webinars",
+        key: "id",
+      },
     },
     createdAt: {
       type: DataTypes.DATE,
@@ -25,17 +25,17 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
   });
-  // UserWebinars.associate = function (models) {
-  //   UserWebinars.belongsTo(models.Users, {
-  //     foreignKey: "userId",
-  //     as: "user",
-  //   });
+  UserWebinars.associate = function (models) {
+    UserWebinars.belongsTo(models.Users, {
+      foreignKey: "userId",
+      as: "user",
+    });
 
-  //   UserWebinars.belongsTo(models.Webinars, {
-  //     foreignKey: "webinarId",
-  //     as: "webinar",
-  //   });
-  // };
+    UserWebinars.belongsTo(models.Webinars, {
+      foreignKey: "webinarId",
+      as: "webinar",
+    });
+  };
 
   return UserWebinars;
 };

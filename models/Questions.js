@@ -29,15 +29,15 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
-  // Questions.associate = function (models) {
-  //   Questions.hasMany(models.Answers, {
-  //     foreignKey: "questionId",
-  //     as: "answers",
-  //   });
-  //   Questions.belongsTo(models.Tests, {
-  //     foreignKey: "testId",
-  //     as: "test",
-  //   });
-  // };
+  Questions.associate = function (models) {
+    Questions.hasMany(models.Answers, {
+      foreignKey: "questionId",
+      as: "answers",
+    });
+    Questions.belongsTo(models.Tests, {
+      foreignKey: "testId",
+      as: "test",
+    });
+  };
   return Questions;
 };
