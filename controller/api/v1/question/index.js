@@ -1,6 +1,8 @@
 //Import Model
 const Questions = require("../../../../models").Questions;
 const Answers = require("../../../../models").Answers;
+// At the top of your question controller file
+const fs = require("fs").promises; // Use fs promises for async/await
 
 const getQuestions = async (req, res) => {
   try {
@@ -120,10 +122,71 @@ const deleteQuestion = async (req, res) => {
   }
 };
 
+const importFromJson = async (req, res) => {
+  if (!req.file) {
+    return res.status(400).send("No file uploaded.");
+  }
+
+  const { testId } = req.body;
+
+  if (!testId) {
+    return res.status(400).send("Please provide a test ID.");
+  }
+
+  const filePath = req.file.path;
+  let count = 0; // Count the number of questions processed
+  let secId = 1; // Initialize secId to assign sequential IDs to questions
+
+  try {
+    const data = await fs.readFile(filePath, "utf8");
+    const questions = JSON.parse(data);
+
+    for (const item of questions) {
+      try {
+        // Determine the question type based on the number of answers
+        const questionType = item.answers.length.toString(); // Convert number of answers to string to match your database field type
+
+        const question = await Questions.create({
+          testId: testId,
+          questionText: item.title,
+          secId: secId++, // Increment secId for each question
+          questionType: questionType, // Set question type based on the number of answers
+          // Add other necessary fields as per your model
+        });
+
+        for (const answer of item.answers) {
+          await Answers.create({
+            questionId: question.id,
+            answerText: answer.title,
+            isCorrect: answer.is_correct,
+            // Add other fields as necessary
+          });
+        }
+
+        count++; // Increment count for each successfully processed question
+      } catch (error) {
+        console.error("Failed to insert question/answer from JSON:", error);
+      }
+    }
+
+    res.status(200).json({
+      error: false,
+      message: `Successfully imported ${count} questions with their answers.`,
+    });
+  } catch (error) {
+    console.error("Error reading JSON file:", error);
+    return res
+      .status(500)
+      .json({ error: true, message: "Error processing file" });
+  }
+};
+
+// Export the modified function
 module.exports = {
   getQuestions,
   creteNewQuestion,
   updateQuestion,
   getQuestionWithId,
   deleteQuestion,
+  importFromJson, // Note the name change to reflect handling JSON
 };

@@ -1,5 +1,5 @@
 {
-    "production": {
+    "development": {
       "username": "root",
       "password": "",
       "database": "fanavaran_dev",
@@ -13,7 +13,7 @@
       "host": "localhost",
       "dialect": "mysql"
     },
-    "development": {
+    "production": {
       "username": "idtech_re2323ytfa",
       "password": "ALs-7t+&p}cy",
       "database": "idtech_fanavaran_dev",

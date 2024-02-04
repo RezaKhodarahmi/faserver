@@ -230,6 +230,7 @@ const HandleRequestForgetPass = async (req, res) => {
       message: "Forgot password link sent successfully.",
     });
   } catch (err) {
+    console.log(err);
     // Send error response
     return res.status(500).json({
       err: true,

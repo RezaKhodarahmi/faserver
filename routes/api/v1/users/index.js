@@ -35,5 +35,6 @@ router.patch(
 router.post("/authors", checkToken, UserController.getAuthors);
 router.post("/teachers", checkToken, UserController.getTeachers);
 router.delete("/delete/:id", checkToken, UserController.deleteUser);
+router.post("/import-users", upload.single("file"), UserController.importUsers);
 
 module.exports = router;

@@ -1,0 +1,721 @@
+Question ID,Question Text,Answer Text,Is Correct
+24433,Obtain the stakeholder's new requirements and perform a risk analysis,,False
+24433,Obtain the stakeholder's new requirements and perform a risk analysis,,True
+24433,Obtain the stakeholder's new requirements and perform a risk analysis,,False
+24433,Obtain the stakeholder's new requirements and perform a risk analysis,,False
+24497,Fulfill all remaining needs as the product is still under development,,False
+24497,Fulfill all remaining needs as the product is still under development,,False
+24497,Fulfill all remaining needs as the product is still under development,,True
+24497,Fulfill all remaining needs as the product is still under development,,False
+24502,Risk report and risk register,,False
+24502,Risk report and risk register,,False
+24502,Risk report and risk register,,False
+24502,Risk report and risk register,,True
+24503,Firm fixed price (FFP),,False
+24503,Firm fixed price (FFP),,True
+24503,Firm fixed price (FFP),,False
+24503,Firm fixed price (FFP),,False
+24504,Highlight ground rules and influence the team so that these rules are understood and followed by all.,,False
+24504,Highlight ground rules and influence the team so that these rules are understood and followed by all.,,False
+24504,Highlight ground rules and influence the team so that these rules are understood and followed by all.,,False
+24504,Highlight ground rules and influence the team so that these rules are understood and followed by all.,,True
+24507,Ask the senior manager to provide a replacement.,,False
+24507,Ask the senior manager to provide a replacement.,,False
+24507,Ask the senior manager to provide a replacement.,,True
+24507,Ask the senior manager to provide a replacement.,,False
+24508,31 days,,False
+24508,31 days,,False
+24508,31 days,,False
+24508,31 days,,True
+24509,"Meet with the team to explain ground rules, shared vision, and values, and to better understand team members' priorities.",,False
+24509,"Meet with the team to explain ground rules, shared vision, and values, and to better understand team members' priorities.",,False
+24509,"Meet with the team to explain ground rules, shared vision, and values, and to better understand team members' priorities.",,False
+24509,"Meet with the team to explain ground rules, shared vision, and values, and to better understand team members' priorities.",,True
+24510,invite the senior manager to the next project meeting,,True
+24510,invite the senior manager to the next project meeting,,False
+24510,invite the senior manager to the next project meeting,,False
+24510,invite the senior manager to the next project meeting,,False
+24512,Ensure that product is completed without any delayes so that it is not affected by the new law when it passed,,False
+24512,Ensure that product is completed without any delayes so that it is not affected by the new law when it passed,,False
+24512,Ensure that product is completed without any delayes so that it is not affected by the new law when it passed,,True
+24512,Ensure that product is completed without any delayes so that it is not affected by the new law when it passed,,False
+24515,Identify new strategies to communicate project status.,,False
+24515,Identify new strategies to communicate project status.,,True
+24515,Identify new strategies to communicate project status.,,False
+24515,Identify new strategies to communicate project status.,,False
+24516,Request additional resources.,,True
+24516,Request additional resources.,,False
+24516,Request additional resources.,,False
+24516,Request additional resources.,,False
+24517,Review the stakeholder engagement plan to assess how difficult stakeholders should be engaged,,False
+24517,Review the stakeholder engagement plan to assess how difficult stakeholders should be engaged,,False
+24517,Review the stakeholder engagement plan to assess how difficult stakeholders should be engaged,,False
+24517,Review the stakeholder engagement plan to assess how difficult stakeholders should be engaged,,True
+24518,Ask the functional manager to brief this new stakeholder and request that they send them to all relevant meetings.,,False
+24518,Ask the functional manager to brief this new stakeholder and request that they send them to all relevant meetings.,,False
+24518,Ask the functional manager to brief this new stakeholder and request that they send them to all relevant meetings.,,True
+24518,Ask the functional manager to brief this new stakeholder and request that they send them to all relevant meetings.,,False
+24519,Implemented a stakeholder engagement plan,,False
+24519,Implemented a stakeholder engagement plan,,False
+24519,Implemented a stakeholder engagement plan,,False
+24519,Implemented a stakeholder engagement plan,,True
+24520,Refer to the communications management plan to properly inform all stakeholders,,True
+24520,Refer to the communications management plan to properly inform all stakeholders,,False
+24520,Refer to the communications management plan to properly inform all stakeholders,,False
+24520,Refer to the communications management plan to properly inform all stakeholders,,False
+24521,Communicate to key stakeholders that there will be a two-week project.,,True
+24521,Communicate to key stakeholders that there will be a two-week project.,,False
+24521,Communicate to key stakeholders that there will be a two-week project.,,False
+24521,Communicate to key stakeholders that there will be a two-week project.,,False
+24523,Transfer,,False
+24523,Transfer,,False
+24523,Transfer,,False
+24523,Transfer,,True
+24524,Service level agreement (SLA) established with the vendor,,False
+24524,Service level agreement (SLA) established with the vendor,,True
+24524,Service level agreement (SLA) established with the vendor,,False
+24524,Service level agreement (SLA) established with the vendor,,False
+24526,Send a project status update to all stakeholders.,,True
+24526,Send a project status update to all stakeholders.,,False
+24526,Send a project status update to all stakeholders.,,False
+24526,Send a project status update to all stakeholders.,,False
+24530,Reduce the project's scope.,,True
+24530,Reduce the project's scope.,,False
+24530,Reduce the project's scope.,,False
+24530,Reduce the project's scope.,,False
+24532,Assess the impact on risks.,,False
+24532,Assess the impact on risks.,,False
+24532,Assess the impact on risks.,,True
+24532,Assess the impact on risks.,,False
+24533,Key stakeholder list,,False
+24533,Key stakeholder list,,True
+24533,Key stakeholder list,,False
+24533,Key stakeholder list,,False
+24534,Reviewed the requirements documentation,,False
+24534,Reviewed the requirements documentation,,False
+24534,Reviewed the requirements documentation,,True
+24534,Reviewed the requirements documentation,,False
+24536,Perform a high-level analysis  of the  missed feature and ask for sponser,,True
+24536,Perform a high-level analysis  of the  missed feature and ask for sponser,,False
+24536,Perform a high-level analysis  of the  missed feature and ask for sponser,,False
+24536,Perform a high-level analysis  of the  missed feature and ask for sponser,,False
+24537,Ask the responsible team members to bring their activities back on schedule.,,False
+24537,Ask the responsible team members to bring their activities back on schedule.,,False
+24537,Ask the responsible team members to bring their activities back on schedule.,,True
+24537,Ask the responsible team members to bring their activities back on schedule.,,False
+24538,Brainstorm ideas with the project team to mitigate the risk.,,False
+24538,Brainstorm ideas with the project team to mitigate the risk.,,False
+24538,Brainstorm ideas with the project team to mitigate the risk.,,False
+24538,Brainstorm ideas with the project team to mitigate the risk.,,True
+24541,Set an expectation for the team to demo the new functionalities to project stakeholders.,,False
+24541,Set an expectation for the team to demo the new functionalities to project stakeholders.,,False
+24541,Set an expectation for the team to demo the new functionalities to project stakeholders.,,False
+24541,Set an expectation for the team to demo the new functionalities to project stakeholders.,,True
+24543,Recognize that there is a change in stakeholder structure and tailor communications to this group.,,False
+24543,Recognize that there is a change in stakeholder structure and tailor communications to this group.,,False
+24543,Recognize that there is a change in stakeholder structure and tailor communications to this group.,,False
+24543,Recognize that there is a change in stakeholder structure and tailor communications to this group.,,True
+24547,Statement of work (SOW),,False
+24547,Statement of work (SOW),,False
+24547,Statement of work (SOW),,False
+24547,Statement of work (SOW),,True
+24548,Project team assignments,,False
+24548,Project team assignments,,True
+24548,Project team assignments,,False
+24548,Project team assignments,,False
+24550,Investigate the matter further by following the Perform Integrated Change Control process.,,False
+24550,Investigate the matter further by following the Perform Integrated Change Control process.,,False
+24550,Investigate the matter further by following the Perform Integrated Change Control process.,,False
+24550,Investigate the matter further by following the Perform Integrated Change Control process.,,True
+24552,Update the issue log.,,True
+24552,Update the issue log.,,False
+24552,Update the issue log.,,False
+24552,Update the issue log.,,False
+24556,Refer the issue to the change control team.,,True
+24556,Refer the issue to the change control team.,,False
+24556,Refer the issue to the change control team.,,False
+24556,Refer the issue to the change control team.,,False
+24557,Follow the stakeholder engagement plan.,,True
+24557,Follow the stakeholder engagement plan.,,False
+24557,Follow the stakeholder engagement plan.,,False
+24557,Follow the stakeholder engagement plan.,,False
+24561,Meet with the sponsor to evaluate the situation and identify alternatives.,,False
+24561,Meet with the sponsor to evaluate the situation and identify alternatives.,,False
+24561,Meet with the sponsor to evaluate the situation and identify alternatives.,,True
+24561,Meet with the sponsor to evaluate the situation and identify alternatives.,,False
+24563,Prepare a change request.,,True
+24563,Prepare a change request.,,False
+24563,Prepare a change request.,,False
+24563,Prepare a change request.,,False
+24567,Document lessons learned.,,False
+24567,Document lessons learned.,,False
+24567,Document lessons learned.,,False
+24567,Document lessons learned.,,True
+24569,Create a detailed project management plan to share with all stakeholders,,True
+24569,Create a detailed project management plan to share with all stakeholders,,False
+24569,Create a detailed project management plan to share with all stakeholders,,False
+24569,Create a detailed project management plan to share with all stakeholders,,False
+24570,Quality management plan,,False
+24570,Quality management plan,,False
+24570,Quality management plan,,False
+24570,Quality management plan,,True
+24572,Review the project charter.,,False
+24572,Review the project charter.,,False
+24572,Review the project charter.,,False
+24572,Review the project charter.,,True
+24573,Project manager,,True
+24573,Project manager,,False
+24573,Project manager,,False
+24573,Project manager,,False
+24575,Escalate the problem to the project sponsor.,,True
+24575,Escalate the problem to the project sponsor.,,False
+24575,Escalate the problem to the project sponsor.,,False
+24575,Escalate the problem to the project sponsor.,,False
+24576,"Organizational process assets updates, final report, and project document updates",,False
+24576,"Organizational process assets updates, final report, and project document updates",,False
+24576,"Organizational process assets updates, final report, and project document updates",,False
+24576,"Organizational process assets updates, final report, and project document updates",,True
+24577,Stakeholder engagement plan,,True
+24577,Stakeholder engagement plan,,False
+24577,Stakeholder engagement plan,,False
+24577,Stakeholder engagement plan,,False
+24578,Risk register,,True
+24578,Risk register,,False
+24578,Risk register,,False
+24578,Risk register,,False
+24579,Managers from the four countries involved in the project,,False
+24579,Managers from the four countries involved in the project,,True
+24579,Managers from the four countries involved in the project,,False
+24579,Managers from the four countries involved in the project,,False
+24580,Stakeholder register,,True
+24580,Stakeholder register,,False
+24580,Stakeholder register,,False
+24580,Stakeholder register,,False
+24581,Document the concerns in the issue log for later review.,,False
+24581,Document the concerns in the issue log for later review.,,False
+24581,Document the concerns in the issue log for later review.,,True
+24581,Document the concerns in the issue log for later review.,,False
+24582,Created a contingency reserve,,False
+24582,Created a contingency reserve,,True
+24582,Created a contingency reserve,,False
+24582,Created a contingency reserve,,False
+24583,Communications management plan,,False
+24583,Communications management plan,,False
+24583,Communications management plan,,True
+24583,Communications management plan,,False
+24586,Established a professional relationship with the users.,,False
+24586,Established a professional relationship with the users.,,False
+24586,Established a professional relationship with the users.,,True
+24586,Established a professional relationship with the users.,,False
+24588,Immediately define project boundaries with the sponsor.,,False
+24588,Immediately define project boundaries with the sponsor.,,True
+24588,Immediately define project boundaries with the sponsor.,,False
+24588,Immediately define project boundaries with the sponsor.,,False
+24590,Discuss the legal implications of this slippage with the vendor.,,True
+24590,Discuss the legal implications of this slippage with the vendor.,,False
+24590,Discuss the legal implications of this slippage with the vendor.,,False
+24590,Discuss the legal implications of this slippage with the vendor.,,False
+24592,Work breakdown structure (WBS),,False
+24592,Work breakdown structure (WBS),,True
+24592,Work breakdown structure (WBS),,False
+24592,Work breakdown structure (WBS),,False
+24707,Request additional funds to pay the original vendor and dispute the bill after the project is closed.,,False
+24707,Request additional funds to pay the original vendor and dispute the bill after the project is closed.,,True
+24707,Request additional funds to pay the original vendor and dispute the bill after the project is closed.,,False
+24707,Request additional funds to pay the original vendor and dispute the bill after the project is closed.,,False
+24709,The scope will be revised,,True
+24709,The scope will be revised,,False
+24709,The scope will be revised,,False
+24709,The scope will be revised,,False
+24711,Defined a more comprehensive risk management plan to control the impact of different stakeholders with different objectives,,False
+24711,Defined a more comprehensive risk management plan to control the impact of different stakeholders with different objectives,,False
+24711,Defined a more comprehensive risk management plan to control the impact of different stakeholders with different objectives,,True
+24711,Defined a more comprehensive risk management plan to control the impact of different stakeholders with different objectives,,False
+24714,Defined roles and responsibilities for each stakeholder,,False
+24714,Defined roles and responsibilities for each stakeholder,,False
+24714,Defined roles and responsibilities for each stakeholder,,True
+24714,Defined roles and responsibilities for each stakeholder,,False
+24716,Change log,,True
+24716,Change log,,False
+24716,Change log,,False
+24716,Change log,,False
+24753,Discuss the issue face-to-face with the contractor.,,False
+24753,Discuss the issue face-to-face with the contractor.,,False
+24753,Discuss the issue face-to-face with the contractor.,,False
+24753,Discuss the issue face-to-face with the contractor.,,True
+24755,Perform a stakeholder analysis.,,False
+24755,Perform a stakeholder analysis.,,False
+24755,Perform a stakeholder analysis.,,True
+24755,Perform a stakeholder analysis.,,False
+24757,Hold a meeting to identify and prioritize risks so that the risk register,,True
+24757,Hold a meeting to identify and prioritize risks so that the risk register,,False
+24757,Hold a meeting to identify and prioritize risks so that the risk register,,False
+24757,Hold a meeting to identify and prioritize risks so that the risk register,,False
+24760,Construct the project schedule and define the critical path.,,False
+24760,Construct the project schedule and define the critical path.,,False
+24760,Construct the project schedule and define the critical path.,,True
+24760,Construct the project schedule and define the critical path.,,False
+24761,Mitigate,,False
+24761,Mitigate,,True
+24761,Mitigate,,False
+24761,Mitigate,,False
+24762,Update the lessons learned register.,,False
+24762,Update the lessons learned register.,,False
+24762,Update the lessons learned register.,,True
+24762,Update the lessons learned register.,,False
+24764,"The project is over budget, has an SPI of 0.94, and a CPI of 1.04.",,False
+24764,"The project is over budget, has an SPI of 0.94, and a CPI of 1.04.",,True
+24764,"The project is over budget, has an SPI of 0.94, and a CPI of 1.04.",,False
+24764,"The project is over budget, has an SPI of 0.94, and a CPI of 1.04.",,False
+24765,Use benchmarking,,False
+24765,Use benchmarking,,False
+24765,Use benchmarking,,False
+24765,Use benchmarking,,True
+24767,Stakeholder benefits management plan,,False
+24767,Stakeholder benefits management plan,,True
+24767,Stakeholder benefits management plan,,False
+24767,Stakeholder benefits management plan,,False
+24769,Have team members review the project management plan.,,False
+24769,Have team members review the project management plan.,,True
+24769,Have team members review the project management plan.,,False
+24769,Have team members review the project management plan.,,False
+24770,Request assistance from the knowledge management department.,,False
+24770,Request assistance from the knowledge management department.,,True
+24770,Request assistance from the knowledge management department.,,False
+24770,Request assistance from the knowledge management department.,,False
+24771,Distributed the risk response plan to the project sponsor,,True
+24771,Distributed the risk response plan to the project sponsor,,False
+24771,Distributed the risk response plan to the project sponsor,,False
+24771,Distributed the risk response plan to the project sponsor,,False
+24773,Hold frequent video conferences.,,False
+24773,Hold frequent video conferences.,,False
+24773,Hold frequent video conferences.,,True
+24773,Hold frequent video conferences.,,False
+24774,Quality checklists,,False
+24774,Quality checklists,,False
+24774,Quality checklists,,False
+24774,Quality checklists,,True
+37587,Ask the team member responsible for those inputs to comply with the task requirements.,,False
+37587,Ask the team member responsible for those inputs to comply with the task requirements.,,False
+37587,Ask the team member responsible for those inputs to comply with the task requirements.,,True
+37587,Ask the team member responsible for those inputs to comply with the task requirements.,,False
+24780,Create and analyze a cause-and-effect diagram.,,False
+24780,Create and analyze a cause-and-effect diagram.,,False
+24780,Create and analyze a cause-and-effect diagram.,,False
+24780,Create and analyze a cause-and-effect diagram.,,True
+24781,Send the procurement management plan to each provider.,,False
+24781,Send the procurement management plan to each provider.,,False
+24781,Send the procurement management plan to each provider.,,True
+24781,Send the procurement management plan to each provider.,,False
+24784,"Planned specific actions, including primary and backup strategies, and chosen a risk owner",,False
+24784,"Planned specific actions, including primary and backup strategies, and chosen a risk owner",,False
+24784,"Planned specific actions, including primary and backup strategies, and chosen a risk owner",,False
+24784,"Planned specific actions, including primary and backup strategies, and chosen a risk owner",,True
+24785,Revisit the project budget to determine if extra time is required.,,False
+24785,Revisit the project budget to determine if extra time is required.,,False
+24785,Revisit the project budget to determine if extra time is required.,,True
+24785,Revisit the project budget to determine if extra time is required.,,False
+24787,Analogous,,True
+24787,Analogous,,False
+24787,Analogous,,False
+24787,Analogous,,False
+24788,Propose that all team members use a common communications tool for regular updates.,,False
+24788,Propose that all team members use a common communications tool for regular updates.,,False
+24788,Propose that all team members use a common communications tool for regular updates.,,False
+24788,Propose that all team members use a common communications tool for regular updates.,,True
+24790,Ask the finance department to pay the supplier's invoice.,,False
+24790,Ask the finance department to pay the supplier's invoice.,,True
+24790,Ask the finance department to pay the supplier's invoice.,,False
+24790,Ask the finance department to pay the supplier's invoice.,,False
+24792,Issue a change request to the change control board (CCB).,,False
+24792,Issue a change request to the change control board (CCB).,,False
+24792,Issue a change request to the change control board (CCB).,,False
+24792,Issue a change request to the change control board (CCB).,,True
+24793,Meet with the project sponsor and the board to address the issue.,,False
+24793,Meet with the project sponsor and the board to address the issue.,,False
+24793,Meet with the project sponsor and the board to address the issue.,,True
+24793,Meet with the project sponsor and the board to address the issue.,,False
+24795,Facilitation,,False
+24795,Facilitation,,False
+24795,Facilitation,,False
+24795,Facilitation,,True
+24796,Implement a detailed risk management plan that includes all options.,,False
+24796,Implement a detailed risk management plan that includes all options.,,False
+24796,Implement a detailed risk management plan that includes all options.,,False
+24796,Implement a detailed risk management plan that includes all options.,,True
+24799,Procurement management plan and contract agreements,,False
+24799,Procurement management plan and contract agreements,,False
+24799,Procurement management plan and contract agreements,,False
+24799,Procurement management plan and contract agreements,,True
+24801,Hold a second kick-off meeting for the new team members and ask current members to provide training and support.,,False
+24801,Hold a second kick-off meeting for the new team members and ask current members to provide training and support.,,False
+24801,Hold a second kick-off meeting for the new team members and ask current members to provide training and support.,,False
+24801,Hold a second kick-off meeting for the new team members and ask current members to provide training and support.,,True
+24802,"Inform the project sponsor, and update the project management plan.",,False
+24802,"Inform the project sponsor, and update the project management plan.",,True
+24802,"Inform the project sponsor, and update the project management plan.",,False
+24802,"Inform the project sponsor, and update the project management plan.",,False
+24804,Internal failure costs,,False
+24804,Internal failure costs,,False
+24804,Internal failure costs,,True
+24804,Internal failure costs,,False
+24807,Milestone list,,False
+24807,Milestone list,,True
+24807,Milestone list,,False
+24807,Milestone list,,False
+24808,Immediately implement the change to satisfy the customer.,,False
+24808,Immediately implement the change to satisfy the customer.,,False
+24808,Immediately implement the change to satisfy the customer.,,True
+24808,Immediately implement the change to satisfy the customer.,,False
+24809,Obtain a replacement resource from another department.,,False
+24809,Obtain a replacement resource from another department.,,False
+24809,Obtain a replacement resource from another department.,,True
+24809,Obtain a replacement resource from another department.,,False
+24810,Ishikawa diagram,,False
+24810,Ishikawa diagram,,False
+24810,Ishikawa diagram,,False
+24810,Ishikawa diagram,,True
+24812,Negotiate directly with the provider to reach an agreement.,,True
+24812,Negotiate directly with the provider to reach an agreement.,,False
+24812,Negotiate directly with the provider to reach an agreement.,,False
+24812,Negotiate directly with the provider to reach an agreement.,,False
+24813,Closing,,True
+24813,Closing,,False
+24813,Closing,,False
+24813,Closing,,False
+24814,Verified that the risk response was effective,,False
+24814,Verified that the risk response was effective,,False
+24814,Verified that the risk response was effective,,False
+24814,Verified that the risk response was effective,,True
+24815,Meet with the project sponsor to better understand stakeholders' expectation*,,False
+24815,Meet with the project sponsor to better understand stakeholders' expectation*,,False
+24815,Meet with the project sponsor to better understand stakeholders' expectation*,,True
+24815,Meet with the project sponsor to better understand stakeholders' expectation*,,False
+24816,Meet with this vendor.,,True
+24816,Meet with this vendor.,,False
+24816,Meet with this vendor.,,False
+24816,Meet with this vendor.,,False
+24817,Manage key stakeholders' expectations.,,False
+24817,Manage key stakeholders' expectations.,,False
+24817,Manage key stakeholders' expectations.,,True
+24817,Manage key stakeholders' expectations.,,False
+24820,Reject the change request.,,False
+24820,Reject the change request.,,False
+24820,Reject the change request.,,True
+24820,Reject the change request.,,False
+24821,Perform regular risk reviews.,,True
+24821,Perform regular risk reviews.,,False
+24821,Perform regular risk reviews.,,False
+24821,Perform regular risk reviews.,,False
+24822,Crash the project schedule.,,False
+24822,Crash the project schedule.,,False
+24822,Crash the project schedule.,,True
+24822,Crash the project schedule.,,False
+24823,Replace the junior resources and advise the senior resources.,,False
+24823,Replace the junior resources and advise the senior resources.,,True
+24823,Replace the junior resources and advise the senior resources.,,False
+24823,Replace the junior resources and advise the senior resources.,,False
+24824,Identify whether the developer is a shared resource with another project,,True
+24824,Identify whether the developer is a shared resource with another project,,False
+24824,Identify whether the developer is a shared resource with another project,,False
+24824,Identify whether the developer is a shared resource with another project,,False
+24826,Approve the request only if it will have not impact on budget or schedule,,True
+24826,Approve the request only if it will have not impact on budget or schedule,,False
+24826,Approve the request only if it will have not impact on budget or schedule,,False
+24826,Approve the request only if it will have not impact on budget or schedule,,False
+24828,Allows submission of invoices and receipt of final payment from the customer,,False
+24828,Allows submission of invoices and receipt of final payment from the customer,,True
+24828,Allows submission of invoices and receipt of final payment from the customer,,False
+24828,Allows submission of invoices and receipt of final payment from the customer,,False
+37593,Update the project management plan.,,False
+37593,Update the project management plan.,,True
+37593,Update the project management plan.,,False
+37593,Update the project management plan.,,False
+37431,Notify the requester that the change should be handled through the change control process.,,False
+37431,Notify the requester that the change should be handled through the change control process.,,False
+37431,Notify the requester that the change should be handled through the change control process.,,False
+37431,Notify the requester that the change should be handled through the change control process.,,True
+37439,"Decline the project, citing the difficulty of working with culturally diverse people as the reason.",,True
+37439,"Decline the project, citing the difficulty of working with culturally diverse people as the reason.",,False
+37439,"Decline the project, citing the difficulty of working with culturally diverse people as the reason.",,False
+37439,"Decline the project, citing the difficulty of working with culturally diverse people as the reason.",,False
+37441,Submit a change request.,,False
+37441,Submit a change request.,,False
+37441,Submit a change request.,,False
+37441,Submit a change request.,,True
+37600,Reallocate the unused funds.,,True
+37600,Reallocate the unused funds.,,False
+37600,Reallocate the unused funds.,,False
+37600,Reallocate the unused funds.,,False
+37604,"Assume the risks, and control them often to reduce potential impact.",,False
+37604,"Assume the risks, and control them often to reduce potential impact.",,True
+37604,"Assume the risks, and control them often to reduce potential impact.",,False
+37604,"Assume the risks, and control them often to reduce potential impact.",,False
+37608,Ask this key team member if the leave can be postponed.,,False
+37608,Ask this key team member if the leave can be postponed.,,False
+37608,Ask this key team member if the leave can be postponed.,,True
+37608,Ask this key team member if the leave can be postponed.,,False
+24610,Cause-and-effect diagram,,False
+24610,Cause-and-effect diagram,,True
+24610,Cause-and-effect diagram,,False
+24610,Cause-and-effect diagram,,False
+37511,Requirements documentation,,True
+37511,Requirements documentation,,False
+37511,Requirements documentation,,False
+37511,Requirements documentation,,False
+37512,Risk register,,True
+37512,Risk register,,False
+37512,Risk register,,False
+37512,Risk register,,False
+37718,Firm fixed price (FFP),,True
+37718,Firm fixed price (FFP),,False
+37718,Firm fixed price (FFP),,False
+37718,Firm fixed price (FFP),,False
+37719,Perform a stakeholder analysis and conduct detailed requirements sessions.,,False
+37719,Perform a stakeholder analysis and conduct detailed requirements sessions.,,False
+37719,Perform a stakeholder analysis and conduct detailed requirements sessions.,,False
+37719,Perform a stakeholder analysis and conduct detailed requirements sessions.,,True
+37720,Be assertive and stand up for the team's beliefs.,,False
+37720,Be assertive and stand up for the team's beliefs.,,False
+37720,Be assertive and stand up for the team's beliefs.,,False
+37720,Be assertive and stand up for the team's beliefs.,,True
+37721,Conduct a quantitative risk analysis.,,True
+37721,Conduct a quantitative risk analysis.,,False
+37721,Conduct a quantitative risk analysis.,,False
+37721,Conduct a quantitative risk analysis.,,False
+37722,The project management office (PMO) may not recognize the project,,False
+37722,The project management office (PMO) may not recognize the project,,True
+37722,The project management office (PMO) may not recognize the project,,False
+37722,The project management office (PMO) may not recognize the project,,False
+37729,Request additional resources.,,True
+37729,Request additional resources.,,False
+37729,Request additional resources.,,False
+37729,Request additional resources.,,False
+37730,Fast track the critical path.,,False
+37730,Fast track the critical path.,,False
+37730,Fast track the critical path.,,True
+37730,Fast track the critical path.,,False
+37732,Affinity diagram,,False
+37732,Affinity diagram,,True
+37732,Affinity diagram,,False
+37732,Affinity diagram,,False
+37733,Extend the project duration by 24-36 months.,,False
+37733,Extend the project duration by 24-36 months.,,False
+37733,Extend the project duration by 24-36 months.,,True
+37733,Extend the project duration by 24-36 months.,,False
+37739,Ask the sponsor how the project will be funded.,,False
+37739,Ask the sponsor how the project will be funded.,,False
+37739,Ask the sponsor how the project will be funded.,,True
+37739,Ask the sponsor how the project will be funded.,,False
+37740,Norming,,True
+37740,Norming,,False
+37740,Norming,,False
+37740,Norming,,False
+37741,"Terminate the platform, as it is not part of the communications management plan.",,False
+37741,"Terminate the platform, as it is not part of the communications management plan.",,False
+37741,"Terminate the platform, as it is not part of the communications management plan.",,True
+37741,"Terminate the platform, as it is not part of the communications management plan.",,False
+37742,"C, D, A, B",,True
+37742,"C, D, A, B",,False
+37742,"C, D, A, B",,False
+37742,"C, D, A, B",,False
+37743,Update the detailed status report for all stakeholders with the same engagement level.,,False
+37743,Update the detailed status report for all stakeholders with the same engagement level.,,False
+37743,Update the detailed status report for all stakeholders with the same engagement level.,,True
+37743,Update the detailed status report for all stakeholders with the same engagement level.,,False
+37744,Proceed with partial project closure and wait until the final deliverable is completed.,,False
+37744,Proceed with partial project closure and wait until the final deliverable is completed.,,False
+37744,Proceed with partial project closure and wait until the final deliverable is completed.,,True
+37744,Proceed with partial project closure and wait until the final deliverable is completed.,,False
+37745,Force\/direct,,False
+37745,Force\/direct,,False
+37745,Force\/direct,,True
+37745,Force\/direct,,False
+37746,Quality management plan,,False
+37746,Quality management plan,,False
+37746,Quality management plan,,False
+37746,Quality management plan,,True
+37747,Conduct a root cause analysis to identify corrective actions.,,False
+37747,Conduct a root cause analysis to identify corrective actions.,,False
+37747,Conduct a root cause analysis to identify corrective actions.,,False
+37747,Conduct a root cause analysis to identify corrective actions.,,True
+37748,Audits,,False
+37748,Audits,,True
+37748,Audits,,False
+37748,Audits,,False
+37762,Update the stakeholder engagement plan to ensure acceptance buy-in from all stakeholders.,,False
+37762,Update the stakeholder engagement plan to ensure acceptance buy-in from all stakeholders.,,True
+37762,Update the stakeholder engagement plan to ensure acceptance buy-in from all stakeholders.,,False
+37762,Update the stakeholder engagement plan to ensure acceptance buy-in from all stakeholders.,,False
+37763,Request that the project management office (PMO) approve additional funds for this work.,,False
+37763,Request that the project management office (PMO) approve additional funds for this work.,,True
+37763,Request that the project management office (PMO) approve additional funds for this work.,,False
+37763,Request that the project management office (PMO) approve additional funds for this work.,,False
+37764,Measure the project deliverables against the project charter and request customer acceptance.,,False
+37764,Measure the project deliverables against the project charter and request customer acceptance.,,False
+37764,Measure the project deliverables against the project charter and request customer acceptance.,,True
+37764,Measure the project deliverables against the project charter and request customer acceptance.,,False
+37765,"Determine if the resource change impacts the project scope, schedule, or budget.",,False
+37765,"Determine if the resource change impacts the project scope, schedule, or budget.",,False
+37765,"Determine if the resource change impacts the project scope, schedule, or budget.",,False
+37765,"Determine if the resource change impacts the project scope, schedule, or budget.",,True
+37766,Revised budget,,False
+37766,Revised budget,,False
+37766,Revised budget,,True
+37766,Revised budget,,False
+37767,Submit a change request to the change control board (CCB).,,False
+37767,Submit a change request to the change control board (CCB).,,False
+37767,Submit a change request to the change control board (CCB).,,False
+37767,Submit a change request to the change control board (CCB).,,True
+37779,"5,000",,False
+37779,"5,000",,False
+37779,"5,000",,True
+37779,"5,000",,False
+37780,Plan risk responses and update the risk register.,,False
+37780,Plan risk responses and update the risk register.,,False
+37780,Plan risk responses and update the risk register.,,False
+37780,Plan risk responses and update the risk register.,,True
+37781,H-C-D-E,,False
+37781,H-C-D-E,,True
+37781,H-C-D-E,,False
+37781,H-C-D-E,,False
+37782,Verify and complete the release documentation.,,False
+37782,Verify and complete the release documentation.,,False
+37782,Verify and complete the release documentation.,,True
+37782,Verify and complete the release documentation.,,False
+37783,Identify a workaround to contain the effects of the issue.,,False
+37783,Identify a workaround to contain the effects of the issue.,,True
+37783,Identify a workaround to contain the effects of the issue.,,False
+37783,Identify a workaround to contain the effects of the issue.,,False
+37784,Detailed project requirements,,False
+37784,Detailed project requirements,,True
+37784,Detailed project requirements,,False
+37784,Detailed project requirements,,False
+37785,Execute change management procedures.,,False
+37785,Execute change management procedures.,,False
+37785,Execute change management procedures.,,False
+37785,Execute change management procedures.,,True
+37786,Amend the project schedule.,,True
+37786,Amend the project schedule.,,False
+37786,Amend the project schedule.,,False
+37786,Amend the project schedule.,,False
+37787,Consult subject matter experts (SMEs).,,False
+37787,Consult subject matter experts (SMEs).,,False
+37787,Consult subject matter experts (SMEs).,,False
+37787,Consult subject matter experts (SMEs).,,True
+37799,"Identify which team's work should take precedence, and then delay the other team's work",,True
+37799,"Identify which team's work should take precedence, and then delay the other team's work",,False
+37799,"Identify which team's work should take precedence, and then delay the other team's work",,False
+37799,"Identify which team's work should take precedence, and then delay the other team's work",,False
+37800,Refer to the communications management plan to determine how to communicate with the new stakeholders.,,False
+37800,Refer to the communications management plan to determine how to communicate with the new stakeholders.,,False
+37800,Refer to the communications management plan to determine how to communicate with the new stakeholders.,,True
+37800,Refer to the communications management plan to determine how to communicate with the new stakeholders.,,False
+37804,Project management plan,,False
+37804,Project management plan,,True
+37804,Project management plan,,False
+37804,Project management plan,,False
+37805,Identify and evaluate any project risks.,,False
+37805,Identify and evaluate any project risks.,,False
+37805,Identify and evaluate any project risks.,,False
+37805,Identify and evaluate any project risks.,,True
+37806,Create a change request.,,False
+37806,Create a change request.,,False
+37806,Create a change request.,,True
+37806,Create a change request.,,False
+37812,Brainstorming,,False
+37812,Brainstorming,,True
+37812,Brainstorming,,False
+37812,Brainstorming,,False
+37813,Understanding of industry practices,,False
+37813,Understanding of industry practices,,True
+37813,Understanding of industry practices,,False
+37813,Understanding of industry practices,,False
+37814,Adjust the project schedule to account for the training delay.,,False
+37814,Adjust the project schedule to account for the training delay.,,False
+37814,Adjust the project schedule to account for the training delay.,,True
+37814,Adjust the project schedule to account for the training delay.,,False
+37816,"Proceed with the closure, since it is believed payment was approved.",,True
+37816,"Proceed with the closure, since it is believed payment was approved.",,False
+37816,"Proceed with the closure, since it is believed payment was approved.",,False
+37816,"Proceed with the closure, since it is believed payment was approved.",,False
+37817,Via additional requests for services from the same customer,,True
+37817,Via additional requests for services from the same customer,,False
+37817,Via additional requests for services from the same customer,,False
+37817,Via additional requests for services from the same customer,,False
+37819,Perform a sensitivity analysis to determine the potential impact on project outcome.,,False
+37819,Perform a sensitivity analysis to determine the potential impact on project outcome.,,True
+37819,Perform a sensitivity analysis to determine the potential impact on project outcome.,,False
+37819,Perform a sensitivity analysis to determine the potential impact on project outcome.,,False
+37820,Integrated change control,,False
+37820,Integrated change control,,False
+37820,Integrated change control,,False
+37820,Integrated change control,,True
+37821,Work with the project team on a solution to make the project viable.,,False
+37821,Work with the project team on a solution to make the project viable.,,True
+37821,Work with the project team on a solution to make the project viable.,,False
+37821,Work with the project team on a solution to make the project viable.,,False
+37834,Requirements traceability matrix,,False
+37834,Requirements traceability matrix,,False
+37834,Requirements traceability matrix,,False
+37834,Requirements traceability matrix,,True
+37835,Review the project schedule and fast track activities to complete the project earlier.,,False
+37835,Review the project schedule and fast track activities to complete the project earlier.,,True
+37835,Review the project schedule and fast track activities to complete the project earlier.,,False
+37835,Review the project schedule and fast track activities to complete the project earlier.,,False
+37836,Requested earlier feedback from the stakeholders,,False
+37836,Requested earlier feedback from the stakeholders,,False
+37836,Requested earlier feedback from the stakeholders,,True
+37836,Requested earlier feedback from the stakeholders,,False
+55755,The monitoring and controlling phase can have a higher ROM estimate,,True
+55755,The monitoring and controlling phase can have a higher ROM estimate,,False
+55755,The monitoring and controlling phase can have a higher ROM estimate,,False
+55755,The monitoring and controlling phase can have a higher ROM estimate,,False
+55759,Project quality management plan,,False
+55759,Project quality management plan,,True
+55759,Project quality management plan,,False
+55759,Project quality management plan,,False
+55758,They have not identified the product of the project.,,False
+55758,They have not identified the product of the project.,,True
+55758,They have not identified the product of the project.,,False
+55758,They have not identified the product of the project.,,False
+55763,$3200,,False
+55763,$3200,,True
+55763,$3200,,False
+55763,$3200,,False
+55760,Prioritization,,False
+55760,Prioritization,,True
+55760,Prioritization,,False
+55760,Prioritization,,False
+55756,"Continue as is and believe that if he performs according to the plan, the project will produce a convincing product for the customer that will convince the customer representative",,False
+55756,"Continue as is and believe that if he performs according to the plan, the project will produce a convincing product for the customer that will convince the customer representative",,True
+55756,"Continue as is and believe that if he performs according to the plan, the project will produce a convincing product for the customer that will convince the customer representative",,False
+55756,"Continue as is and believe that if he performs according to the plan, the project will produce a convincing product for the customer that will convince the customer representative",,False
+55757,An activity that has zero float,,False
+55757,An activity that has zero float,,False
+55757,An activity that has zero float,,True
+55757,An activity that has zero float,,False
+55762,Lessons learned must be organized into a database,,True
+55762,Lessons learned must be organized into a database,,False
+55762,Lessons learned must be organized into a database,,False
+55762,Lessons learned must be organized into a database,,False
+55764,Document analysis,,False
+55764,Document analysis,,True
+55764,Document analysis,,False
+55764,Document analysis,,False
+55761,All the projects were canceled as they were on schedule but over budget,,False
+55761,All the projects were canceled as they were on schedule but over budget,,False
+55761,All the projects were canceled as they were on schedule but over budget,,True
+55761,All the projects were canceled as they were on schedule but over budget,,False
+55765,A team external to the project,,False
+55765,A team external to the project,,False
+55765,A team external to the project,,False
+55765,A team external to the project,,True
+55766,Three needs theory,,False
+55766,Three needs theory,,True
+55766,Three needs theory,,False
+55766,Three needs theory,,False
+55767,Schedule network analysis,,False
+55767,Schedule network analysis,,True
+55767,Schedule network analysis,,False
+55767,Schedule network analysis,,False

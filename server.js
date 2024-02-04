@@ -10,12 +10,12 @@ const { logger } = require("./middlewares/logEvents");
 const cors = require("cors");
 const credentials = require("./middlewares/credentials");
 const rateLimit = require("express-rate-limit");
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 50000, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
-  standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
-  legacyHeaders: false, // Disable the `X-RateLimit-*` headers
-});
+// const limiter = rateLimit({
+//   windowMs: 15 * 60 * 1000, // 15 minutes
+//   max: 50000, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
+//   standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+//   legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+// });
 
 // CORS middleware configuration
 // CORS middleware configuration
@@ -27,6 +27,10 @@ const corsOptions = {
     "http://localhost:3002",
     "http://idtech.ca",
     "https://idtech.ca",
+    "http://idtech.ca:3100",
+    "https://idtech.ca:3100",
+    "https://idtech.ca:3000",
+    "http://idtech.ca:3000",
     "https://www.idtech.ca",
     "https://dashboard.idtech.ca",
     "https://www.dashboard.idtech.ca",
@@ -55,7 +59,7 @@ app.use(logger);
 // app.use(bodyParser.raw({ type: "application/json" }));
 
 // Apply the rate limiting middleware to all requests
-app.use(limiter);
+// app.use(limiter);
 const PORT = 3100;
 
 app.use("/uploads", express.static("uploads"));
@@ -142,12 +146,12 @@ app.all("*", (req, res) => {
 //   })
 //   .listen(3200);
 
-//Running server
-// dbConnect.sequelize.sync().then(() => {
-//   app.listen(3200, () => {
-//     console.log(`SERVER IS RUNNING ON PORT 3200`);
-//   });
-// });
+// Running server
+dbConnect.sequelize.sync().then(() => {
+  app.listen(3200, () => {
+    console.log(`SERVER IS RUNNING ON PORT 3200`);
+  });
+});
 
 // Handle 404 errors
 app.all("*", (req, res) => {
@@ -161,14 +165,14 @@ app.all("*", (req, res) => {
   }
 });
 
-const options = {
-  key: fs.readFileSync("/etc/ssl/private/idtech.key"),
-  cert: fs.readFileSync("/etc/ssl/certs/idtech.crt"),
-};
+// const options = {
+//   key: fs.readFileSync("/etc/ssl/private/idtech.key"),
+//   cert: fs.readFileSync("/etc/ssl/certs/idtech.crt"),
+// };
 
-// //Running server
-dbConnect.sequelize.sync().then(() => {
-  https.createServer(options, app).listen(3200, () => {
-    console.log("Server is running");
-  });
-});
+// // //Running server
+// dbConnect.sequelize.sync().then(() => {
+//   https.createServer(options, app).listen(3200, () => {
+//     console.log("Server is running");
+//   });
+// });

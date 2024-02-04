@@ -2,6 +2,11 @@ const Users = require("../../../../models").Users;
 const Validation = require("../../../../utils/dashboard/validationSchema");
 const crypto = require("crypto");
 const bcrypt = require("bcrypt");
+const { promisify } = require("util");
+const fs = require("fs");
+const path = require("path");
+const csv = require("fast-csv");
+const readFileAsync = promisify(fs.readFile);
 
 //Generate Referral code
 const generateCode = (length = 6) => {
@@ -257,6 +262,75 @@ const deleteUser = async (req, res) => {
     });
   }
 };
+
+const importUsers = async (req, res) => {
+  try {
+    if (!req.file) {
+      return res
+        .status(400)
+        .json({ error: true, message: "No file uploaded." });
+    }
+
+    // Get the path of the uploaded file
+    const filePath = req.file.path;
+
+    const usersData = [];
+
+    // Read and parse the CSV file
+    fs.createReadStream(filePath)
+      .pipe(csv.parse({ headers: true }))
+      .on("data", (row) => {
+        // Map CSV row to your user model
+        const user = {
+          firstName: row.firstName,
+          lastName: row.lastName,
+          email: row.email,
+          phone: row.phone,
+          password: row.password,
+          address: row.address,
+          postalCode: row.postalCode,
+          country: row.country,
+          city: row.city,
+          avatar: null, // Assuming avatar is not provided in CSV
+          language: "en",
+          timezone: "gmt-05",
+          emailVerification: 1,
+          dateOfBirth: "",
+          status: 1,
+          vip: null,
+          registerStep: 5,
+          token: null,
+          forgetToken: null,
+          contract: 1,
+          referralCode: generateCode(),
+          stripeCustomerId: null,
+          credit: 0, // Assuming default credit
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        };
+        usersData.push(user);
+      })
+      .on("end", async () => {
+        // Store users in database
+        for (const userData of usersData) {
+          // Hash the password
+          const salt = await bcrypt.genSalt(10);
+          userData.password = await bcrypt.hash(userData.password, salt);
+
+          await Users.create(userData);
+        }
+        res
+          .status(201)
+          .json({ error: false, message: "Users imported successfully." });
+      });
+  } catch (error) {
+    console.error(error);
+    res
+      .status(500)
+      .json({ error: true, message: "Server error during user import." });
+  }
+};
+
 module.exports = {
   getUsers,
   getUserWithId,
@@ -265,4 +339,5 @@ module.exports = {
   createUser,
   getAuthors,
   getTeachers,
+  importUsers,
 };
