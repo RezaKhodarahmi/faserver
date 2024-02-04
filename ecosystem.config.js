@@ -4,9 +4,12 @@ module.exports = {
       name: "my-app",
       script: "server.js",
       env: {
-        BASE_URL: "http://localhost:3200",
-        APP_URL: "http://dashboard.idtech.ca:3000",
-        DASHBOARD_URL: "http://idtech.ca:3001",
+        BASE_URL: "http://idtech.ca:3200",
+        APP_URL: "https://idtech.ca",
+        DASHBOARD_URL: "https://dashboard.idtech.ca",
+        // BASE_URL: "http://localhost:3200",
+        // APP_URL: "http://localhost:3000",
+        // DASHBOARD_URL: "http://localhost:3001",
         ACCESS_TOKEN_SECRET:
           "650f3e68dae094bf927206aa6bd30cc23d565ff2e9adddfd88e36a8765819469e53c8310e485fd2d9eae35a27ab58492c28bb15aa2ff15d82069e5b16eab3501",
         REFRESH_TOKEN_SECRET:
@@ -29,6 +32,9 @@ module.exports = {
         STRIPE_MEMBERSHIP_PRICE_ID: "price_1NfMWKFf0hE9RkFd78kU6Ix3",
         STRIPE_PRODUCT_PAYMENT_MODE: "subscription",
         TZ: "America/Toronto",
+        NEXTAUTH_SECRET:
+          "568df396ff5ede0dc62f1aab2662c17a65f65e6bea9611184b21f0de74f7336f",
+        JWT_SECRET: "sddwgdjgwdjgefgejfekfjgj",
       },
       env_production: {
         // You can add production-specific environment variables here

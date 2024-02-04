@@ -19,23 +19,30 @@ const getQuestions = async (req, res) => {
 const creteNewQuestion = async (req, res) => {
   try {
     const params = req.body;
+
+    const createdQuestions = []; // Store the created question IDs here
     const existingArray = [];
-    for (const question of Object.values(params)) {
+
+    for (const question of params) {
       const existQuestion = await Questions.findOne({
-        where: { testId: question.testId, questionText: question.questionText },
+        where: { testId: question.testId, secId: question.secId },
       });
+
       if (existQuestion) {
         existingArray.push({ ...existQuestion });
       } else {
         const newQuestion = await Questions.create(question);
-        return res.status(201).json({
-          error: false,
-          data: newQuestion,
-          existed: existingArray,
-        });
+        createdQuestions.push(newQuestion); // Store the ID of the newly created question
       }
     }
+
+    return res.status(201).json({
+      error: false,
+      data: createdQuestions, // Send the IDs of the created questions
+      existed: existingArray,
+    });
   } catch (error) {
+    console.log(error);
     return res.status(500).json({
       error: true,
       message: "Server error!",
@@ -45,11 +52,17 @@ const creteNewQuestion = async (req, res) => {
 const updateQuestion = async (req, res) => {
   try {
     const params = req.body;
+    console.error(params);
+
     // Update each question in the array
     const promises = params.map((question) => {
-      return Questions.update(question, { where: { id: question.id } });
+      return Questions.update(question, {
+        where: { id: question.id },
+      });
     });
+
     await Promise.all(promises);
+
     return res.status(201).json({
       error: false,
       message: "The question updated successfully!",

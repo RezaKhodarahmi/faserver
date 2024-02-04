@@ -162,6 +162,7 @@ const handelRegister = async (req, res) => {
       });
     }
   } catch (error) {
+    console.log(error);
     return res.status(500).json({
       error: true,
       message: "Server error!",
@@ -186,7 +187,7 @@ const HandleTokenValidation = async (req, res) => {
           "password",
           "forgotToken",
           "token",
-          "registerStep",
+
           "contract",
           "stripeCustomerId",
         ],
@@ -253,7 +254,10 @@ const HandlePersonalInfo = async (req, res) => {
         user.city = city;
         user.country = country;
         user.registerStep = 4;
+
         await user.save();
+        changed = true;
+
         break;
       case 4:
         var { contract } = req.body;
@@ -283,6 +287,7 @@ const HandlePersonalInfo = async (req, res) => {
       return res.status(201).json({
         error: true,
         message: "User updated successfully",
+        data: user,
       });
     }
     return res.status(400).json({

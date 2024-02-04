@@ -37,5 +37,17 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
   });
+
+  Comments.associate = function (models) {
+    Comments.hasMany(models.CommentReplies, {
+      foreignKey: "commentId",
+      as: "replies",
+    });
+    Comments.belongsTo(models.Users, {
+      foreignKey: "userId",
+      as: "user",
+    });
+  };
+
   return Comments;
 };

@@ -1,11 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  const UserWebinars = sequelize.define("Webinars", {
-    id: {
-      type: DataTypes.INTEGER,
-      autoIncrement: true,
-      allowNull: false,
-      primaryKey: true,
-    },
+  const UserWebinars = sequelize.define("UserWebinars", {
     userId: {
       type: DataTypes.INTEGER,
       allowNull: false,
