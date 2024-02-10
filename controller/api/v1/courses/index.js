@@ -24,11 +24,13 @@ const getCourses = async (req, res) => {
         },
       ],
     });
+    console.log(courses);
     return res.status(200).json({
       error: false,
       data: courses,
     });
   } catch (error) {
+    console.log(error);
     return res.status(500).json({
       error: true,
       message: "Server error",

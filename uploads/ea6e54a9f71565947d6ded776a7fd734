@@ -1,0 +1,4682 @@
+[
+    {
+        "id": "24715",
+        "title": "1. project manager prepares the charter for a project that aims to automate 20 percent of product testing. The project sponsor advises the project manager to assign senior test engineers to identify the tests that can be automated. However, the test department manager is uncooperative because they believe that the project will cause downsizing in their department. What should the project manager do first?",
+        "answers": [
+            {
+                "id": "816",
+                "title": "Raise the risk that the senior testing engineers will be unavailable for the testing.",
+                "is_correct": false
+            },
+            {
+                "id": "817",
+                "title": "Ask the project sponsor to provide a rationale for test automation.",
+                "is_correct": false
+            },
+            {
+                "id": "818",
+                "title": "Provide objective cost-benefit evidence of test automation to the test department manager.",
+                "is_correct": true
+            },
+            {
+                "id": "823",
+                "title": "Meet with the test department manager to explain the statement of work",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24717",
+        "title": "2. A project manager is developing the schedule management plan for a data center migration project. The project sponsor asks for a schedule that plans all tasks as soon as possible. The project manager is presented with possible network paths that will not violate schedule constraints. What leads and lags relationship should the project manager select?",
+        "answers": [
+            {
+                "id": "824",
+                "title": "Early start is smaller than the late start in all activities.",
+                "is_correct": false
+            },
+            {
+                "id": "825",
+                "title": "Early start equals the late start in all activities,",
+                "is_correct": false
+            },
+            {
+                "id": "826",
+                "title": "Early start is smaller than the late start in some activities.",
+                "is_correct": false
+            },
+            {
+                "id": "827",
+                "title": "Early start equals the late start in some activities.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24718",
+        "title": "3. A project is 45 percent complete when a project manager learns that an outsourced key resource will be unavailable for an extended period of time. This will have a serious impact on the project's schedule and budget. What should the project manager do?",
+        "answers": [
+            {
+                "id": "828",
+                "title": "Contact the key resource to determine why they will be unavailable and inform the team.",
+                "is_correct": false
+            },
+            {
+                "id": "829",
+                "title": "Provide project stakeholders with an updated delivery date and budget impact and submit a change request.",
+                "is_correct": false
+            },
+            {
+                "id": "830",
+                "title": "Note this in the project file and update the project management plan.",
+                "is_correct": false
+            },
+            {
+                "id": "831",
+                "title": "Submit a change request",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24719",
+        "title": "4. While reviewing the quality of deliverables with the team, the project manager determines that several quality issues could have been avoided by using a simple checklist. The checklist is then implemented for future deliverables. What did the project manager do in this situation?",
+        "answers": [
+            {
+                "id": "832",
+                "title": "Used preventive action",
+                "is_correct": false
+            },
+            {
+                "id": "833",
+                "title": "Facilitated a retrospective",
+                "is_correct": false
+            },
+            {
+                "id": "834",
+                "title": "Used corrective action",
+                "is_correct": true
+            },
+            {
+                "id": "835",
+                "title": "Conducted a lessons learned meeting",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24720",
+        "title": "5. A project is completed, and closeout activities are underway. The project manager discovers that a team member is performing operations activities unrelated to the project scope, but necessary for regular operations. Since the final deliverables must be handed over to operations, what should the project manager do?",
+        "answers": [
+            {
+                "id": "836",
+                "title": "Temporarily transfer the team member to operations.",
+                "is_correct": false
+            },
+            {
+                "id": "837",
+                "title": "Train a resource from operations to perform the activities.",
+                "is_correct": false
+            },
+            {
+                "id": "838",
+                "title": "Issue a change request and obtain approval from the change control board (CCB).",
+                "is_correct": true
+            },
+            {
+                "id": "839",
+                "title": "Ask the team to assist in completing the operations work and close the project ",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24721",
+        "title": "6. During project initiation, the project manager performed a cost-benefit analysis that resulted in 0.6. What should the project manager do next?",
+        "answers": [
+            {
+                "id": "840",
+                "title": "Review the results with the project sponsor to confirm the project's feasibility,",
+                "is_correct": true
+            },
+            {
+                "id": "841",
+                "title": "Consult with stakeholders about project approval.",
+                "is_correct": false
+            },
+            {
+                "id": "842",
+                "title": "Consult experts, look for options, and re-perform the analysis.",
+                "is_correct": false
+            },
+            {
+                "id": "843",
+                "title": "Examine reports to determine if the project should start or be rejected",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24722",
+        "title": "7. A project manager is conducting a risk analysis based on high-level  scope.If expert judgment is being used what document  is being prepared?",
+        "answers": [
+            {
+                "id": "844",
+                "title": "Project scope statement",
+                "is_correct": false
+            },
+            {
+                "id": "845",
+                "title": "Project management plan",
+                "is_correct": false
+            },
+            {
+                "id": "846",
+                "title": "Project charter",
+                "is_correct": true
+            },
+            {
+                "id": "847",
+                "title": "Risk management plan",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24724",
+        "title": "8. A project manager is working on a new project to address gaps in a previously completed project. What should the project manager do first?",
+        "answers": [
+            {
+                "id": "848",
+                "title": "Refer to the lessons learned documents.",
+                "is_correct": true
+            },
+            {
+                "id": "849",
+                "title": "Plan to use the same project resources.",
+                "is_correct": false
+            },
+            {
+                "id": "850",
+                "title": "Define the requirements and finalize the scope.",
+                "is_correct": false
+            },
+            {
+                "id": "851",
+                "title": "Prepare the project management plan.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24725",
+        "title": "9. Two key stakeholders have different opinions about a project's goals. What should the project manager do to obtain approval of the project charter?",
+        "answers": [
+            {
+                "id": "852",
+                "title": "Settle the project goals during the kick-off meeting.",
+                "is_correct": false
+            },
+            {
+                "id": "853",
+                "title": "Perform a stakeholder analysis.",
+                "is_correct": false
+            },
+            {
+                "id": "854",
+                "title": "Negotiate an agreement between the two stakeholders.",
+                "is_correct": true
+            },
+            {
+                "id": "855",
+                "title": "Ask the project sponsor to resolve the conflict.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24727",
+        "title": "10. During a project's initiation phase, the project manager conducted a stakeholder analysis and documented all requirements. Still, some stakeholders are dissatisfied with project results because their expectations were unmet. What should the project manager have done to prevent this?",
+        "answers": [
+            {
+                "id": "856",
+                "title": "Captured the stakeholders' varying expectations throughout the project's life cycle",
+                "is_correct": true
+            },
+            {
+                "id": "857",
+                "title": "Added this as a risk in the risk register",
+                "is_correct": false
+            },
+            {
+                "id": "858",
+                "title": "Asked the project team to refer to the stakeholder engagement plan and respond accordingly",
+                "is_correct": false
+            },
+            {
+                "id": "859",
+                "title": "Submit change request    ",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24729",
+        "title": "11. A project manager finishes the first draft of a project management plan, and intends to present it to stakeholders for approval. However, the project management plan is long and stakeholders are geographically dispersed. The project manager has limited time to gain approval. What should the project manager do to ensure that the review of the plan is completed on time?",
+        "answers": [
+            {
+                "id": "860",
+                "title": "Divide the plan into sections and ask select stakeholders to review particular portions based on their areas of expertise.",
+                "is_correct": false
+            },
+            {
+                "id": "861",
+                "title": "Arrange individual meetings with only the key stakeholders to walk them through the plan.",
+                "is_correct": false
+            },
+            {
+                "id": "862",
+                "title": "Send the plan to each stakeholder individually, asking them to add their comments and return it for updating.",
+                "is_correct": true
+            },
+            {
+                "id": "863",
+                "title": "Schedule a meeting with all stakeholders and send the plan for review",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24730",
+        "title": "12. A sponsor is very upset because they did not know about a project change to reduce the budget. The project manager and project team do not understand the sponsor's frustration, because the change was required and beneficial to the project. What should the project manager have done first?",
+        "answers": [
+            {
+                "id": "864",
+                "title": "Notified the client of the budget decrease and ensure project requirements will not be affected.",
+                "is_correct": false
+            },
+            {
+                "id": "865",
+                "title": "Asked management if there is a required project budget for the financial period.",
+                "is_correct": false
+            },
+            {
+                "id": "866",
+                "title": "Documented the change in detail since the sponsor is responsible for making budgetary decisions.",
+                "is_correct": false
+            },
+            {
+                "id": "867",
+                "title": "Consulted the sponsor since the sponsor is a member of the change control board (CCB)",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24732",
+        "title": "13. A project manager is informally told that a possible union action will involve their project team. At this stage of the project, any delays will significantly impact the schedule and budget. The probability of this union action was assumed to be minimal and was, therefore, unanticipated. What should the project manager do?",
+        "answers": [
+            {
+                "id": "868",
+                "title": "Notify the project team of possible disciplinary actions should they choose to take part in this, and offer a reward for those who do not.",
+                "is_correct": false
+            },
+            {
+                "id": "869",
+                "title": "Update the risk register with the new risk, and notify relevant stakeholders.",
+                "is_correct": true
+            },
+            {
+                "id": "870",
+                "title": "Obtain more information on the probability of this union action, and then act based on any factual information received.",
+                "is_correct": false
+            },
+            {
+                "id": "871",
+                "title": "Submit change request     ",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24733",
+        "title": "14. At the end of an iteration, a team member tells the project manager that a planned task is unfinished because of an issue that appeared days ago but was unable to be resolved. What should the project manager do to prevent this type of situation in the future?",
+        "answers": [
+            {
+                "id": "872",
+                "title": "Address the issue in the demo.",
+                "is_correct": false
+            },
+            {
+                "id": "873",
+                "title": "Discuss the issue during the retrospective.",
+                "is_correct": true
+            },
+            {
+                "id": "874",
+                "title": "Discuss the issue during the next iteration planning meeting.",
+                "is_correct": false
+            },
+            {
+                "id": "875",
+                "title": "Review the issue in the next daily standup meeting.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24734",
+        "title": "15. A project is initiated based on the approved scope. During implementation of the project design, a team member states that the product will not meet the requirements in a particular scenario. Fixing the issue will increase the scope and costs, and the project will miss the deadline. The project sponsors do not have additional funding to support the project. What should the project manager do?",
+        "answers": [
+            {
+                "id": "876",
+                "title": "Conduct the Perform Integrated Change Control process.",
+                "is_correct": true
+            },
+            {
+                "id": "877",
+                "title": "Perform a risk analysis and update the project sponsor.",
+                "is_correct": false
+            },
+            {
+                "id": "878",
+                "title": "Inform the customer and negotiate for risk acceptance.",
+                "is_correct": false
+            },
+            {
+                "id": "879",
+                "title": "Correct the issue to satisfy the customer.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24735",
+        "title": "16. A project manager must manage potential conflicting stakeholder interests. The stakeholder engagement assessment matrix identifies an influential stakeholder who is resistant to the project. What should the project manager do to align this stakeholder's expectations?",
+        "answers": [
+            {
+                "id": "880",
+                "title": "Communicate the stakeholder engagement plan.",
+                "is_correct": false
+            },
+            {
+                "id": "881",
+                "title": "Meet with all stakeholders to gain consensus on project objectives",
+                "is_correct": false
+            },
+            {
+                "id": "882",
+                "title": "Update the stakeholder register.",
+                "is_correct": false
+            },
+            {
+                "id": "883",
+                "title": "Create the stakeholder engagement plan.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24737",
+        "title": "17. A project manager is working on a project for which the project sponsor is also the customer. Since the project is running smoothly, the sponsor/customer asks that the project manager send status reports only if the project is in trouble. What should the project manager do?",
+        "answers": [
+            {
+                "id": "884",
+                "title": "Amend the communications management plan.",
+                "is_correct": false
+            },
+            {
+                "id": "885",
+                "title": "Keep track of the project and continue to inform other stakeholders of project progress.",
+                "is_correct": false
+            },
+            {
+                "id": "886",
+                "title": "Store the project status reports in the project repository rather than sending them to stakeholders.",
+                "is_correct": false
+            },
+            {
+                "id": "887",
+                "title": "Monitor the communications to ensure true info is collecting       ",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24738",
+        "title": "18. A project manager completes plans for a project and submits all documents for approval. No time is allocated for delays in approvals. What should the project manager have done to address this potential risk?",
+        "answers": [
+            {
+                "id": "888",
+                "title": "Selected a risk owner and incorporated owner-identified actions into the planning document",
+                "is_correct": false
+            },
+            {
+                "id": "889",
+                "title": "Planned specific actions, including primary and backup strategies, and chosen a risk owner",
+                "is_correct": true
+            },
+            {
+                "id": "890",
+                "title": "Started the project in advance to avoid impacting the schedule",
+                "is_correct": false
+            },
+            {
+                "id": "891",
+                "title": "Submit a change request       ",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24739",
+        "title": "19. A complex project is in the planning phase. The sponsor assigns a newly certified project manager to the project. Upon review of the project charter, the project manager uncovers several factors that could impact the project in unpredictable ways. What should the project manager do?",
+        "answers": [
+            {
+                "id": "892",
+                "title": "Update the project plan with details about schedule and budget forecasts. ",
+                "is_correct": false
+            },
+            {
+                "id": "893",
+                "title": "Meet with the project sponsor to discuss the possible impacts on the project. ",
+                "is_correct": false
+            },
+            {
+                "id": "894",
+                "title": "Develop a risk management plan with details about the various factors.",
+                "is_correct": true
+            },
+            {
+                "id": "895",
+                "title": "Extend the issue log to include a what-if scenario analysis.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24741",
+        "title": "20. After the kick-off meeting, the project manager realizes that certain components must be imported to meet the project's requirements. The project manager knows that fluctuations in the exchange rate have not been accounted for in the overall budget. The project manager decides that a loss because of a potentially unfavorable exchange rate does not justify spending money to avoid it. Which risk response strategy did the project manager use?",
+        "answers": [
+            {
+                "id": "896",
+                "title": "Transfer ",
+                "is_correct": false
+            },
+            {
+                "id": "897",
+                "title": "Avoid ",
+                "is_correct": false
+            },
+            {
+                "id": "898",
+                "title": "Mitigate ",
+                "is_correct": false
+            },
+            {
+                "id": "899",
+                "title": "Accept",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24743",
+        "title": "21. A project is initiated to develop a several new financial products and services for a company with offices in several countries. The project manager has researched the regulations for each of the countries governing the project. The project manager is concerned that some new products and services do not offer enough protection for the consumer. What should the project manager do?",
+        "answers": [
+            {
+                "id": "900",
+                "title": "Identify the high-level project risks. ",
+                "is_correct": true
+            },
+            {
+                "id": "901",
+                "title": "Quantify the project risks in the risk register. ",
+                "is_correct": false
+            },
+            {
+                "id": "902",
+                "title": "Develop a risk response strategy. ",
+                "is_correct": false
+            },
+            {
+                "id": "903",
+                "title": "Perform scheduled risk audits.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24744",
+        "title": "22. A project team implements a change that was approved by the change control board (CCB). The change was intended to minimize a risk but it had the opposite effect. What should the project manager have done to avoid this outcome?",
+        "answers": [
+            {
+                "id": "904",
+                "title": "Confirmed the effectiveness of the risk response and monitored progress ",
+                "is_correct": true
+            },
+            {
+                "id": "905",
+                "title": "Updated the assumption log with details concerning the risk ",
+                "is_correct": false
+            },
+            {
+                "id": "906",
+                "title": "Performed a risk analysis to quantify project risk exposure ",
+                "is_correct": false
+            },
+            {
+                "id": "907",
+                "title": "Developed a probability and impact matrix to determine the risk's priority level",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24746",
+        "title": "23. A project manager has been made aware of a recent weather event that could potentially impact the project. Forecasters are unable to predict the path or strength of the event. Any delays would extend the project's finish date and cause cost overruns. What should the project manager do first?",
+        "answers": [
+            {
+                "id": "908",
+                "title": "Notify the stakeholders affected and revise the risk register. ",
+                "is_correct": true
+            },
+            {
+                "id": "909",
+                "title": "Monitor the development of the event and take preventive action based on new information. ",
+                "is_correct": false
+            },
+            {
+                "id": "910",
+                "title": "Identify the risk owner who would take responsibility for an appropriate risk response. ",
+                "is_correct": false
+            },
+            {
+                "id": "911",
+                "title": "Record information about the event in the issue log.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24748",
+        "title": "24. A technology project for a multinational bank is in the testing stage. The project manager learns that a security breach has exposed the personal data of thousands of end users. The project sponsor suspends work while the cause is investigated. What should the project manager do?",
+        "answers": [
+            {
+                "id": "912",
+                "title": "Refer to the stakeholder engagement plan to determine the risk owner. ",
+                "is_correct": false
+            },
+            {
+                "id": "913",
+                "title": "Perform a decision tree analysis to calculate the optimal path to resolution. ",
+                "is_correct": false
+            },
+            {
+                "id": "914",
+                "title": "Meet with the project sponsor to negotiate a contingency plan. ",
+                "is_correct": false
+            },
+            {
+                "id": "915",
+                "title": "Review the risk response strategy outlined in the risk management plan.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24750",
+        "title": "25. After comparing actual results to the performance measurement baseline, the project manager discovers that the project's work and cost performance measures are better than expected. The project manager doubts that these positive variances can continue until the end of the project. What should the project manager do?",
+        "answers": [
+            {
+                "id": "916",
+                "title": "Conduct performance reviews with the team members. ",
+                "is_correct": false
+            },
+            {
+                "id": "917",
+                "title": "Update the risk register",
+                "is_correct": true
+            },
+            {
+                "id": "918",
+                "title": "Notify the stakeholders. ",
+                "is_correct": false
+            },
+            {
+                "id": "919",
+                "title": "Review the project management plan.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24752",
+        "title": "26. A supplier of a critical component for a construction project notifies the project manager that the component will be significantly late. Because this risk had been identified during project planning, the cost baseline contains an adequate contingency reserve. What should the project manager do next?",
+        "answers": [
+            {
+                "id": "920",
+                "title": "Identify a supplier that can provide the component within the amount of the reserve. ",
+                "is_correct": true
+            },
+            {
+                "id": "921",
+                "title": "Order the component from another supplier and submit a change request to the change control board (CCB). ",
+                "is_correct": false
+            },
+            {
+                "id": "922",
+                "title": "Review the statement of work for a penalty clause for late delivery. ",
+                "is_correct": false
+            },
+            {
+                "id": "923",
+                "title": "Update the project schedule and the lessons learned repository.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24754",
+        "title": "27. During development phase of a construction project, key stakeholders approved a budget for risks that included natural disasters, which they categorized as having high levels of probability and impact. However, during project execution, an unexpected local health emergency stopped work on the project. This event type was listed in the risk register but was not included in the risk budget. What should the project manager do first?",
+        "answers": [
+            {
+                "id": "928",
+                "title": "Meet with the risk owner to execute the risk response plan. ",
+                "is_correct": false
+            },
+            {
+                "id": "929",
+                "title": "Submit a change request for a budget increase and schedule change. ",
+                "is_correct": false
+            },
+            {
+                "id": "930",
+                "title": "Update the risk management plan to include information on the new risk. ",
+                "is_correct": true
+            },
+            {
+                "id": "931",
+                "title": "Conduct an impact analysis of the new risk.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24756",
+        "title": "28. A deliverable for a technology project requires the customer's end users to upgrade the security on their computers. Not all the end users have completed the upgrade, which is a threat to successful project completion. What should the project manager do?",
+        "answers": [
+            {
+                "id": "936",
+                "title": "Escalate the issue to the appropriate stakeholders for them to address the risk. ",
+                "is_correct": true
+            },
+            {
+                "id": "937",
+                "title": "Perform a qualitative risk analysis to assess the impact of the delay on the project. ",
+                "is_correct": false
+            },
+            {
+                "id": "939",
+                "title": "Meet with the appropriate stakeholder to implement the risk response. ",
+                "is_correct": false
+            },
+            {
+                "id": "942",
+                "title": "Submit a change request to extend the project schedule until all end user computers are upgraded.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24759",
+        "title": "29. After a project has been completed, the team meets to conduct a lessons learned session. During this meeting, the team sees that all deliverables were completed to the defined parameters. However, during the testing, there were a large number of errors identified. What should the project manager do in this situation?",
+        "answers": [
+            {
+                "id": "944",
+                "title": "Set up a meeting with the testing team to get more information about the testing methods used. ",
+                "is_correct": false
+            },
+            {
+                "id": "945",
+                "title": "Evaluate when the mitigation strategy should have been implemented to prepare for future projects. ",
+                "is_correct": false
+            },
+            {
+                "id": "946",
+                "title": "Conduct a Monte Carlo analysis which will determine potential outcomes and responses. ",
+                "is_correct": true
+            },
+            {
+                "id": "950",
+                "title": "Document these errors in the risk register as something to look for in future projects.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24763",
+        "title": "30. During the iteration planning, a project team and project owner are discussing user stories. While prioritizing the user stories, some with higher value are also identified as having greater risks. What should the project manager do?",
+        "answers": [
+            {
+                "id": "960",
+                "title": "Suggest that the stories with higher risk are included in the earlier sprints instead of the later ones",
+                "is_correct": true
+            },
+            {
+                "id": "961",
+                "title": "Suggest that the stories with lower risk are included in the earlier sprints to increase team motivation. ",
+                "is_correct": false
+            },
+            {
+                "id": "962",
+                "title": "Work with the product stakeholders to schedule which user stories should be worked on in which sprints. ",
+                "is_correct": false
+            },
+            {
+                "id": "966",
+                "title": "Conduct a Monte Carlo analysis to identify which user stories should be completed first.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24766",
+        "title": "31. A project manager is new to the organization and is assigned to replace the project manager of an active project. What should be one of the first things the project manager does?",
+        "answers": [
+            {
+                "id": "972",
+                "title": "Schedule meetings with the project stakeholders to learn more about the project deliverables.",
+                "is_correct": false
+            },
+            {
+                "id": "973",
+                "title": "Setup meetings with the team members to discuss the project's status and risks. ",
+                "is_correct": true
+            },
+            {
+                "id": "974",
+                "title": "Conduct a Pareto analysis to identify which tasks need to be prioritized. ",
+                "is_correct": false
+            },
+            {
+                "id": "975",
+                "title": "Prepare by reviewing the risk register and mitigation strategies.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24768",
+        "title": "32. A project manager is assigned to join a mega industrial project mid-way through. The performance indices are CPI= 0.42 and SPI= 0.2. The project was stopped years ago due to organizational change and a local financial crisis. 70% of the budget is already consumed. During a meeting with stakeholders, the project manager finds there are major scope changes that could lead to delay. What is the best course of action to take as project manager? (Choose 2).",
+        "answers": [
+            {
+                "id": "980",
+                "title": "Change the earned value management tracking technique ",
+                "is_correct": false
+            },
+            {
+                "id": "981",
+                "title": "C & D & E",
+                "is_correct": true
+            },
+            {
+                "id": "982",
+                "title": "Negotiate scope changes with stakeholders and keep it minimized as possible ",
+                "is_correct": false
+            },
+            {
+                "id": "986",
+                "title": "Return to the project sponsor for direction ",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24772",
+        "title": "33. A project manager is assigned to join a mega industrial project mid-way through. The performance indices are CPI= 0.42 and SPI= 0.2. The project was stopped years ago due to organizational change and a local financial crisis. 70% of the budget is already consumed. During a meeting with stakeholders, the project manager finds there are major scope changes that could lead to delay. Which risk response strategy should be used in this instance?",
+        "answers": [
+            {
+                "id": "1003",
+                "title": "Mitigate ",
+                "is_correct": false
+            },
+            {
+                "id": "1004",
+                "title": "Transfer",
+                "is_correct": false
+            },
+            {
+                "id": "1005",
+                "title": " Avoid ",
+                "is_correct": true
+            },
+            {
+                "id": "1007",
+                "title": "Accept",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24775",
+        "title": "34. Upon reviewing the stakeholder engagement assessment matrix, a project manager identifies an influential stakeholder who is resistant to the project. How would creating a stakeholder engagement plan enable the project manager to align this stakeholder's expectations?",
+        "answers": [
+            {
+                "id": "1011",
+                "title": "By identifying strategies to promote productive involvement of the stakeholder in decision making ",
+                "is_correct": true
+            },
+            {
+                "id": "1012",
+                "title": "By establishing paths of communication with the stakeholder to ensure proper expectation setting ",
+                "is_correct": false
+            },
+            {
+                "id": "1013",
+                "title": "By giving the stakeholder an opportunity for input on project objectives in order to gain consensus ",
+                "is_correct": false
+            },
+            {
+                "id": "1014",
+                "title": "By allowing the stakeholder to express and document objections to the project's goals",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24778",
+        "title": "35. A marketing team has identified the target audience for their company's new website. This audience is varied and geographically disperse, but the marketing team wants to compile a statistical analysis quickly. What tool or technique should the project manager use to gather this information?",
+        "answers": [
+            {
+                "id": "1020",
+                "title": "Focus groups ",
+                "is_correct": false
+            },
+            {
+                "id": "1021",
+                "title": "Questionnaire ",
+                "is_correct": true
+            },
+            {
+                "id": "1022",
+                "title": "Interview ",
+                "is_correct": false
+            },
+            {
+                "id": "1023",
+                "title": "Benchmarking",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24782",
+        "title": "36. A project is in development when a functional manager leaves the company and is no longer involved with the project. What should the project manager do first?",
+        "answers": [
+            {
+                "id": "1032",
+                "title": "Document the change in the project change log. ",
+                "is_correct": false
+            },
+            {
+                "id": "1033",
+                "title": "Perform a risk analysis to determine the impact on the project. ",
+                "is_correct": false
+            },
+            {
+                "id": "1034",
+                "title": "Remove the functional manager's name from the stakeholder register. ",
+                "is_correct": true
+            },
+            {
+                "id": "1035",
+                "title": "Reassign the functional manager's task to another member of the project team.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24786",
+        "title": "37. Stakeholders in a multinational project are experiencing cross-cultural differences and a seemingly small cultural misunderstanding during the planning phase resulted in failure to approve the project management plan. What should the project manager have done to avoid this situation?",
+        "answers": [
+            {
+                "id": "1048",
+                "title": "Reviewed the lessons learned register to understand previous cultural mistakes made by the organization. ",
+                "is_correct": false
+            },
+            {
+                "id": "1049",
+                "title": "Researched common cultural mistakes made when dealing with stakeholders from the countries involved with the project",
+                "is_correct": false
+            },
+            {
+                "id": "1050",
+                "title": "Paid attention to body language during initial interactions and updated the stakeholder register. ",
+                "is_correct": true
+            },
+            {
+                "id": "1051",
+                "title": "Held a workshop with the stakeholders before the initial meeting to develop a common communication language",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24789",
+        "title": "38. A project manager has been assigned to a newly approved multinational construction project. Deliverables from a variety of departments are required for the project to be successfully implemented. What should the project manager do first to ensure successful progress of the project?",
+        "answers": [
+            {
+                "id": "1059",
+                "title": "Develop a communications management plan to ensure that communication channels have been established for stakeholders. ",
+                "is_correct": false
+            },
+            {
+                "id": "1060",
+                "title": "Facilitate sessions with key stakeholders to gather relevant information and define detailed product requirements. ",
+                "is_correct": true
+            },
+            {
+                "id": "1061",
+                "title": "Meet with the functional managers of the relevant departments to ensure alignment with project objectives. ",
+                "is_correct": false
+            },
+            {
+                "id": "1062",
+                "title": "Develop a resource management plan to define the resources required from each department.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24791",
+        "title": "39. A project manager is discussing the project charter with the project sponsor, who is concerned about the allocation of resources. The project sponsor reports that the stakeholders have not been advised of their roles in the project. Which document should the project manager have completed to avoid this situation?",
+        "answers": [
+            {
+                "id": "1069",
+                "title": "Communications management plan ",
+                "is_correct": false
+            },
+            {
+                "id": "1070",
+                "title": "Business case ",
+                "is_correct": false
+            },
+            {
+                "id": "1071",
+                "title": "Stakeholder register ",
+                "is_correct": true
+            },
+            {
+                "id": "1072",
+                "title": "Stakeholder management plan",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24794",
+        "title": "40. A stakeholder requests more frequent and detailed project status reports. The stakeholder also expresses interest in getting more involved with the project. What should the project manager do first?",
+        "answers": [
+            {
+                "id": "1081",
+                "title": "Meet with the stakeholder to provide an update on the project's status and send detailed status reports as soon as possible. ",
+                "is_correct": false
+            },
+            {
+                "id": "1082",
+                "title": "Update the stakeholder engagement assessment matrix to show the stakeholder's engagement level as supportive.",
+                "is_correct": false
+            },
+            {
+                "id": "1083",
+                "title": "Review the stakeholder register and discuss stakeholder roles and reporting requirements with the project sponsor ",
+                "is_correct": true
+            },
+            {
+                "id": "1084",
+                "title": "Develop a stakeholder cube that defines the relationship between the stakeholder and the project.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24798",
+        "title": "41. A project manager is having difficulty managing stakeholders because the stakeholder register does not distinguish how aware of the project they need to be in order for the project to be successful. What should the project manager do?",
+        "answers": [
+            {
+                "id": "1093",
+                "title": "Meet with the change control board (CCB) to assess the impact of identifying new stakeholders. ",
+                "is_correct": false
+            },
+            {
+                "id": "1094",
+                "title": "Update the stakeholder communication plan. ",
+                "is_correct": false
+            },
+            {
+                "id": "1095",
+                "title": "Determine each stakeholder's risk threshold",
+                "is_correct": false
+            },
+            {
+                "id": "1096",
+                "title": "Develop a stakeholder engagement assessment matrix.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24800",
+        "title": "42. A project manager learns that a functional manager is assigning a two-week task in another project to a project team member. Loss of this resource for two weeks will jeopardize the project schedule. What should the project manager do?",
+        "answers": [
+            {
+                "id": "1101",
+                "title": "Review the resource management plan to determine how to negotiate with the functional manager. ",
+                "is_correct": true
+            },
+            {
+                "id": "1102",
+                "title": "Submit a change request to the change control board (CCB) to obtain a replacement resource from another department. ",
+                "is_correct": false
+            },
+            {
+                "id": "1103",
+                "title": "Meet with the project sponsor to discuss the priority levels of the two projects. ",
+                "is_correct": false
+            },
+            {
+                "id": "1104",
+                "title": "Assign another team member to perform the work of the team member who will be missing for two weeks.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24803",
+        "title": "43. A project manager determines that a project has completed 75 percent of its activities, has a schedule performance index (SPI) of 1.03, and a cost performance index (CPI) of 0.9. What should the project manager do next?",
+        "answers": [
+            {
+                "id": "1112",
+                "title": "Identify parallel activities to reduce the critical path. ",
+                "is_correct": false
+            },
+            {
+                "id": "1113",
+                "title": "Develop a bottom-up estimate for the remaining work. ",
+                "is_correct": true
+            },
+            {
+                "id": "1114",
+                "title": "Determine if the reserve contingency is sufficient. ",
+                "is_correct": false
+            },
+            {
+                "id": "1144",
+                "title": "Prepare a change request for the project budget.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24805",
+        "title": "44. A project has an approved project baseline schedule of 180 days and the baseline budget is US$250,000. After 21 days, the project has spent US$60,000 and earned value is US$75,000. What is the cost performance index (CPI) for this project?",
+        "answers": [
+            {
+                "id": "1119",
+                "title": "0.8 ",
+                "is_correct": false
+            },
+            {
+                "id": "1120",
+                "title": "0.75 ",
+                "is_correct": false
+            },
+            {
+                "id": "1121",
+                "title": "1.25 ",
+                "is_correct": true
+            },
+            {
+                "id": "1122",
+                "title": "1.02",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24806",
+        "title": "45. A project manager is planning a worldwide product launch. Manufacturing is subject to rigid time constraints relating to the production line and raw material availability. However, there are uncertainties around regional labeling regulations that are expected to evolve within the launch period. How can the project manager integrate effort planning for the unknown labeling requirements?",
+        "answers": [
+            {
+                "id": "1124",
+                "title": "Use a hybrid approach, integrating predictive labeling work streams into an agile roll-out schedule. ",
+                "is_correct": false
+            },
+            {
+                "id": "1125",
+                "title": "Use a hybrid approach, integrating an agile labeling workflow into a predictive roll-out schedule. ",
+                "is_correct": true
+            },
+            {
+                "id": "1126",
+                "title": "Apply agile planning to both the manufacturing and labeling work streams to align the workflows. ",
+                "is_correct": false
+            },
+            {
+                "id": "1127",
+                "title": "Apply predictive planning to the labeling work stream and streamline the change control process.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24842",
+        "title": "46. An organization has a policy that the project owner must be notified immediately of any project budget changes. A project has used support personnel longer than initially planned, resulting in spending more than was allocated in the budget. What should the project manager do to manage the project budget?",
+        "answers": [
+            {
+                "id": "1205",
+                "title": "Provide the change review board an updated budget accounting for the additional personnel costs of the project. ",
+                "is_correct": false
+            },
+            {
+                "id": "1206",
+                "title": "Immediately halt the use of support personnel, replacing them with current project team members. ",
+                "is_correct": false
+            },
+            {
+                "id": "1207",
+                "title": "Working with the current project team, discuss methods to lower costs by sharing resources between other projects ",
+                "is_correct": true
+            },
+            {
+                "id": "1208",
+                "title": "Charge the support personnel's additional hours against the project's contingency reserve",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24843",
+        "title": "47. A product owner submits a project plan with a very tight budget due to company fiscal constraints. The sponsor informs the product owner of the projects approval but says that no additional budget is available this fiscal year. The product owner is concerned that the tight budget will delay the project. What should the product owner do in this scenario?",
+        "answers": [
+            {
+                "id": "1209",
+                "title": "Closely monitor the budget throughout the project and demonstrate the value of the project to the company. ",
+                "is_correct": true
+            },
+            {
+                "id": "1210",
+                "title": "Meet with the sponsor to express concerns that the budget will need to be increased, referencing the risk assessment ",
+                "is_correct": false
+            },
+            {
+                "id": "1211",
+                "title": "Remove secondary deliverables from the project plan and monitor the budget after each iteration. ",
+                "is_correct": false
+            },
+            {
+                "id": "1212",
+                "title": "Have the project manager receive approval for each project invoice from the product owner.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24844",
+        "title": "48. A software developer who is working on a critical component has to take emergency leave from the project. Due to time constraints, the project manager cannot add a new replacement developer to the team. What should the project manager do to manage the situation?",
+        "answers": [
+            {
+                "id": "1213",
+                "title": "Move the critical component to the final iteration it can be worked on after the developer returns from leave. ",
+                "is_correct": false
+            },
+            {
+                "id": "1214",
+                "title": "Request the project sponsor to extend the project until the developer returns and finishes the work. ",
+                "is_correct": false
+            },
+            {
+                "id": "1215",
+                "title": "Prolong the iteration to allow time for the developer to return and complete the component ",
+                "is_correct": false
+            },
+            {
+                "id": "1216",
+                "title": "Ask team members to find a way to complete the missing developer's work in this iteration.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24845",
+        "title": "49. A project manager learns that, due to supplier delays, task 9 should start 10 days after the start of task 8. The project manager produces a network diagram where each task has a three-day duration, and re-evaluates the critical path. What is the new critical path?",
+        "answers": [
+            {
+                "id": "1217",
+                "title": "8-9-10 ",
+                "is_correct": true
+            },
+            {
+                "id": "1218",
+                "title": "1-2-3-4-5 ",
+                "is_correct": false
+            },
+            {
+                "id": "1219",
+                "title": "8-6-7 ",
+                "is_correct": false
+            },
+            {
+                "id": "1220",
+                "title": "8-3-4-5",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24846",
+        "title": "50. A functional manager working on an important project wants to use equipment already allocated to another project. What should the project manager of the second project do?",
+        "answers": [
+            {
+                "id": "1221",
+                "title": "Escalate the issue to the program manager. ",
+                "is_correct": true
+            },
+            {
+                "id": "1222",
+                "title": "Ask the functional manager to provide replacement equipment. ",
+                "is_correct": false
+            },
+            {
+                "id": "1223",
+                "title": "Tell the functional manager that this equipment is unavailable because it is already committed to the second project. ",
+                "is_correct": false
+            },
+            {
+                "id": "1224",
+                "title": "Review the budget for contingency funding to lease duplicate equipment",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24847",
+        "title": "51. A project manager joins a project early in its implementation phase. The project manager needs to be able to compare planned versus actual dates and determine the progress that has been made compared with the schedule baseline. What can the project manager use to find this information?",
+        "answers": [
+            {
+                "id": "1225",
+                "title": "Project management information system (PMIS) ",
+                "is_correct": true
+            },
+            {
+                "id": "1226",
+                "title": "Resource calendar ",
+                "is_correct": false
+            },
+            {
+                "id": "1227",
+                "title": "Project charter ",
+                "is_correct": false
+            },
+            {
+                "id": "1228",
+                "title": "Key performance indicators (KPIs)",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24848",
+        "title": "52. After receiving the project charter, a project manager starts to prepare the project management plan. Although there is a limited amount of detailed activity information in the project management office (PMO), the project manager needs to calculate the expected duration of the project. What should the project manager use to determine this?",
+        "answers": [
+            {
+                "id": "1229",
+                "title": "Analogous estimating ",
+                "is_correct": true
+            },
+            {
+                "id": "1230",
+                "title": "Bottom-up estimating ",
+                "is_correct": false
+            },
+            {
+                "id": "1231",
+                "title": "Kick-off meeting feedback ",
+                "is_correct": false
+            },
+            {
+                "id": "1232",
+                "title": "Input from the project sponsor",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24850",
+        "title": "53. A project manager is uncertain about the duration of a new phase and consults three groups of subject matter experts (SMEs). The first group advises that the phase can be complete in 20 days. The second group identifies some risks that could extend the duration up to 35 days. The third group proposes a new approach that can shorten the time to 11 days. What is the estimated duration for the new phase?",
+        "answers": [
+            {
+                "id": "1233",
+                "title": "19 days ",
+                "is_correct": false
+            },
+            {
+                "id": "1234",
+                "title": "21 days ",
+                "is_correct": true
+            },
+            {
+                "id": "1235",
+                "title": "23 days ",
+                "is_correct": false
+            },
+            {
+                "id": "1236",
+                "title": "25 days ",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24851",
+        "title": "54. There are three main work packages in a new product development project. Work package A must be delivered one week before work package C starts, and work package C will start at the same time that work package B begins. What is the relationship between work packages A and B?",
+        "answers": [
+            {
+                "id": "1237",
+                "title": "Finish-to-start (FS) ",
+                "is_correct": true
+            },
+            {
+                "id": "1238",
+                "title": "Finish-to-finish (FF) ",
+                "is_correct": false
+            },
+            {
+                "id": "1239",
+                "title": "Start-to-start (SS) ",
+                "is_correct": false
+            },
+            {
+                "id": "1240",
+                "title": "Start-to-finish (SF)",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24852",
+        "title": "55. A project manager is developing the schedule management plan for a construction project. The project sponsor has asked for a schedule with zero total float. The project manager is presented with possible network paths that will not violate schedule constraints. What leads and lags relationship should the project manager select?",
+        "answers": [
+            {
+                "id": "1241",
+                "title": "Early finish is smaller than the late finish in all activities. ",
+                "is_correct": false
+            },
+            {
+                "id": "1242",
+                "title": "Early finish equals the late finish in some activities, ",
+                "is_correct": false
+            },
+            {
+                "id": "1243",
+                "title": "Early finish equals the late finish in all activities,",
+                "is_correct": true
+            },
+            {
+                "id": "1244",
+                "title": "Early finish is smaller than the late finish in some activities.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24855",
+        "title": "56. An engineering company is implementing a project to produce a product similar to a previous product. Details of the component work packages have been defined and constraints for each component have been identified. Management would like to obtain the most precise estimate possible for the duration of the project. Which estimating technique should the project manager use?",
+        "answers": [
+            {
+                "id": "1245",
+                "title": "Analogous ",
+                "is_correct": false
+            },
+            {
+                "id": "1246",
+                "title": "Three-point ",
+                "is_correct": false
+            },
+            {
+                "id": "1247",
+                "title": "Bottom-up ",
+                "is_correct": true
+            },
+            {
+                "id": "1248",
+                "title": "Reserve analysis",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24857",
+        "title": "57. A long-term project that is a year into the execution phase shows a schedule performance index (SPI) of 0.95 and a trend analysis that shows the SPI has a downward trend. What should the project manager do?",
+        "answers": [
+            {
+                "id": "1249",
+                "title": "Submit a change request for the schedule baseline. ",
+                "is_correct": true
+            },
+            {
+                "id": "1250",
+                "title": "Reallocate critical resources to other projects. ",
+                "is_correct": false
+            },
+            {
+                "id": "1251",
+                "title": "Submit a change request for the cost baseline. ",
+                "is_correct": false
+            },
+            {
+                "id": "1252",
+                "title": "Use the risk breakdown structure (RBS) to restructure the risk categories.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24859",
+        "title": "58. A key supplier has become unavailable and the project manager has found a replacement that will meet project approval. Bringing the new supplier onboard will add 10 days to the project timeline. However, a key stakeholder does not want to extend the schedule. The new supplier must be used to move to the execution phase. What should the project manager do?",
+        "answers": [
+            {
+                "id": "1253",
+                "title": "Meet with the stakeholder to explain that using the new supplier will increase the timeline but will meet the overall project goals. ",
+                "is_correct": false
+            },
+            {
+                "id": "1254",
+                "title": "Let the stakeholder know that the current schedule will require updates, and continue with periodic reviews to discuss the updates. ",
+                "is_correct": true
+            },
+            {
+                "id": "1255",
+                "title": "Inform the stakeholder that there will be a 10-day delay in the schedule to onboard the new supplier, but critical path tasks will be fast tracked. ",
+                "is_correct": false
+            },
+            {
+                "id": "1256",
+                "title": "Communicate to the stakeholder that using the new supplier will require a restart at the beginning of the next planning phase.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24861",
+        "title": "59. The project management plan states that an occurence count per defect type must be documented and represented. What should the project manager create to meet this requirement?",
+        "answers": [
+            {
+                "id": "1257",
+                "title": "Cause-and-effect diagram ",
+                "is_correct": false
+            },
+            {
+                "id": "1258",
+                "title": "Histogram ",
+                "is_correct": true
+            },
+            {
+                "id": "1259",
+                "title": "Affinity diagram ",
+                "is_correct": false
+            },
+            {
+                "id": "1260",
+                "title": "Design for X (DfX) guidelines",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24862",
+        "title": "60. A project team developed 100 products according to the project charter. The project manager tasks the team with evaluating all 100 of the products against the quality metrics to identify defects. What is the project team performing?",
+        "answers": [
+            {
+                "id": "1261",
+                "title": "Inspections ",
+                "is_correct": true
+            },
+            {
+                "id": "1262",
+                "title": "Statistical sampling ",
+                "is_correct": false
+            },
+            {
+                "id": "1263",
+                "title": "Requirement traceability ",
+                "is_correct": false
+            },
+            {
+                "id": "1264",
+                "title": "Quality function deployment",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24867",
+        "title": "61. While reviewing the quality of deliverables with the team, the project manager determines that several quality issues could have been avoided by using a simple checklist. The project manager then implemented a checklist to ensure future deliverables would align with the project management plan. What did the project manager do in this situation?",
+        "answers": [
+            {
+                "id": "1265",
+                "title": "Defined new quality metrics ",
+                "is_correct": false
+            },
+            {
+                "id": "1266",
+                "title": "Used corrective action ",
+                "is_correct": true
+            },
+            {
+                "id": "1267",
+                "title": "Facilitated a retrospective ",
+                "is_correct": false
+            },
+            {
+                "id": "1268",
+                "title": "Conducted a lessons learned meeting",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24869",
+        "title": "62. A new project manager joins a project overseen by a senior project manager. The sponsor asks the new project manager to develop the quality management plan. Why should the new project manager begin by consulting with the senior project manager?",
+        "answers": [
+            {
+                "id": "1269",
+                "title": "To learn the established quality processes and plans and how appropriate standards were selected. ",
+                "is_correct": true
+            },
+            {
+                "id": "1270",
+                "title": "To determine what product requirements have already been collected and to gather more as needed. ",
+                "is_correct": false
+            },
+            {
+                "id": "1271",
+                "title": "To develop cost-benefit analyses and benchmarking samples to be used for risk management",
+                "is_correct": false
+            },
+            {
+                "id": "1273",
+                "title": "To draft a change request for revision to the quality metrics and quality checklists.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24870",
+        "title": "63. A project team has not been performing user acceptance tests on a deliverable because the product has been working as expected in other projects. However, after implementation, the product is not operational. What should the project manager do to identify the source of the problem?",
+        "answers": [
+            {
+                "id": "1274",
+                "title": "Review the quality metrics document. ",
+                "is_correct": false
+            },
+            {
+                "id": "1275",
+                "title": "Develop a scatter diagram. ",
+                "is_correct": false
+            },
+            {
+                "id": "1276",
+                "title": "Conduct a root cause analysis. ",
+                "is_correct": true
+            },
+            {
+                "id": "1278",
+                "title": "Perform an audit.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24871",
+        "title": "64. A project manager is working with stakeholders to identify the steps that must be completed as part of a task. The project manager needs to be able to verify that team members have completed all the steps required when performing a frequently performed task. What should the project manager use?",
+        "answers": [
+            {
+                "id": "1279",
+                "title": "Flowchart ",
+                "is_correct": false
+            },
+            {
+                "id": "1280",
+                "title": "Checklist ",
+                "is_correct": true
+            },
+            {
+                "id": "1281",
+                "title": "Histogram ",
+                "is_correct": false
+            },
+            {
+                "id": "1282",
+                "title": "Facilitation",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24872",
+        "title": "65. A project manager managing a project for an application is launched with the expectation that it can accept credit cards. However, it is soon learned that the application cannot accept foreign credit cards. The project manager learns that an application developer saw a story card which said \"Customer can pay using credit card\". The developer worked to incorporate this within the application, however the functionality was rejected. As a project manager, what should have been done to prevent this issue?",
+        "answers": [
+            {
+                "id": "1283",
+                "title": "Ensure that a detailed user story was presented to the project team. ",
+                "is_correct": false
+            },
+            {
+                "id": "1284",
+                "title": "Have the project team implement the user story during the next sprint. ",
+                "is_correct": false
+            },
+            {
+                "id": "1285",
+                "title": "Ensure that the team performs iterative backlog refinement. ",
+                "is_correct": true
+            },
+            {
+                "id": "1286",
+                "title": "Ensure that the team recorded detailed application functionality requirements from the stakeholders.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24880",
+        "title": "66. A project manager receives an email from a customer detailing reservations that the customer has about the project deliverables. How should the project manager address the customer's reservations?",
+        "answers": [
+            {
+                "id": "1287",
+                "title": "Meet with the customer to discuss the project scope. ",
+                "is_correct": false
+            },
+            {
+                "id": "1288",
+                "title": "Note the reservations in the risk register and prepare a mitigation plan. ",
+                "is_correct": false
+            },
+            {
+                "id": "1289",
+                "title": "Schedule additional time during the deliverable hand over to discuss the customer's reservations. ",
+                "is_correct": false
+            },
+            {
+                "id": "1290",
+                "title": "Set up a meeting with the product owner and the customer to discuss the criteria for an acceptable deliverable.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24883",
+        "title": "67. An organization hires a project manager experienced with hybrid to improve the organization's efficiency in delivering projects. The organization currently follows the waterfall approach, completing a task before conducting any quality analysis. How should the project manager begin improving the organization's processes?",
+        "answers": [
+            {
+                "id": "1291",
+                "title": "Maintain processes on active projects, implementing agile approaches in new projects. ",
+                "is_correct": false
+            },
+            {
+                "id": "1292",
+                "title": "Task one of the team members to manage quality analysis in the current projects. ",
+                "is_correct": false
+            },
+            {
+                "id": "1293",
+                "title": "Work with the project management office (PMO) to develop process improvements for all active and future projects. ",
+                "is_correct": false
+            },
+            {
+                "id": "1294",
+                "title": "Work with the project team members to learn the various interdependencies and rationale why the current processes are in place before proposing more efficient processes",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24885",
+        "title": "68. As a project manager of a technology firm, a change in the scope is required to implement a change in the project. What tools can be utilized to better understand the impact of the change?",
+        "answers": [
+            {
+                "id": "1295",
+                "title": "Pareto chart ",
+                "is_correct": false
+            },
+            {
+                "id": "1296",
+                "title": "Fishbone diagram ",
+                "is_correct": false
+            },
+            {
+                "id": "1297",
+                "title": "Deming's PDCA cycle ",
+                "is_correct": true
+            },
+            {
+                "id": "1298",
+                "title": "Cause and effect diagram",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24888",
+        "title": "69. A new project manager has been assigned to a project during its execution stage. During a review of the work breakdown structure (WBS), the project manager discovers that some deliverables were overlooked. The project manager needs to ensure that no work is left out of the project scope and no extra work is performed. What should the project manager do next?",
+        "answers": [
+            {
+                "id": "1299",
+                "title": "Add the work to the WBS and recalculate the total project cost. ",
+                "is_correct": true
+            },
+            {
+                "id": "1300",
+                "title": "Ask the stakeholders if these deliverables need to be added to the WBS. ",
+                "is_correct": false
+            },
+            {
+                "id": "1301",
+                "title": "Roll up the lower-level deliverables into higher-level work already accounted for in the WBS. ",
+                "is_correct": false
+            },
+            {
+                "id": "1302",
+                "title": "Request that the project management office (PMO) approve additional funds and change the project scope.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24892",
+        "title": "70. A project sponsor questions whether some detailed capabilities in the product design match the scope according to the project charter. What should the project manager use to manage this?",
+        "answers": [
+            {
+                "id": "1303",
+                "title": "Expert judgment ",
+                "is_correct": false
+            },
+            {
+                "id": "1304",
+                "title": "Requirements traceability matrix ",
+                "is_correct": true
+            },
+            {
+                "id": "1305",
+                "title": "Prototype ",
+                "is_correct": false
+            },
+            {
+                "id": "1306",
+                "title": "Context diagram",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24895",
+        "title": "71. A project manager was recently hired in a new organization and has been assigned to their first project. A colleague of the project manager warns about too much stakeholder involvement and adding extra complexity to the project. Which behavior will neither add complexity nor uncertainty to the project during project scope process?",
+        "answers": [
+            {
+                "id": "1307",
+                "title": "Influential stakeholders understanding and agreement ",
+                "is_correct": true
+            },
+            {
+                "id": "1308",
+                "title": "Stakeholder setting unachievable goals ",
+                "is_correct": false
+            },
+            {
+                "id": "1309",
+                "title": "Disagreement between stakeholders ",
+                "is_correct": false
+            },
+            {
+                "id": "1310",
+                "title": "Optimistic biases on project scope",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24900",
+        "title": "72. During acceptance testing of a deliverable, some senior stakeholders complain that a feature essential to their department was not included. What should the project manager have done to prevent this?",
+        "answers": [
+            {
+                "id": "1311",
+                "title": "Consulted lessons learned from similar projects to adapt processes",
+                "is_correct": false
+            },
+            {
+                "id": "1312",
+                "title": "Prepared a change management plan and logged changes during project implementation ",
+                "is_correct": false
+            },
+            {
+                "id": "1313",
+                "title": "Analyzed the project charter and developed a scope management plan ",
+                "is_correct": true
+            },
+            {
+                "id": "1314",
+                "title": "Prepared a prototype and conducted a product demo with stakeholders",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24904",
+        "title": "73. A key stakeholder has submitted several requests for new functions for a product under development. The project manager just completed the scope definition for the product's next version release and communicated the scope statement to all stakeholders. What should the project manager do next?",
+        "answers": [
+            {
+                "id": "1315",
+                "title": "Revise the communications management plan to define the number of new feature and function requests that can be submitted. ",
+                "is_correct": false
+            },
+            {
+                "id": "1316",
+                "title": "Review the acceptance criteria for the product deliverables as defined in the scope statement. ",
+                "is_correct": false
+            },
+            {
+                "id": "1317",
+                "title": "Meet with stakeholders to emphasize their alignment with product objectives and the goals of the project. ",
+                "is_correct": false
+            },
+            {
+                "id": "1318",
+                "title": "Review the scope management plan and undertake the work via a short iteration followed by a demonstration of functionality.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24909",
+        "title": "74. A project manager joins the planning phase of a global project that has a fixed budget and a tight deadline. The project manager needs to prevent any scope creep in the project to ensure that a product is delivered that meets the requirements. What should the project manager do?",
+        "answers": [
+            {
+                "id": "1319",
+                "title": "Define a scope baseline and route any changes through a formal approval process. ",
+                "is_correct": true
+            },
+            {
+                "id": "1320",
+                "title": "Review the business case to understand the economic feasibility of the project scope. ",
+                "is_correct": false
+            },
+            {
+                "id": "1321",
+                "title": "Manage any changes to the scope progressively and approve changes for each deliverable as they are developed. ",
+                "is_correct": false
+            },
+            {
+                "id": "1322",
+                "title": "Create a communications management plan that prevents stakeholders from interacting directly with the project team.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24914",
+        "title": "75. A project manager is leading a multiyear agile project. The team is developing a prototype and finding that the user stories are taking longer than planned to deliver. How can the project manager address this situation?",
+        "answers": [
+            {
+                "id": "1323",
+                "title": "Document the risks in the risk register and work to identify a mitigation strategy during the retrospective meeting. ",
+                "is_correct": false
+            },
+            {
+                "id": "1324",
+                "title": "Work with the team to identify potential gaps-in-knowledge and prepare for a spike during the following sprint. ",
+                "is_correct": true
+            },
+            {
+                "id": "1325",
+                "title": "Review the project schedule and identify areas that can be compressed to account for the delay. ",
+                "is_correct": false
+            },
+            {
+                "id": "1326",
+                "title": "Work with the project sponsor to extend the project's completion date.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24919",
+        "title": "76. During the execution phase, an issue that was not previously listed as a risk is now causing a new installation to interfere with the existing site's infrastructure. What did the project manager miss during planning that led to this problem?",
+        "answers": [
+            {
+                "id": "1327",
+                "title": "Risk management plan ",
+                "is_correct": false
+            },
+            {
+                "id": "1328",
+                "title": "Rolling wave planning ",
+                "is_correct": true
+            },
+            {
+                "id": "1329",
+                "title": "Risk response planning ",
+                "is_correct": false
+            },
+            {
+                "id": "1330",
+                "title": "Risk register",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24923",
+        "title": "77. A project manager becomes a team leader and wants to form a high performance team to get better results. As defined by Tuckman, the team development life cycle has four stages. Which is the first stage of team development?",
+        "answers": [
+            {
+                "id": "1331",
+                "title": "Norming ",
+                "is_correct": false
+            },
+            {
+                "id": "1332",
+                "title": "Storming ",
+                "is_correct": false
+            },
+            {
+                "id": "1333",
+                "title": "Forming ",
+                "is_correct": true
+            },
+            {
+                "id": "1334",
+                "title": "Performing",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24928",
+        "title": "78. During implementation of a project design, it is discovered that the product will not meet the requirements of the approved scope in a particular scenario. The project sponsors do not have additional funding to fix the issue, which will increase the scope and costs and cause the project to miss the deadline. What should the project manager do?",
+        "answers": [
+            {
+                "id": "1335",
+                "title": "Perform a risk analysis and update the project scope. ",
+                "is_correct": false
+            },
+            {
+                "id": "1336",
+                "title": "Initiate the Perform Integrated Change Control process. ",
+                "is_correct": true
+            },
+            {
+                "id": "1337",
+                "title": "Review all baselines and deliverable specifications. ",
+                "is_correct": false
+            },
+            {
+                "id": "1338",
+                "title": "Inform the customer and negotiate for an extended deadline.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24932",
+        "title": "79. A project manager is leading a project to deliver a new product to market. The project sponsor has asked to broaden the scope to deliver a scaled-up version of the final product. What should the project manager do?",
+        "answers": [
+            {
+                "id": "1339",
+                "title": "Request formal confirmation of the change from the project sponsor ",
+                "is_correct": false
+            },
+            {
+                "id": "1340",
+                "title": "Get stakeholder approval to revise the budget ",
+                "is_correct": false
+            },
+            {
+                "id": "1341",
+                "title": "Initiate the Perform Integrated Change Control process ",
+                "is_correct": true
+            },
+            {
+                "id": "1342",
+                "title": "Update the project management plan",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24934",
+        "title": "80. An employee of a customer currently engaged in a project asks the project manager for a new product feature. The project manager is not sure if this request has been approved by the correct authority. Which document should the project manager consult?",
+        "answers": [
+            {
+                "id": "1343",
+                "title": "Scope management plan ",
+                "is_correct": false
+            },
+            {
+                "id": "1344",
+                "title": "Change management plan ",
+                "is_correct": true
+            },
+            {
+                "id": "1345",
+                "title": "Responsible, accountable, consult, and inform (RACI) matrix ",
+                "is_correct": false
+            },
+            {
+                "id": "1346",
+                "title": "Requirements traceability matrix",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24937",
+        "title": "81. A project is starting up that is subject to strict time and budget constraints. When reviewing the lessons learned repository, the project manager learns that constant scope creep caused a similar project to fail. What should the project manager do to avoid project failure?",
+        "answers": [
+            {
+                "id": "1347",
+                "title": "Reject all out-of-scope change requests that would increase project duration and budget ",
+                "is_correct": false
+            },
+            {
+                "id": "1348",
+                "title": "Manage key stakeholders' expectations by detailing the possibility of meeting project goals ",
+                "is_correct": false
+            },
+            {
+                "id": "1349",
+                "title": "Adjust the scope and schedule to stay within constraints and avoid changes ",
+                "is_correct": false
+            },
+            {
+                "id": "1350",
+                "title": "Establish formal process approval changes to force teams to process essential features first",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24941",
+        "title": "82. After sponsor approval of a project, the project manager invites the sponsor, selected team members, and other stakeholders to a meeting. The major purpose of the meeting is to define how changes to the project will be initiated and the authorization levels required to approve these changes. What document will be developed as the final output of this meeting?",
+        "answers": [
+            {
+                "id": "1355",
+                "title": "Change log ",
+                "is_correct": false
+            },
+            {
+                "id": "1356",
+                "title": "Stakeholder register ",
+                "is_correct": false
+            },
+            {
+                "id": "1357",
+                "title": "Scope management plan ",
+                "is_correct": false
+            },
+            {
+                "id": "1358",
+                "title": "Requirements management plan",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24944",
+        "title": "83. A project is entering the user acceptance testing phase. After several business end users raised questions and concerns, the project manager discovered that critical business requirements were omitted from the business requirements analysis. What should the project manager do to resolve this issue?",
+        "answers": [
+            {
+                "id": "1359",
+                "title": "Interview the team that conducted the analysis to learn why these business requirements were omitted ",
+                "is_correct": false
+            },
+            {
+                "id": "1360",
+                "title": "Modify the requirements management plan and communicate to the stakeholders that the project schedule might be impacted ",
+                "is_correct": false
+            },
+            {
+                "id": "1361",
+                "title": "Schedule a meeting with the project sponsor to report end users' concerns ",
+                "is_correct": false
+            },
+            {
+                "id": "1362",
+                "title": "Meet with the change control board (CCB) to review change requests",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24948",
+        "title": "84. During nondestructive testing at a construction site, certain components are failing workability tests. The project team has determined the cause of the failures and has recommended a solution. However, the project deadline is tight and the solution would require an increase in the budget. What should the project manager do first?",
+        "answers": [
+            {
+                "id": "1363",
+                "title": "Invite suppliers to submit bids for a lower-cost solution",
+                "is_correct": false
+            },
+            {
+                "id": "1364",
+                "title": "Submit a change request to the change control board (CCB). ",
+                "is_correct": true
+            },
+            {
+                "id": "1365",
+                "title": "Request additional funding from the project sponsor. ",
+                "is_correct": false
+            },
+            {
+                "id": "1366",
+                "title": "Update the risk management plan to include the impact of the failures.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24953",
+        "title": "85. A local government passes a law that affects the scope of a project that is currently in the execution phase. The regulations take effect immediately. The project manager knows that the project schedule and budget will be impacted as a result. What should the project manager do first?",
+        "answers": [
+            {
+                "id": "1367",
+                "title": "Initiate a project risk management process to assess and mitigate the risk. ",
+                "is_correct": false
+            },
+            {
+                "id": "1368",
+                "title": "Seek expert judgment regarding the scope of the new regulations. ",
+                "is_correct": false
+            },
+            {
+                "id": "1369",
+                "title": "Consult with key stakeholders to revise the project management plan. ",
+                "is_correct": false
+            },
+            {
+                "id": "1370",
+                "title": "Start the formal change control process.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24958",
+        "title": "86. A software development project is in the testing phase. A new government regulation requires that additional documentation be delivered under the contract. What should the project manager do first?",
+        "answers": [
+            {
+                "id": "1371",
+                "title": "Gather information on work performance metrics to date ",
+                "is_correct": false
+            },
+            {
+                "id": "1372",
+                "title": "Process a change request ",
+                "is_correct": true
+            },
+            {
+                "id": "1373",
+                "title": "Update the schedule forecast ",
+                "is_correct": false
+            },
+            {
+                "id": "1374",
+                "title": "Review the project budget",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24964",
+        "title": "87. The change control board (CCB) has approved several change requests in the last several weeks. The CCB has evaluated and approved the changes in a timely manner. However, implementation of the changes is taking more time than had been anticipated. What should the project manager do?",
+        "answers": [
+            {
+                "id": "1375",
+                "title": "Revise the change control system to allow only critical changes to be raised. ",
+                "is_correct": false
+            },
+            {
+                "id": "1376",
+                "title": "Acquire additional resources to ensure the project milestones are met. ",
+                "is_correct": false
+            },
+            {
+                "id": "1377",
+                "title": "Perform a detailed risk analysis to determine the impact of the time required to implement the changes on the success of the project ",
+                "is_correct": false
+            },
+            {
+                "id": "1378",
+                "title": "Monitor implementation of the changes to ensure that change management procedures are being followed.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24967",
+        "title": "88. A functional manager has been making changes to a project outside of the established management plan. The manager recently went straight to the project sponsor to request another change. What should the project manager do?",
+        "answers": [
+            {
+                "id": "1379",
+                "title": "Determine if the change control board (CCB) needs to review the changes. ",
+                "is_correct": false
+            },
+            {
+                "id": "1380",
+                "title": "Tell the functional manager that all changes must go through the change control process. ",
+                "is_correct": true
+            },
+            {
+                "id": "1381",
+                "title": "Modify the project management plan to allow flexibility in the change control procedures. ",
+                "is_correct": false
+            },
+            {
+                "id": "1382",
+                "title": "Meet with the project sponsor to discuss details about the requested changes.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24971",
+        "title": "89. A key stakeholder requests a change that will solve a critical issue that might affect continuity of operations. However, the project is nearing completion and the change would increase the overall project cost and delay the completion date. What should the project manager do?",
+        "answers": [
+            {
+                "id": "1383",
+                "title": "Assign the decision regarding the critical nature of the change to a more knowledgeable stakeholder",
+                "is_correct": false
+            },
+            {
+                "id": "1384",
+                "title": "Submit a change request to the change control board (CCB).",
+                "is_correct": true
+            },
+            {
+                "id": "1385",
+                "title": "Revise the work breakdown structure (WBS) and the project scope statement to include the change.",
+                "is_correct": false
+            },
+            {
+                "id": "1386",
+                "title": "Communicate the impact on the budget and schedule to the project sponsor",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24974",
+        "title": "90. A functional manager learns that a product could have a detrimental effect on the environment and asks the project manager to change the materials used to manufacture the product. What should the project manager do?",
+        "answers": [
+            {
+                "id": "1387",
+                "title": "Conduct the Perform Integrated Change Control process according to established procedures. ",
+                "is_correct": true
+            },
+            {
+                "id": "1388",
+                "title": "Present the issue as a stop light chart in a work performance report and circulate the report to stakeholders",
+                "is_correct": false
+            },
+            {
+                "id": "1389",
+                "title": "Initiate research into alternate manufacturing materials and communicate the findings to the project sponsor. ",
+                "is_correct": false
+            },
+            {
+                "id": "1390",
+                "title": "Document the issue in the issue log before rejecting the request because it is outside of scope.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24976",
+        "title": "91. A customer finds defects in a deliverable. Upon investigation, the project manager determines that parts from a certain supplier did not meet quality standards. The supplier does not agree to provide replacement parts. What should the project manager do?",
+        "answers": [
+            {
+                "id": "1391",
+                "title": "Submit a change request to modify the procurement statement of work (SOW). ",
+                "is_correct": false
+            },
+            {
+                "id": "1392",
+                "title": "Review the procurement management plan and contract with this supplier. ",
+                "is_correct": true
+            },
+            {
+                "id": "1393",
+                "title": "Identify a new supplier and request a change to the resource management plan. ",
+                "is_correct": false
+            },
+            {
+                "id": "1394",
+                "title": "Escalate the issue to the project sponsor.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24978",
+        "title": "92. A project needs resource support from a new supplier to complete a project phase running over budget and schedule. The project manager wants to have the option to increase the supplier's scope if the work progresses well. The supplier's hourly rates should not vary for the duration of the project, but the supplier could earn a bonus payment for exceeding goals. Which contract type best suits the project manager's needs?",
+        "answers": [
+            {
+                "id": "1395",
+                "title": "Fixed price incentive fee (FPIF) ",
+                "is_correct": true
+            },
+            {
+                "id": "1396",
+                "title": "Cost plus award fee (CPAF) ",
+                "is_correct": false
+            },
+            {
+                "id": "1397",
+                "title": "Cost plus incentive fee (CPIF) ",
+                "is_correct": false
+            },
+            {
+                "id": "1398",
+                "title": "Firm fixed price (FFP)",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24981",
+        "title": "93. The supplier of a tool for a manufacturing project informs the project manager that delivery of the tool will be late. The project manager orders the tool from another supplier. After the tool from the second supplier arrives, the original supplier delivers the tool and submits an invoice according to the procurement agreement. What should the project manager do next?",
+        "answers": [
+            {
+                "id": "1399",
+                "title": "Return the tool to the original supplier and refuse to pay the invoice because delivery was late. ",
+                "is_correct": false
+            },
+            {
+                "id": "1400",
+                "title": "Keep the extra tool as a spare, pay the invoice from the contingency reserve, and update the lessons learned log. ",
+                "is_correct": false
+            },
+            {
+                "id": "1401",
+                "title": "Consult the supplier's procurement agreement to apply late delivery terms, and inform legal counsel of the issue. ",
+                "is_correct": true
+            },
+            {
+                "id": "1402",
+                "title": "Compare the quality of both tools, select the tool that gives the best value, and return the other tool.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24986",
+        "title": "94. A project manager is leading a project with an aggressive timeline that requires fast time to market because a competitor is working on a similar product. The project team cannot meet the go live date, and there are no other internal resources that can assist with the project. How should the project manager mitigate this risk?",
+        "answers": [
+            {
+                "id": "1403",
+                "title": "Look for external resources who can assist in meeting the required go live date. ",
+                "is_correct": true
+            },
+            {
+                "id": "1404",
+                "title": "Ask the team to remove the obstacles preventing them from meeting the go live date. ",
+                "is_correct": false
+            },
+            {
+                "id": "1405",
+                "title": "Ask the project sponsor to set a new go live date based on available resources. ",
+                "is_correct": false
+            },
+            {
+                "id": "1406",
+                "title": "Ask the team to focus only on the critical features and meet the go live date.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24989",
+        "title": "95. A project manager is leading a project where a vendor is engaged. The project team has a dependency on the vendor to complete some work first. However, the vendor is constantly failing to complete their work on time. How should the project manager mitigate this risk?",
+        "answers": [
+            {
+                "id": "1407",
+                "title": "Create an integrated project schedule with the vendor and keep regular checkpoints with the vendor. ",
+                "is_correct": true
+            },
+            {
+                "id": "1408",
+                "title": "Get approval from the project sponsor to add a contingency buffer to the project, and inform the vendor about it. ",
+                "is_correct": false
+            },
+            {
+                "id": "1409",
+                "title": "Remove this vendor immediately, and start the request for proposal (RFP) process for new vendor selection. ",
+                "is_correct": false
+            },
+            {
+                "id": "1410",
+                "title": "Ask the vendor to add new resources, and approve overtime for existing resources to deliver their work on time.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "24994",
+        "title": "96. An organization has implemented agile for its recent projects, but all of the recent agile projects have missed their delivery milestones. The sponsors for the agile projects are regularly adding new requests to the projects. A project manager is given a new agile project and finds that it has a vague project objective and no clear definition of done (DoD). What should the project manager do in this situation?",
+        "answers": [
+            {
+                "id": "1411",
+                "title": "Set up a meeting with the project stakeholders to ensure the communication management plan is clearly defined. ",
+                "is_correct": false
+            },
+            {
+                "id": "1412",
+                "title": "Ensure that the sponsor allows the project team to include the most technical resources to better ensure project success.",
+                "is_correct": false
+            },
+            {
+                "id": "1413",
+                "title": "Work closely with the project team to develop the project vision. ",
+                "is_correct": false
+            },
+            {
+                "id": "1414",
+                "title": "Work with the project stakeholders to ensure that the project charter and deliverables are clearly defined.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24996",
+        "title": "97. A project team member successfully completed all the tasks for which the team member was responsible. Now the functional manager asks the project manager to assign the team member to a similar project. What should the project manager do?",
+        "answers": [
+            {
+                "id": "1415",
+                "title": "Ask the functional manager for a checklist of tasks to be performed on the new project. ",
+                "is_correct": false
+            },
+            {
+                "id": "1416",
+                "title": "Ask the team member to train a replacement for the original project",
+                "is_correct": false
+            },
+            {
+                "id": "1417",
+                "title": "Identify a different team member that the functional manager should assign to the other project. ",
+                "is_correct": false
+            },
+            {
+                "id": "1418",
+                "title": "Direct the team member to update the lessons learned register.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "24998",
+        "title": "98. A manufacturing project is in the implementation phase. During a status meeting, a stakeholder tells the project manager that a solution has been found for a persistent equipment failure. The project manager is aware that this solution is temporary, and the problem could happen again with this equipment. Which document should the project manager update?",
+        "answers": [
+            {
+                "id": "1419",
+                "title": "Issue log ",
+                "is_correct": true
+            },
+            {
+                "id": "1420",
+                "title": "Risk register ",
+                "is_correct": false
+            },
+            {
+                "id": "1421",
+                "title": "Assumption log ",
+                "is_correct": false
+            },
+            {
+                "id": "1422",
+                "title": "Stakeholder register",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "25000",
+        "title": "99. A project manager learns that a new law will go into effect that will regulate the type of products the company can manufacture. The company is planning to launch a new product in the next few weeks that would not comply with the new regulations. The project manager meets with the sponsor and stakeholders to discuss the changes. What should the project manager do next?",
+        "answers": [
+            {
+                "id": "1423",
+                "title": "Update the project charter to reflect the results of the meeting. ",
+                "is_correct": true
+            },
+            {
+                "id": "1424",
+                "title": "Plan to launch the product on time without modification but update the risk management plan. ",
+                "is_correct": false
+            },
+            {
+                "id": "1425",
+                "title": "Plan to modify the product to meet the new regulations before the law goes into effect. ",
+                "is_correct": false
+            },
+            {
+                "id": "1426",
+                "title": "Advise the sponsor and stakeholders to cancel the launch until the product can be modified to meet the new regulations.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "25003",
+        "title": "100. A project manager is assigned to a complex project with multiple milestones. Many tasks need to be completed simultaneously and there is no float in the schedule. Because management is watching this project closely and plans to use it as a model for similar future projects, an accurate lessons learned register is essential. What should the project manager do?",
+        "answers": [
+            {
+                "id": "1430",
+                "title": "Invite key stakeholders to create a lessons learned register and share it with team members. ",
+                "is_correct": false
+            },
+            {
+                "id": "1431",
+                "title": "Engage knowledge transfer managers to contribute to a shared repository as appropriate. ",
+                "is_correct": false
+            },
+            {
+                "id": "1432",
+                "title": "Create the lessons learned register as part of the project charter and amend it when issues are resolved. ",
+                "is_correct": false
+            },
+            {
+                "id": "1433",
+                "title": "Create the lessons learned register early in the project and update it regularly.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "25005",
+        "title": "101. A project manager normally conducts retrospective sessions at the end of the project. The sponsor of many of these projects feels that retrospectives are a waste of time and budget and tells the project manager to significantly shorten or remove retrospectives from future projects. What are two results that could occur from the sponsor's mandate? (Choose 2)",
+        "answers": [
+            {
+                "id": "1434",
+                "title": "The project team being unmotivated and questioning the need for the retrospective. ",
+                "is_correct": false
+            },
+            {
+                "id": "1435",
+                "title": "Concentrating on discussing issues instead of identifying ways to improve for future projects. ",
+                "is_correct": false
+            },
+            {
+                "id": "1436",
+                "title": "Process improvement based on specific project observations. ",
+                "is_correct": false
+            },
+            {
+                "id": "1437",
+                "title": "A & B",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "25007",
+        "title": "102. Operations for a project based on new technology is being transitioned to a new project team. Early in the execution phase, the project manager discovers major gaps in the documentation, which will hamper knowledge transfer. The solution launch date cannot be delayed, and the budget cannot be increased. How should the project manager structure the project to optimize the work within the project constraints?",
+        "answers": [
+            {
+                "id": "1438",
+                "title": "Double the team size by assigning less expensive, outsourced resources ",
+                "is_correct": false
+            },
+            {
+                "id": "1439",
+                "title": "Split knowledge transfer and knowledge testing to run in parallel ",
+                "is_correct": false
+            },
+            {
+                "id": "1440",
+                "title": "Eliminate all slack and re-plan the tasks using a rolling wave approach ",
+                "is_correct": false
+            },
+            {
+                "id": "1441",
+                "title": "Use agile sprints and Kanban to accelerate learning and fault-finding",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "25009",
+        "title": "103. A project manager conducts a lesson's learned meeting. Project team members inform the project manager that they were not always aware of the progress occurring during sprints. What can the project manager do to address this concern?",
+        "answers": [
+            {
+                "id": "1442",
+                "title": "Mentor the team about how to use the project iteration board. ",
+                "is_correct": true
+            },
+            {
+                "id": "1443",
+                "title": "Assign a project team member to prepare daily status reports and distribute it to all team members. ",
+                "is_correct": false
+            },
+            {
+                "id": "1444",
+                "title": "Coach the team about how to use the project backlog report",
+                "is_correct": false
+            },
+            {
+                "id": "1445",
+                "title": "Establish a process to address the confusion at the next retrospective session.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "25011",
+        "title": "104. After a review meeting, a scrum master repeats the importance of quality, focusing especially on the Cost of Change. Which of the following is the scrum master not referring to?",
+        "answers": [
+            {
+                "id": "1446",
+                "title": "Shorten the defect cycle time ",
+                "is_correct": false
+            },
+            {
+                "id": "1447",
+                "title": "Fix escaped defects ",
+                "is_correct": false
+            },
+            {
+                "id": "1448",
+                "title": "Support more features ",
+                "is_correct": true
+            },
+            {
+                "id": "1449",
+                "title": "Reduce the technical debt",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "25013",
+        "title": "105. Knowledge sharing documents such as videos, pictures, audio, or other suitable means to ensure the efficiency of information are captured in:",
+        "answers": [
+            {
+                "id": "1450",
+                "title": "Lessons learned register ",
+                "is_correct": true
+            },
+            {
+                "id": "1451",
+                "title": "Knowledge sharing register ",
+                "is_correct": false
+            },
+            {
+                "id": "1452",
+                "title": "Risk register ",
+                "is_correct": false
+            },
+            {
+                "id": "1453",
+                "title": "Issue log",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "25015",
+        "title": "106. A project manager needs to formally complete a project, but a supplier says an invoice has been paid twice. The project manager knows that the invoice was approved, but cannot find evidence of a duplicate payment. The project manager needs to close out this project in order to start a new project. What should the project manager do?",
+        "answers": [
+            {
+                "id": "1454",
+                "title": "Inform the supplier that payment was made only once, begin the close project process, and begin work on the new project",
+                "is_correct": false
+            },
+            {
+                "id": "1455",
+                "title": "Postpone project closure until the accounts payable department can document that the invoice was paid correctly. ",
+                "is_correct": true
+            },
+            {
+                "id": "1456",
+                "title": "Complete all final project documents, delay work on the new project, and update the documents after payment is verified. ",
+                "is_correct": false
+            },
+            {
+                "id": "1457",
+                "title": "Meet with the sponsor of the existing project to obtain approval to begin the new project before the existing project is closed.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "25017",
+        "title": "107. At the end of an iteration, a team member tells the project manager that a planned task is unfinished because of an issue that appeared days ago but was unable to be resolved. Why should the project manager discuss the issue during the retrospective to prevent this type of situation in the future?",
+        "answers": [
+            {
+                "id": "1458",
+                "title": "It is a timely opportunity to discuss issues and ideas for improvement to encourage team-based problem solving. ",
+                "is_correct": true
+            },
+            {
+                "id": "1459",
+                "title": "It allows the project manager to address the issue during a demo, which leads to high levels of buy-in from the team members. ",
+                "is_correct": false
+            },
+            {
+                "id": "1460",
+                "title": "The team member will have the opportunity to resolve the issue before the retrospective. ",
+                "is_correct": false
+            },
+            {
+                "id": "1461",
+                "title": "The project manager can emphasize how to maximize the time available to resolve the issue.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "25019",
+        "title": "108. Closure of a project will be delayed because an essential component will not be delivered on time. What should the project manager do?",
+        "answers": [
+            {
+                "id": "1462",
+                "title": "Consult with stakeholders and revise the project schedule to reflect the delay. ",
+                "is_correct": false
+            },
+            {
+                "id": "1463",
+                "title": "Review the scope management plan to understand how acceptance of project deliverables should be obtained. ",
+                "is_correct": false
+            },
+            {
+                "id": "1464",
+                "title": "Check the procurement statement of work (SOW) for penalties that can be imposed on the supplier of the component. ",
+                "is_correct": false
+            },
+            {
+                "id": "1465",
+                "title": "Evaluate the impact of the delay before deciding what actions are necessary.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "25021",
+        "title": "109. A large project involving functional groups in four countries is nearing completion. The project manager is meeting with the functional managers to prepare closeout documents. Why should the project sponsor sign off on the acceptance of project deliverables?",
+        "answers": [
+            {
+                "id": "1466",
+                "title": "Because the project sponsor is responsible for procuring funding and committing resources to the project ",
+                "is_correct": true
+            },
+            {
+                "id": "1467",
+                "title": "Because the project sponsor communicates directly with the customer regarding acceptance of deliverables ",
+                "is_correct": false
+            },
+            {
+                "id": "1468",
+                "title": "Because the functional managers have authority to approve project objectives but not final deliverables ",
+                "is_correct": false
+            },
+            {
+                "id": "1469",
+                "title": "Because the functional managers are too geographically dispersed to sign off on the deliverables",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "25023",
+        "title": "110. A project manager needs to close out a project and does not have time to update the lessons learned register. What could be a consequence of this failure to act?",
+        "answers": [
+            {
+                "id": "1470",
+                "title": "Work performance data would be incomplete and unavailable for analysis. ",
+                "is_correct": false
+            },
+            {
+                "id": "1471",
+                "title": "Opportunities to prevent similar problems in future projects could be missed. ",
+                "is_correct": true
+            },
+            {
+                "id": "1472",
+                "title": "The project management plan could be inaccurate and misleading. ",
+                "is_correct": false
+            },
+            {
+                "id": "1473",
+                "title": "Key stakeholders would refuse to engage in future projects.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "25025",
+        "title": "111. A project manager is concerned that team members spend too much time assisting operations and maintenance staff with a recently commissioned project component. The project manager has referred to the organizational process assets updates document to validate that the component was signed off and ownership was transferred. To which additional documents should the project manager refer?",
+        "answers": [
+            {
+                "id": "1474",
+                "title": "Procurement statement of work (SOW) and work performance report ",
+                "is_correct": false
+            },
+            {
+                "id": "1475",
+                "title": "Requirements management plan and change management plan ",
+                "is_correct": false
+            },
+            {
+                "id": "1476",
+                "title": "Procurement management plan and project charter ",
+                "is_correct": false
+            },
+            {
+                "id": "1477",
+                "title": "Final report and project document updates",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "25027",
+        "title": "112. A project manager and team have completed an agile project and all deliverables were accepted by the customer. The project experienced multiple challenges which resulted in significant team conflict. The team is still upset about the experience. What should the project manager do regarding this?",
+        "answers": [
+            {
+                "id": "1478",
+                "title": "Work with the organization's human resources department to discipline the problem team members. ",
+                "is_correct": false
+            },
+            {
+                "id": "1479",
+                "title": "Meet individually with the team members expressing concern regarding their actions. ",
+                "is_correct": false
+            },
+            {
+                "id": "1480",
+                "title": "Document the conflict in the risk register, noting the team members that caused the conflict. ",
+                "is_correct": false
+            },
+            {
+                "id": "1481",
+                "title": "Conduct a lessons-learned session with the team to discuss what occurred.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "25029",
+        "title": "113. During the past five iterations, an agile project team has made decisions about the product design. The director of security compliance has learned about these design changes and is concerned because the compliance team was not informed about these decisions. What should the project manager do to address the director's concerns?",
+        "answers": [
+            {
+                "id": "1482",
+                "title": "Ensure that a security compliance team member attends every future daily standup. ",
+                "is_correct": false
+            },
+            {
+                "id": "1483",
+                "title": "Request the director of security compliance to assign a security compliance team member to join the project team. ",
+                "is_correct": false
+            },
+            {
+                "id": "1484",
+                "title": "Set up a meeting with the director of security compliance to identify and implement a process to meet compliance requirements ",
+                "is_correct": true
+            },
+            {
+                "id": "1485",
+                "title": "Meet with the project owner and ask to leverage the project reserve to reverse the changes that the project team made without consulting the security compliance team.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "46746",
+        "title": "114. A project manager is developing the schedule management plan for a data center migration project. The project sponsor asks for a schedule that plans all tasks as soon as possible. The project manager is presented with possible network paths that will not violate schedule constraints. What leads and lags relationship should the project manager select?",
+        "answers": [
+            {
+                "id": "21451",
+                "title": "Early start is smaller than the late start in all activities.",
+                "is_correct": false
+            },
+            {
+                "id": "21452",
+                "title": "Early start equals the late start in all activities,",
+                "is_correct": true
+            },
+            {
+                "id": "21453",
+                "title": "Early start is smaller than the late start in some activities.",
+                "is_correct": false
+            },
+            {
+                "id": "21458",
+                "title": "Early start equals the late start in some activities",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "46745",
+        "title": "115. A project manager prepares the charter for a project that aims to automate 20 percent of product testing. The project sponsor advises the project manager to assign senior test engineers to identify the tests that can be automated. However, the test department manager is uncooperative because they believe that the project will cause downsizing in their department. What should the project manager do first?",
+        "answers": [
+            {
+                "id": "21454",
+                "title": "Raise the risk that the senior testing engineers will be unavailable for the testing.",
+                "is_correct": false
+            },
+            {
+                "id": "21455",
+                "title": "Ask the project sponsor to provide a rationale for test automation.",
+                "is_correct": false
+            },
+            {
+                "id": "21456",
+                "title": "Provide objective cost-benefit evidence of test automation to the test department manager.",
+                "is_correct": false
+            },
+            {
+                "id": "21457",
+                "title": "Meet with the test department manager to explain the statement of work (SOW).",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "55782",
+        "title": "116. A project manager's success in managing project teams depends on which of the following?",
+        "answers": [
+            {
+                "id": "35655",
+                "title": "The project manager executing the projects without any risks",
+                "is_correct": false
+            },
+            {
+                "id": "35656",
+                "title": "The project manager running the project with minimal variances in schedule and cost",
+                "is_correct": false
+            },
+            {
+                "id": "35657",
+                "title": "The project manager resolving conflicts with the project team",
+                "is_correct": true
+            },
+            {
+                "id": "35850",
+                "title": "The project manager satisfying the needs of all stakeholders",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55783",
+        "title": "117. There was a contract signed between ABC Pvt. Ltd. with XYZ Technologies to design, develop, test, and supply telematics products with basic track and trace functionality. This contract binds XYZ Technologies to provide products that contain the agreed features and functionalities and binds ABC Pvt. Ltd. to pay for these products. In this context, which of the following is a mandatory feature of a contract?",
+        "answers": [
+            {
+                "id": "35658",
+                "title": "Signatures of the CEOs of both the firms",
+                "is_correct": false
+            },
+            {
+                "id": "35659",
+                "title": "A well-defined and detailed SOW",
+                "is_correct": false
+            },
+            {
+                "id": "35660",
+                "title": "List of deliverables with a timeline",
+                "is_correct": false
+            },
+            {
+                "id": "35852",
+                "title": "A contract is mutually binding",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "55788",
+        "title": "118. Roger was given the most likely cost as $3500, the optimistic cost as $4250, and the pessimistic cost as $5000 to compute expected cost. What will be the computed expected cost? (Choose all that apply)",
+        "answers": [
+            {
+                "id": "35661",
+                "title": "$4250",
+                "is_correct": true
+            },
+            {
+                "id": "35662",
+                "title": "$2875",
+                "is_correct": false
+            },
+            {
+                "id": "35663",
+                "title": "$3875",
+                "is_correct": true
+            },
+            {
+                "id": "35857",
+                "title": "$3200",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55789",
+        "title": "119. Jacob is looking for a business document that will describe the required, desired, and optional criteria for meeting the business needs and influences collecting requirements to finalize the project scope. Which document should Jacob refer to?",
+        "answers": [
+            {
+                "id": "35664",
+                "title": "Project charter",
+                "is_correct": false
+            },
+            {
+                "id": "35665",
+                "title": "Project management plan",
+                "is_correct": false
+            },
+            {
+                "id": "35666",
+                "title": "Project communication plan",
+                "is_correct": false
+            },
+            {
+                "id": "35858",
+                "title": "Business case",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "55790",
+        "title": "120. Sam, the project manager for a product development project, is planning to process a change request for his product in the next program increment. What is his responsibility in this process?",
+        "answers": [
+            {
+                "id": "35667",
+                "title": "Completely responsible",
+                "is_correct": true
+            },
+            {
+                "id": "35668",
+                "title": "Partly responsible ",
+                "is_correct": false
+            },
+            {
+                "id": "35669",
+                "title": "Not responsible",
+                "is_correct": false
+            },
+            {
+                "id": "35859",
+                "title": "Responsible till change is approved",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55793",
+        "title": "121. Philippe was making a presentation on the quality-related status of the project and presented a diagram that has a breakdown of the various causes of the quality issues noted. Which data representation technique has Philippe used in this slide?",
+        "answers": [
+            {
+                "id": "35670",
+                "title": "Affinity diagram",
+                "is_correct": false
+            },
+            {
+                "id": "35671",
+                "title": "Histograms",
+                "is_correct": false
+            },
+            {
+                "id": "35672",
+                "title": "Flow charts",
+                "is_correct": false
+            },
+            {
+                "id": "35862",
+                "title": "Cause and effect diagram",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "55794",
+        "title": "122. What is the use of sharing the work performance reports with the stakeholders?",
+        "answers": [
+            {
+                "id": "35673",
+                "title": "It is defined in the project stakeholder register",
+                "is_correct": false
+            },
+            {
+                "id": "35674",
+                "title": "To create awareness and generate decisions and actions",
+                "is_correct": true
+            },
+            {
+                "id": "35675",
+                "title": "To avoid conflicts with the stakeholders",
+                "is_correct": false
+            },
+            {
+                "id": "35863",
+                "title": "To have a proper closure report",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55785",
+        "title": "123. David is on the verge of completing the planning activities this week and is planning to move to the execution of project activities in two weeks. He would like to communicate the objectives of the project and stress the importance of delivering this project on time and within the budget. What should he do?",
+        "answers": [
+            {
+                "id": "35676",
+                "title": "Send out a mail sharing the approved project charter",
+                "is_correct": false
+            },
+            {
+                "id": "35677",
+                "title": "Follow the procedure defined in the communication plan",
+                "is_correct": false
+            },
+            {
+                "id": "35678",
+                "title": "Organize a project kickoff meeting",
+                "is_correct": true
+            },
+            {
+                "id": "35854",
+                "title": "Neglect this and move forward",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55795",
+        "title": "124. Lenny is presenting the ways in which his team is planning to demonstrate the product's quality and standards to his PMO team. During the presentation, one of the PMO members highlighted that a particular test, which costs $250, was not per the contract. However, Lenny stated that this test will improve the confidence in the product quality at an early stage of the product qualification process. This is accounted for under which category?",
+        "answers": [
+            {
+                "id": "35679",
+                "title": "Cost of appraisal",
+                "is_correct": true
+            },
+            {
+                "id": "35680",
+                "title": "Cost of prevention",
+                "is_correct": false
+            },
+            {
+                "id": "35681",
+                "title": "Cost of failure",
+                "is_correct": false
+            },
+            {
+                "id": "35864",
+                "title": "Cost of quality reserve",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55787",
+        "title": "125. Peter was given the responsibility of running a project as the project manager. He wanted to establish an agreement with all the key stakeholders to secure proper delivery. Which document should he use to secure proper delivery?",
+        "answers": [
+            {
+                "id": "35682",
+                "title": "Business case",
+                "is_correct": false
+            },
+            {
+                "id": "35683",
+                "title": "Project charter",
+                "is_correct": true
+            },
+            {
+                "id": "35684",
+                "title": "Purchase order",
+                "is_correct": false
+            },
+            {
+                "id": "35856",
+                "title": "None of the options",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55781",
+        "title": "126. What are the three I’s of stakeholders?",
+        "answers": [
+            {
+                "id": "35685",
+                "title": "Independence, influence, inquiry",
+                "is_correct": false
+            },
+            {
+                "id": "35686",
+                "title": "Importance, illuminate, interest",
+                "is_correct": false
+            },
+            {
+                "id": "35687",
+                "title": "Interest, influence, importance",
+                "is_correct": true
+            },
+            {
+                "id": "35851",
+                "title": "Influence, inquiry, importance",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55786",
+        "title": "127. During the execution of the project, Peter has observed that a team member is being isolated by other team members. What should he NOT do in such a situation?",
+        "answers": [
+            {
+                "id": "35688",
+                "title": "The interpersonal relationships between team members are their private issues and he should not interfere.",
+                "is_correct": true
+            },
+            {
+                "id": "35689",
+                "title": "He should apply team-building measures to improve the team’s effectiveness.",
+                "is_correct": false
+            },
+            {
+                "id": "35690",
+                "title": "He should try to get feedback from the isolated team member to understand the situation.",
+                "is_correct": false
+            },
+            {
+                "id": "35855",
+                "title": "He should try to get feedback from the other team members to understand the situation.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55792",
+        "title": "128. Gargi delivered 500 of his automatic remote-controlled toy cars as an initial batch to his customer. In that batch, 50 were returned as they were defective. What should Gargi do next?",
+        "answers": [
+            {
+                "id": "35691",
+                "title": "Formally raise a change request to rectify the defect and submit it for review and approval of CCB",
+                "is_correct": true
+            },
+            {
+                "id": "35692",
+                "title": "Produce another 50 and deliver these to the customer",
+                "is_correct": false
+            },
+            {
+                "id": "35693",
+                "title": "Inform the customer that he will not be able to deliver another 50 toy cars and ask them to reduce the quantity of the first batch to 450",
+                "is_correct": false
+            },
+            {
+                "id": "35861",
+                "title": "Request the customer to accept the 50 toy cars despite the defects",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55784",
+        "title": "129. Harris entered into a fixed-price contract in the form of a purchase order for the mechanical enclosure for a rugged display project which needs to be fitted into a fighter aircraft. The contract is to deliver the mechanical enclosure by a specific date for a specified price. In this contract, the profit is:",
+        "answers": [
+            {
+                "id": "35694",
+                "title": "Determine by the buyer during the contract signoff",
+                "is_correct": false
+            },
+            {
+                "id": "35695",
+                "title": "Determine by the seller during the contract signoff",
+                "is_correct": false
+            },
+            {
+                "id": "35696",
+                "title": "Determine by the details provided by the buyer to the seller at the end of the project if defined performance criteria are met",
+                "is_correct": false
+            },
+            {
+                "id": "35853",
+                "title": "Not known at the time of the contract signoff",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "55791",
+        "title": "130. The following is the network diagram for a particular project which is in progress. Roman shares this with the stakeholders. He also highlights that activity 7 has been updated with the actual start date before activity 6 has been updated with the actual finish date. What is this scenario called?<br>  <img src=\"https://fanavaran.ca/wp-content/uploads/2023/01/Screenshot-2023-01-29-202250.png\">",
+        "answers": [
+            {
+                "id": "35697",
+                "title": "Date constraint",
+                "is_correct": false
+            },
+            {
+                "id": "35698",
+                "title": "Schedule risk",
+                "is_correct": false
+            },
+            {
+                "id": "35699",
+                "title": "Lag",
+                "is_correct": false
+            },
+            {
+                "id": "35860",
+                "title": "Out of sequence (OOS) logic",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "55796",
+        "title": "131. ________________ has clear assignment of roles and responsibilities when the team consists of internal and external resources.",
+        "answers": [
+            {
+                "id": "35700",
+                "title": "RACI chart",
+                "is_correct": true
+            },
+            {
+                "id": "35701",
+                "title": "Bar chart",
+                "is_correct": false
+            },
+            {
+                "id": "35702",
+                "title": "Resource chart",
+                "is_correct": false
+            },
+            {
+                "id": "35865",
+                "title": "RAM ",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55797",
+        "title": "132. Which sequence of these steps is the right approach to solve a problem?",
+        "answers": [
+            {
+                "id": "35703",
+                "title": "Investigate, analyze, and solve",
+                "is_correct": true
+            },
+            {
+                "id": "35704",
+                "title": "Analyze, investigate, and solve",
+                "is_correct": false
+            },
+            {
+                "id": "35705",
+                "title": "Solve, analyze, and investigate",
+                "is_correct": false
+            },
+            {
+                "id": "35866",
+                "title": "Solve, investigate, and analyze",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55798",
+        "title": "133. Frank was asked to take over the project handled by Bobby by the management. Frank reviewed the status of the project and understood that the requirements were finalized and that the scope statement was drafted. Frank wanted to study the attributes associated with each of these requirements. Where would Frank find this data?",
+        "answers": [
+            {
+                "id": "35706",
+                "title": "Project charter",
+                "is_correct": false
+            },
+            {
+                "id": "35707",
+                "title": "Scope statement document",
+                "is_correct": false
+            },
+            {
+                "id": "35708",
+                "title": " Scope management plan",
+                "is_correct": false
+            },
+            {
+                "id": "35867",
+                "title": " Requirement traceability matrix",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "55799",
+        "title": "134. Crashing describes a technique to speed up a project by ________.",
+        "answers": [
+            {
+                "id": "35709",
+                "title": "Reallocating existing resources or assigning additional resources to the project",
+                "is_correct": true
+            },
+            {
+                "id": "35710",
+                "title": "Overlapping activities that were originally planned to be completed in a sequence",
+                "is_correct": false
+            },
+            {
+                "id": "35711",
+                "title": " Reducing the number of features of the product to reduce development work",
+                "is_correct": false
+            },
+            {
+                "id": "35868",
+                "title": "Reducing the duration estimates for activities to increase the pressure applied on the staff",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55800",
+        "title": "135. Barry is in the process of concluding on the resources required for his project execution. He concluded that he would require resources external to the organization. How should Barry acquire these resources?",
+        "answers": [
+            {
+                "id": "35712",
+                "title": "Discuss with functional managers",
+                "is_correct": false
+            },
+            {
+                "id": "35713",
+                "title": "Discuss with HR",
+                "is_correct": false
+            },
+            {
+                "id": "35714",
+                "title": "Follow the procurement process ",
+                "is_correct": true
+            },
+            {
+                "id": "35869",
+                "title": "Discuss with the project sponsor",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55801",
+        "title": "136. Johnathan wants to analyze the efficiency of his team and wants his PMO to suggest a suitable method to accomplish this? What measure can the PMO suggest?",
+        "answers": [
+            {
+                "id": "35715",
+                "title": "Compute earned value",
+                "is_correct": false
+            },
+            {
+                "id": "35716",
+                "title": "Calculate the schedule performance index (SPI)",
+                "is_correct": true
+            },
+            {
+                "id": "35717",
+                "title": "Use critical path method",
+                "is_correct": false
+            },
+            {
+                "id": "35870",
+                "title": "Analyze the risk mitigation plans to identify if any controls need to be implemented",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55802",
+        "title": "137. Albert was presenting the project status report to all key stakeholders and in one of the key slides, he was highlighting that one of the key vendor’s productivity may go below the target and the number of rejections may be high. He highlighted this as a ___________ risk.",
+        "answers": [
+            {
+                "id": "35718",
+                "title": "Nonevent risk",
+                "is_correct": true
+            },
+            {
+                "id": "35719",
+                "title": "Event-driven risk",
+                "is_correct": false
+            },
+            {
+                "id": "35720",
+                "title": "Procurement risk",
+                "is_correct": false
+            },
+            {
+                "id": "35871",
+                "title": "Stakeholder risk",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55803",
+        "title": "138. Enzokuhle was attending a training session on project management. The trainer was concluding their first session by briefing the class about ethics and professional conduct. Which of the following best describes the term 'respect’?",
+        "answers": [
+            {
+                "id": "35721",
+                "title": "A duty to show high regard for oneself, others, and the resources entrusted",
+                "is_correct": true
+            },
+            {
+                "id": "35722",
+                "title": "A limitation to trust, confidence, and performance excellence through cooperation",
+                "is_correct": false
+            },
+            {
+                "id": "35723",
+                "title": "Accepting a level of information that may lead to disrespectful behavior",
+                "is_correct": false
+            },
+            {
+                "id": "35872",
+                "title": "Limited to respecting the physical and intellectual property rights of others",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55804",
+        "title": "139. Justin delivered 100 units of his product as an initial batch delivery to customers and would like to know the status of the acceptance of these. Where will Justin have to look for these details?",
+        "answers": [
+            {
+                "id": "35724",
+                "title": "Work performance information",
+                "is_correct": true
+            },
+            {
+                "id": "35725",
+                "title": "Quality report",
+                "is_correct": false
+            },
+            {
+                "id": "35726",
+                "title": "Delivery list",
+                "is_correct": false
+            },
+            {
+                "id": "35873",
+                "title": "Project status report",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55805",
+        "title": "140. Lethabo was presenting the below network logic diagram during one of the review meetings. He also highlighted that the working time was 9:00 am to 6:00 pm. In this scenario, if the tasks scheduled are going to begin at an early start date, which one of the following statements is true? <br>     <img src=\"https://fanavaran.ca/wp-content/uploads/2023/01/Screenshot-2023-01-29-204613.png\">",
+        "answers": [
+            {
+                "id": "35727",
+                "title": "Activity B has a free float of 10 days",
+                "is_correct": false
+            },
+            {
+                "id": "35728",
+                "title": "Activity B has a total float of 10 days",
+                "is_correct": true
+            },
+            {
+                "id": "35729",
+                "title": "Activity A has a free float of 10 days",
+                "is_correct": false
+            },
+            {
+                "id": "35874",
+                "title": "Activity A has a total float of 10 days",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55806",
+        "title": "141. What is typical for critical path project management?",
+        "answers": [
+            {
+                "id": "35730",
+                "title": "Forward and backward pass analysis",
+                "is_correct": true
+            },
+            {
+                "id": "35731",
+                "title": "Level-of-effort activities",
+                "is_correct": false
+            },
+            {
+                "id": "35732",
+                "title": "Management of security protocols",
+                "is_correct": false
+            },
+            {
+                "id": "35875",
+                "title": "Management of over-allocation of resources",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55807",
+        "title": "142. Steve wants to formally close the project. Which of the following criteria should the project satisfy?",
+        "answers": [
+            {
+                "id": "35733",
+                "title": "The project has met its objectives.",
+                "is_correct": false
+            },
+            {
+                "id": "35734",
+                "title": "The project has been dropped due to a change in business requirements.",
+                "is_correct": false
+            },
+            {
+                "id": "35735",
+                "title": "The project could not meet its defined objectives.",
+                "is_correct": false
+            },
+            {
+                "id": "35876",
+                "title": "Any one of the above three.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "55808",
+        "title": "143. Robert is planning for the procurement of a part that will be integrated with his product. He is expecting the seller to provide more details. Which procurement approach should Robert use?",
+        "answers": [
+            {
+                "id": "35736",
+                "title": "RFI",
+                "is_correct": true
+            },
+            {
+                "id": "35737",
+                "title": "RFQ",
+                "is_correct": false
+            },
+            {
+                "id": "35738",
+                "title": "RFP",
+                "is_correct": false
+            },
+            {
+                "id": "35877",
+                "title": "Purchase Order",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55809",
+        "title": "144. Most projects will have a ___________ number of stakeholders.",
+        "answers": [
+            {
+                "id": "35739",
+                "title": "Resistant",
+                "is_correct": false
+            },
+            {
+                "id": "35740",
+                "title": "Supportive",
+                "is_correct": false
+            },
+            {
+                "id": "35741",
+                "title": "Unaware",
+                "is_correct": false
+            },
+            {
+                "id": "35878",
+                "title": "Diverse",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "55810",
+        "title": "145. Simon was explaining to his colleagues that he was having a few nonconformances on the products that were realized by his team, and he was unable to conclude on what to do next. Which document should Simon refer to?",
+        "answers": [
+            {
+                "id": "35742",
+                "title": "Quality management plan",
+                "is_correct": true
+            },
+            {
+                "id": "35743",
+                "title": " Risk management plan",
+                "is_correct": false
+            },
+            {
+                "id": "35744",
+                "title": "Scope management plan",
+                "is_correct": false
+            },
+            {
+                "id": "35879",
+                "title": "Knowledge management plan",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55811",
+        "title": "146. What do stakeholders like suppliers, customers, and end users have in common?",
+        "answers": [
+            {
+                "id": "35745",
+                "title": "They are in a similar sphere of influence by project managers.",
+                "is_correct": true
+            },
+            {
+                "id": "35746",
+                "title": "They always share common goals.",
+                "is_correct": false
+            },
+            {
+                "id": "35747",
+                "title": "They usually speak the same language.",
+                "is_correct": false
+            },
+            {
+                "id": "35880",
+                "title": "They usually don’t interfere with project management",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55812",
+        "title": "147. Luiz was asked by the PMO to present his project schedule in a graphical format and to highlight the major deliverables and key external interfaces. Which of the following should Luiz choose?",
+        "answers": [
+            {
+                "id": "35748",
+                "title": "Bar chart",
+                "is_correct": false
+            },
+            {
+                "id": "35749",
+                "title": "Milestone chart",
+                "is_correct": true
+            },
+            {
+                "id": "35750",
+                "title": "Network diagram",
+                "is_correct": false
+            },
+            {
+                "id": "35881",
+                "title": "Pie chart",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55813",
+        "title": "148. Dolly is presenting the project status to the PMO and key stakeholders. During this presentation, the PMO asked Dolly to check the expected utilization of some of the resources. In which project document will Dolly find these details?",
+        "answers": [
+            {
+                "id": "35751",
+                "title": "Physical resource assignment",
+                "is_correct": true
+            },
+            {
+                "id": "35752",
+                "title": "Resource breakdown structure",
+                "is_correct": false
+            },
+            {
+                "id": "35753",
+                "title": "Resource requirements",
+                "is_correct": false
+            },
+            {
+                "id": "35882",
+                "title": "Resource management plan",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55814",
+        "title": "149. Which of the following can be classified as nonverbal communication techniques?",
+        "answers": [
+            {
+                "id": "35754",
+                "title": "Gestures and facial expressions",
+                "is_correct": false
+            },
+            {
+                "id": "35755",
+                "title": "The tone of voice and eye contact",
+                "is_correct": false
+            },
+            {
+                "id": "35756",
+                "title": "Mirroring",
+                "is_correct": false
+            },
+            {
+                "id": "35883",
+                "title": "All the options",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "55815",
+        "title": "150. _______________ will negotiate a contract with the seller.",
+        "answers": [
+            {
+                "id": "35757",
+                "title": "Project manager",
+                "is_correct": false
+            },
+            {
+                "id": "35758",
+                "title": " Procurement team member",
+                "is_correct": true
+            },
+            {
+                "id": "35759",
+                "title": "Sponsor",
+                "is_correct": false
+            },
+            {
+                "id": "35884",
+                "title": "PMO member",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55816",
+        "title": "151. Jamie is in the process of engaging with all the key stakeholders identified to obtain their feedback on the progress of and key decisions in the project. Jamie is looking for tools to obtain stakeholder feedback. Which of the following will enable Jamie to obtain stakeholder feedback?",
+        "answers": [
+            {
+                "id": "35760",
+                "title": "Surveys",
+                "is_correct": false
+            },
+            {
+                "id": "35761",
+                "title": "Conversations",
+                "is_correct": false
+            },
+            {
+                "id": "35762",
+                "title": "Progress reporting",
+                "is_correct": false
+            },
+            {
+                "id": "35885",
+                "title": "All of the options",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "55817",
+        "title": "152. Samuel is planning to propose a change. Which of the following should he used to calculate the impact of the change he is planning to propose in time, budget, and resources?",
+        "answers": [
+            {
+                "id": "35763",
+                "title": "Milestone list",
+                "is_correct": false
+            },
+            {
+                "id": "35764",
+                "title": "Requirement’s documentation",
+                "is_correct": false
+            },
+            {
+                "id": "35765",
+                "title": "Basis of estimates",
+                "is_correct": true
+            },
+            {
+                "id": "35886",
+                "title": "Quality reports",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55818",
+        "title": "153. Wing is one of the key stakeholders of a construction project. The project manager of this project has already defined the activities to be accomplished till final approvals are obtained. Wing requested the project manager to share a document in which the detailed scope of work of each activity is available. Which document should the PM give to Wing?",
+        "answers": [
+            {
+                "id": "35766",
+                "title": "Project schedule ",
+                "is_correct": false
+            },
+            {
+                "id": "35767",
+                "title": "Activity list",
+                "is_correct": false
+            },
+            {
+                "id": "35768",
+                "title": "WBS dictionary",
+                "is_correct": true
+            },
+            {
+                "id": "35887",
+                "title": "All of the options",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55819",
+        "title": "154. Which of the four values that form the foundation of the PMI Code of Ethics and Professional Conduct?",
+        "answers": [
+            {
+                "id": "35769",
+                "title": "Responsibility, respect, fairness, and honesty",
+                "is_correct": true
+            },
+            {
+                "id": "35770",
+                "title": "Responsibility, authority, respect, and honesty",
+                "is_correct": false
+            },
+            {
+                "id": "35771",
+                "title": "Authority, fairness, honesty, and power",
+                "is_correct": false
+            },
+            {
+                "id": "35888",
+                "title": "Responsibility, fairness, authority, honesty",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55820",
+        "title": "155. Matt Butcher is preparing a project status presentation to present to the stakeholders and PMO. While reviewing the status of the risks, he noted that many risks had occurred, and necessary mitigation plans were executed. While conducting a detailed analysis, he observed that a few of the risks impacted the schedule. Considering the pending risks, he wanted to understand the adequacy of the remaining contingency reserves. What should Matt Butcher do to understand this?",
+        "answers": [
+            {
+                "id": "35772",
+                "title": "Review the risk register for the mitigation plans proposed for the remaining risks",
+                "is_correct": false
+            },
+            {
+                "id": "35773",
+                "title": "Call for a meeting with all stakeholders and have a brainstorming session",
+                "is_correct": false
+            },
+            {
+                "id": "35774",
+                "title": "Perform reserve analysis to calculate this data",
+                "is_correct": true
+            },
+            {
+                "id": "35889",
+                "title": "Do nothing and proceed with routine activities",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55821",
+        "title": "156. Ed derived the list of activities required for the project and he wants to calculate the time needed to complete each of those activities. What should Ed do?",
+        "answers": [
+            {
+                "id": "35775",
+                "title": "Estimate activity duration",
+                "is_correct": true
+            },
+            {
+                "id": "35776",
+                "title": "Define activities",
+                "is_correct": false
+            },
+            {
+                "id": "35777",
+                "title": "Sequence activities",
+                "is_correct": false
+            },
+            {
+                "id": "35890",
+                "title": "Define work breakdown structure",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55822",
+        "title": "157. You are working in a startup that works on silicon designs for mobile broadband companies. The HR department is requesting all hiring managers to follow some guidelines and policies while recruiting people. As a project manager, these guidelines and policies will be classified as:",
+        "answers": [
+            {
+                "id": "35778",
+                "title": "Regulations",
+                "is_correct": false
+            },
+            {
+                "id": "35779",
+                "title": "Best practices",
+                "is_correct": false
+            },
+            {
+                "id": "35780",
+                "title": "Assumptions",
+                "is_correct": false
+            },
+            {
+                "id": "35891",
+                "title": "Constraints",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "55823",
+        "title": "158. Jenny was asked to perform the analysis to see whether the results obtained improved over a period of time. What data analysis tool should Jenny use to perform this analysis?",
+        "answers": [
+            {
+                "id": "35781",
+                "title": "Alternative analysis",
+                "is_correct": false
+            },
+            {
+                "id": "35782",
+                "title": "Variance analysis",
+                "is_correct": false
+            },
+            {
+                "id": "35783",
+                "title": "Trend analysis",
+                "is_correct": true
+            },
+            {
+                "id": "35892",
+                "title": "Reserve analysis",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55824",
+        "title": "159. The head of the PMO in your organization has made you the project manager for a safety-critical project where the key stakeholder left midway due to health issues. As a project manager, you are responsible for adhering to the project schedule. If there is a delay in the project schedule, you should:",
+        "answers": [
+            {
+                "id": "35784",
+                "title": "Increase the timeline for the project",
+                "is_correct": false
+            },
+            {
+                "id": "35785",
+                "title": "Fast track or crash the project and let the management know the impact of this action",
+                "is_correct": true
+            },
+            {
+                "id": "35786",
+                "title": "Ask the resources to work overtime to meet the project deadlines",
+                "is_correct": false
+            },
+            {
+                "id": "35893",
+                "title": "Change the project scope",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55825",
+        "title": "160. Zak Abel was presenting his project’s status to all key stakeholders. In this presentation, he stated that the earned schedule number is greater than 0. What is the status of the project?",
+        "answers": [
+            {
+                "id": "35787",
+                "title": "The project is ahead of schedule",
+                "is_correct": true
+            },
+            {
+                "id": "35788",
+                "title": "The project is behind schedule",
+                "is_correct": false
+            },
+            {
+                "id": "35789",
+                "title": "The project is on track.",
+                "is_correct": false
+            },
+            {
+                "id": "35894",
+                "title": "There is no reasonable progress in the project.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55826",
+        "title": "161. In his project, Yang needs to subcontract the machining of 1000 units of a mechanical part for a weather radar antenna. Yang has determined the technical criteria to evaluate the sellers. This is an example of:",
+        "answers": [
+            {
+                "id": "35790",
+                "title": "Objective evaluation criteria",
+                "is_correct": false
+            },
+            {
+                "id": "35791",
+                "title": "Source selection criteria",
+                "is_correct": true
+            },
+            {
+                "id": "35792",
+                "title": "Statement of work",
+                "is_correct": false
+            },
+            {
+                "id": "35895",
+                "title": "Fixed scope contract",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55827",
+        "title": "162. Which type of organizational process asset should be updated by the project team?",
+        "answers": [
+            {
+                "id": "35793",
+                "title": "Processes, policies, and procedures",
+                "is_correct": false
+            },
+            {
+                "id": "35794",
+                "title": "Organizational knowledge base",
+                "is_correct": true
+            },
+            {
+                "id": "35795",
+                "title": "External enterprise environmental factors",
+                "is_correct": false
+            },
+            {
+                "id": "35896",
+                "title": "Internal enterprise environmental factors",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55828",
+        "title": "163. Faris Badwan is assigned a project in which he has to deal with many vendors outside the organization. So, he wants to have a dedicated contract administrator assigned to this project as a separate function within the organization. Who will the contract administrator report to in this situation?",
+        "answers": [
+            {
+                "id": "35796",
+                "title": " Sponsor",
+                "is_correct": false
+            },
+            {
+                "id": "35797",
+                "title": "Project manager",
+                "is_correct": false
+            },
+            {
+                "id": "35798",
+                "title": "Supervisor of the function which is formed to handle contracts",
+                "is_correct": true
+            },
+            {
+                "id": "35897",
+                "title": "PMO",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55829",
+        "title": "164. Benji wants to find out what was initially planned and what was achieved in a project as a part of project closure. Which data analysis technique should Benji use to achieve this?",
+        "answers": [
+            {
+                "id": "35799",
+                "title": "Document analysis",
+                "is_correct": false
+            },
+            {
+                "id": "35800",
+                "title": "Regression analysis",
+                "is_correct": false
+            },
+            {
+                "id": "35801",
+                "title": "Trend analysis",
+                "is_correct": false
+            },
+            {
+                "id": "35898",
+                "title": "Variance analysis",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "55830",
+        "title": "165. Bruno identified the stakeholders and updated the stakeholder list. He would like to categorize the stakeholder and build a relationship with them. Which tool and technique should Bruno use to categorize the stakeholders?",
+        "answers": [
+            {
+                "id": "35802",
+                "title": "Document analysis",
+                "is_correct": false
+            },
+            {
+                "id": "35803",
+                "title": "Power-interest grid",
+                "is_correct": true
+            },
+            {
+                "id": "35804",
+                "title": "Interviewing",
+                "is_correct": false
+            },
+            {
+                "id": "35899",
+                "title": "Meetings",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55831",
+        "title": "166. Sipho was assigned with a new project and requested to start the planning-related activities immediately. He was surprised to learn that his team members are not sufficiently qualified to execute the tasks in this project. What may be an appropriate solution to this problem?",
+        "answers": [
+            {
+                "id": "35805",
+                "title": "Reduce the level of effort",
+                "is_correct": false
+            },
+            {
+                "id": "35806",
+                "title": "Organize a training session",
+                "is_correct": true
+            },
+            {
+                "id": "35807",
+                "title": "Plan quality audits",
+                "is_correct": false
+            },
+            {
+                "id": "35900",
+                "title": "Plan quality inspections",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55832",
+        "title": "167. Tim identified another risk that arose directly after implementing the risk response as defined in the risk register for a risk that had occurred. What is this risk, which occurred due to the implementation of a risk response, called?",
+        "answers": [
+            {
+                "id": "35808",
+                "title": "Secondary risk",
+                "is_correct": true
+            },
+            {
+                "id": "35809",
+                "title": "Potential risk",
+                "is_correct": false
+            },
+            {
+                "id": "35810",
+                "title": "Contingent risk",
+                "is_correct": false
+            },
+            {
+                "id": "35901",
+                "title": "Project risk",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55833",
+        "title": "168. Adamski was asked to create the project schedule. Adamski decided to divide the project scope and project deliverables to smaller and more manageable parts. What technique is Adamski using here?",
+        "answers": [
+            {
+                "id": "35811",
+                "title": "WBS",
+                "is_correct": false
+            },
+            {
+                "id": "35812",
+                "title": "Rolling wave",
+                "is_correct": false
+            },
+            {
+                "id": "35813",
+                "title": "Decomposition",
+                "is_correct": true
+            },
+            {
+                "id": "35902",
+                "title": "Defining activities",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55834",
+        "title": "169. Harris is applying critical path method (CPM) on a schedule model that is developed with a list of project activities. Harris wants to calculate the early start and early finish dates of each of those project activities. Which one of the following should Harris use to compute these dates?",
+        "answers": [
+            {
+                "id": "35814",
+                "title": "Backward pass",
+                "is_correct": false
+            },
+            {
+                "id": "35815",
+                "title": "Forward pass",
+                "is_correct": true
+            },
+            {
+                "id": "35816",
+                "title": "Schedule network analysis",
+                "is_correct": false
+            },
+            {
+                "id": "35903",
+                "title": "Rolling wave",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55835",
+        "title": "170. Which of the following interpersonal skills allow us to solve problems and increase stakeholder support informally?",
+        "answers": [
+            {
+                "id": "35817",
+                "title": "Political awareness",
+                "is_correct": false
+            },
+            {
+                "id": "35818",
+                "title": "Networking",
+                "is_correct": true
+            },
+            {
+                "id": "35819",
+                "title": "Active listening",
+                "is_correct": false
+            },
+            {
+                "id": "35904",
+                "title": "Cultural awareness",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55836",
+        "title": "171. Miley suspects that the product has a scope creep, and she would like to have the scope verified for any deviation from the agreed one. Against which document should Miley compare the scope to check on any deviation?",
+        "answers": [
+            {
+                "id": "35820",
+                "title": "Requirement document ",
+                "is_correct": true
+            },
+            {
+                "id": "35821",
+                "title": "Scope statement",
+                "is_correct": false
+            },
+            {
+                "id": "35822",
+                "title": "Test results",
+                "is_correct": false
+            },
+            {
+                "id": "35905",
+                "title": "Performance measurement baseline",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55837",
+        "title": "172. Zhao monitored and controlled communications throughout her project’s life cycle to ensure the information needs of the project stakeholders were met. The information typically provides information on the project’s status and progress at a level of detail required by the various stakeholders. This is done through:",
+        "answers": [
+            {
+                "id": "35823",
+                "title": "Plan communication management process",
+                "is_correct": false
+            },
+            {
+                "id": "35824",
+                "title": "Monitor communication process",
+                "is_correct": true
+            },
+            {
+                "id": "35825",
+                "title": "Manage communication process",
+                "is_correct": false
+            },
+            {
+                "id": "35906",
+                "title": "Control communication process",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55838",
+        "title": "173. Luca uses product analysis to translate the high-level product descriptions into tangible deliverables and requirements for her project. Which of the following techniques is NOT used in product analysis?",
+        "answers": [
+            {
+                "id": "35826",
+                "title": "Value engineering",
+                "is_correct": false
+            },
+            {
+                "id": "35827",
+                "title": "Value analysis",
+                "is_correct": false
+            },
+            {
+                "id": "35828",
+                "title": "Product breakdown",
+                "is_correct": false
+            },
+            {
+                "id": "35907",
+                "title": "Alternative’s identification",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "id": "55839",
+        "title": "174. Luisa had 12 members in her project team. One more member will join the team in one week and one will join the team the week after next. The number of communication channels will increase by _________ channels in the week after next",
+        "answers": [
+            {
+                "id": "35829",
+                "title": "14",
+                "is_correct": false
+            },
+            {
+                "id": "35830",
+                "title": "25",
+                "is_correct": true
+            },
+            {
+                "id": "35831",
+                "title": "20",
+                "is_correct": false
+            },
+            {
+                "id": "35908",
+                "title": "12",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55840",
+        "title": "175. ________________ is the project document which contains information about the requirements along with how to validate them.",
+        "answers": [
+            {
+                "id": "35832",
+                "title": " Requirements document",
+                "is_correct": false
+            },
+            {
+                "id": "35833",
+                "title": "Requirement traceability matrix",
+                "is_correct": true
+            },
+            {
+                "id": "35834",
+                "title": "Scope statement",
+                "is_correct": false
+            },
+            {
+                "id": "35909",
+                "title": "Quality reports",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55841",
+        "title": "176. Which one of the following is a benefit of the “control resource” process?",
+        "answers": [
+            {
+                "id": "35835",
+                "title": "Securing availability of assigned resources at the right time",
+                "is_correct": false
+            },
+            {
+                "id": "35836",
+                "title": "Securing release of assigned resources at the right time",
+                "is_correct": false
+            },
+            {
+                "id": "35837",
+                "title": "Securing availability of assigned resources at the right time and release of resources when not needed",
+                "is_correct": true
+            },
+            {
+                "id": "35910",
+                "title": "Securing task accomplishments from the team",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55842",
+        "title": "177. Integration in project management takes place at three different levels. They are:",
+        "answers": [
+            {
+                "id": "35838",
+                "title": "Process, cognitive, and context ",
+                "is_correct": true
+            },
+            {
+                "id": "35839",
+                "title": "Knowledge areas, tasks, and resources",
+                "is_correct": false
+            },
+            {
+                "id": "35840",
+                "title": "Resources, processes, and tasks",
+                "is_correct": false
+            },
+            {
+                "id": "35911",
+                "title": "Cognitive, technology, and risks",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55843",
+        "title": "178. Jonathan is trying to understand the change management process followed within the organization. He is handling a web application development project and is trying to raise a change request for a software design document that is yet to be baselined by the software team. Which one of the following is correct?",
+        "answers": [
+            {
+                "id": "35841",
+                "title": "Jonathan has to raise a change request and follow the change control process.",
+                "is_correct": false
+            },
+            {
+                "id": "35842",
+                "title": "Jonathan need not raise a change request and need not follow the change control process.",
+                "is_correct": true
+            },
+            {
+                "id": "35843",
+                "title": "Jonathan has to raise a change request but need not follow the change control process.",
+                "is_correct": false
+            },
+            {
+                "id": "35912",
+                "title": "Jonathan need not raise a change request but has to get the change approved.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55844",
+        "title": "179. Tom was discussing the risks that are recorded in the register for their project with the project team and the sponsor. While discussing one of the critical risks and its proposed response, Tom was informed that executing this risk response was not within his authority level. Tom can adopt which of the following strategies?",
+        "answers": [
+            {
+                "id": "35844",
+                "title": "Escalate",
+                "is_correct": true
+            },
+            {
+                "id": "35845",
+                "title": "Transfer",
+                "is_correct": false
+            },
+            {
+                "id": "35846",
+                "title": "Mitigate",
+                "is_correct": false
+            },
+            {
+                "id": "35913",
+                "title": "Accept",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "id": "55845",
+        "title": "180. Peter wants to sign a contract with a supplier wherein the requirements are clearly available and there are no major changes expected to the scope of the work. Peter was discussing with the PMO to decide on the type of contract for this. Which type of contract should be used by Peter Drucker?",
+        "answers": [
+            {
+                "id": "35847",
+                "title": "Fixed-price contract",
+                "is_correct": true
+            },
+            {
+                "id": "35848",
+                "title": "Cost reimbursable contract",
+                "is_correct": false
+            },
+            {
+                "id": "35849",
+                "title": "Time and material contract",
+                "is_correct": false
+            },
+            {
+                "id": "35914",
+                "title": "Normal contract",
+                "is_correct": false
+            }
+        ]
+    }
+]

@@ -53,5 +53,24 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true,
     },
   });
+
+  Enrollments.associate = (models) => {
+    Enrollments.belongsTo(models.Users, {
+      foreignKey: "userId",
+      as: "user",
+    });
+    Enrollments.belongsTo(models.Courses, {
+      foreignKey: "courseId",
+      as: "course",
+    });
+    Enrollments.belongsTo(models.CourseCycles, {
+      foreignKey: "cycleId",
+      as: "cycle",
+    });
+    Enrollments.belongsTo(models.Transactions, {
+      foreignKey: "Transaction_ID",
+      as: "transaction",
+    });
+  };
   return Enrollments;
 };

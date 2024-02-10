@@ -17,7 +17,6 @@ const getWebinars = async (req, res) => {
 
 const getSingleWebinar = async (req, res) => {
   try {
-    console.log(req.body);
     const { slug, email } = req.body;
     const webinar = await Webinars.findAll({
       where: { slug, status: 1 },

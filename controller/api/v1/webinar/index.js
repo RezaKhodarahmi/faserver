@@ -38,7 +38,8 @@ const createWebinar = async (req, res) => {
     }
     var image = null;
     if (req.file) {
-      image = process.env.BASE_URL + "/" + req.file.path;
+      const filePath = req.file.path.replace(/\\/g, "/"); // Ensure consistent path separator
+      image = `${process.env.BASE_URL}/${filePath}`;
     }
     const webinar = await Webinars.create({
       ...params,

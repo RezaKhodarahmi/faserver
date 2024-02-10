@@ -25,6 +25,7 @@ router.post(
   UserController.createUser
 );
 router.get("/:id", checkToken, UserController.getUserWithId);
+router.get("/get/email/:email", checkToken, UserController.getUserWithEmail);
 router.patch(
   "/update",
   checkToken,

@@ -27,6 +27,10 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    time: {
+      type: DataTypes.TIME,
+      allowNull: true,
+    },
     regularPrice: {
       type: DataTypes.FLOAT,
       allowNull: false,
@@ -55,6 +59,14 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
       defaultValue: 0,
+    },
+    video: {
+      type: DataTypes.STRING(500),
+      allowNull: true,
+    },
+    listId: {
+      type: DataTypes.STRING(191),
+      allowNull: false,
     },
     createdAt: {
       type: DataTypes.DATE,

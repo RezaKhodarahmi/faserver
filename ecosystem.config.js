@@ -5,8 +5,11 @@ module.exports = {
       script: "server.js",
       env: {
         BASE_URL: "http://idtech.ca:3200",
-        APP_URL: "https://idtech.ca",
-        DASHBOARD_URL: "https://dashboard.idtech.ca",
+        APP_URL: "http://fanavaran:3001",
+        DASHBOARD_URL: "http://fanavaran:300",
+        // BASE_URL: "http://idtech.ca:3200",
+        // APP_URL: "https://idtech.ca",
+        // DASHBOARD_URL: "https://dashboard.idtech.ca",
         // BASE_URL: "http://localhost:3200",
         // APP_URL: "http://localhost:3000",
         // DASHBOARD_URL: "http://localhost:3001",

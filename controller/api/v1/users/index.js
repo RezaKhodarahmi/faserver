@@ -178,6 +178,43 @@ const getUserWithId = async (req, res) => {
   }
 };
 
+const getUserWithEmail = async (req, res) => {
+  try {
+    const { email } = req.params;
+    console.log(
+      "yesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss" + email
+    );
+    const user = await Users.findOne({
+      where: { email },
+      attributes: {
+        exclude: [
+          "token",
+          "password",
+          "forgotToken",
+          "contract",
+          "registerStep",
+          "language",
+          "timezone",
+          "createdAt",
+          "updatedAt",
+          "stripeCustomerId",
+        ],
+      },
+    });
+    if (!user) {
+      return res.status(400).json({ error: true, message: "User not found!" });
+    }
+    return res.status(200).json({
+      error: false,
+      data: user,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      error: true,
+      message: "Server Error!",
+    });
+  }
+};
 const updateUser = async (req, res) => {
   try {
     const data = req.body;
@@ -340,4 +377,5 @@ module.exports = {
   getAuthors,
   getTeachers,
   importUsers,
+  getUserWithEmail,
 };

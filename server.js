@@ -34,6 +34,36 @@ const corsOptions = {
     "https://www.idtech.ca",
     "https://dashboard.idtech.ca",
     "https://www.dashboard.idtech.ca",
+    "https://a.stripecdn.com",
+    "https://api.stripe.com",
+    "https://atlas.stripe.com",
+    "https://auth.stripe.com",
+    "https://b.stripecdn.com",
+    "https://billing.stripe.com",
+    "https://buy.stripe.com",
+    "https://c.stripecdn.com",
+    "https://checkout.stripe.com",
+    "https://climate.stripe.com",
+    "https://connect.stripe.com",
+    "https://dashboard.stripe.com",
+    "https://express.stripe.com",
+    "https://files.stripe.com",
+    "https://hooks.stripe.com",
+    "https://invoice.stripe.com",
+    "https://invoicedata.stripe.com",
+    "https://js.stripe.com",
+    "https://m.stripe.com",
+    "https://m.stripe.network",
+    "https://manage.stripe.com",
+    "https://pay.stripe.com",
+    "https://payments.stripe.com",
+    "https://q.stripe.com",
+    "https://qr.stripe.com",
+    "https://r.stripe.com",
+    "https://verify.stripe.com",
+    "https://stripe.com",
+    "https://terminal.stripe.com",
+    "https://uploads.stripe.com",
   ],
   credentials: true,
 };
@@ -91,6 +121,7 @@ app.use("/api/v1/blogtags", require("./routes/api/v1/blogtags"));
 app.use("/api/v1/auth/refresh", require("./routes/refreshToken"));
 app.use("/api/v1/coupon", require("./routes/api/v1/coupon"));
 app.use("/api/v1/transaction", require("./routes/api/v1/transaction"));
+app.use("/api/v1/enrollment", require("./routes/api/v1/enrollment"));
 app.use("/api/v1/webinar", require("./routes/api/v1/webinar"));
 app.use("/api/v1/activecampaing", require("./routes/api/v1/activecampaing"));
 
@@ -147,11 +178,11 @@ app.all("*", (req, res) => {
 //   .listen(3200);
 
 // Running server
-dbConnect.sequelize.sync().then(() => {
-  app.listen(3200, () => {
-    console.log(`SERVER IS RUNNING ON PORT 3200`);
-  });
-});
+// dbConnect.sequelize.sync().then(() => {
+//   app.listen(3200, () => {
+//     console.log(`SERVER IS RUNNING ON PORT 3200`);
+//   });
+// });
 
 // Handle 404 errors
 app.all("*", (req, res) => {
@@ -165,14 +196,14 @@ app.all("*", (req, res) => {
   }
 });
 
-// const options = {
-//   key: fs.readFileSync("/etc/ssl/private/idtech.key"),
-//   cert: fs.readFileSync("/etc/ssl/certs/idtech.crt"),
-// };
+const options = {
+  key: fs.readFileSync("/etc/ssl/private/idtech.key"),
+  cert: fs.readFileSync("/etc/ssl/certs/idtech.crt"),
+};
 
-// // //Running server
-// dbConnect.sequelize.sync().then(() => {
-//   https.createServer(options, app).listen(3200, () => {
-//     console.log("Server is running");
-//   });
-// });
+// //Running server
+dbConnect.sequelize.sync().then(() => {
+  https.createServer(options, app).listen(3200, () => {
+    console.log("Server is running");
+  });
+});

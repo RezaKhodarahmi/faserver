@@ -101,7 +101,7 @@ const calculateOneYearFromNow = () => {
 const verifyPayment = async (req, res) => {
   try {
     const eventData = req.body?.data?.object;
-
+    console.log(req);
     //Check and return  if request is now a event
     if (!eventData) {
       return res.status(200).send("Received");
