@@ -11,7 +11,7 @@ function forgetPassReqEmailTemplate(token, email) {
     "To reset your password, click the link below:" +
     "</p>" +
     "<p>" +
-    `<a href="${process.env.APP_URL}/reset-password/${token}" style="display:block;background-color: #202B8B;padding: 1rem 1.5rem;font-size: 16px;border-radius: 12px;color: #ffffff;margin: 0 auto 2rem;width: 175px;text-decoration:none;text-align:center">` +
+    `<a href="https://fanavaran.ca/reset-password/${token}" style="display:block;background-color: #202B8B;padding: 1rem 1.5rem;font-size: 16px;border-radius: 12px;color: #ffffff;margin: 0 auto 2rem;width: 175px;text-decoration:none;text-align:center">` +
     "Reset Password" +
     "</a>" +
     "</p>" +

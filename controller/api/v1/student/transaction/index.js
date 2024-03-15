@@ -5,7 +5,7 @@ const TransactionCycles = require("../../../../../models").TransactionCycles;
 const TransactionCourses = require("../../../../../models").TransactionCourses;
 const Enrollments = require("../../../../../models").Enrollments;
 const Validation = require("../../../../../utils/dashboard/validationSchema");
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+const stripe = require("stripe")("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");
 var request = require("request");
 const axios = require("axios");
 
@@ -106,49 +106,49 @@ const createPaymentIntent = async (req, res) => {
     }
 
     // Check if contact exists in ActiveCampaign
-    const activeCampaignApiKey =
-      "78465a755a4825860f06481b1da0d00ef5239a74a557efc9965abf85679f3d525eb0b602"; // Replace with your ActiveCampaign API Key
-    const activeCampaignApiUrl =
-      "https://geniuscamp.api-us1.com/api/3/contacts";
+//    const activeCampaignApiKey =
+  //    "78465a755a4825860f06481b1da0d00ef5239a74a557efc9965abf85679f3d525eb0b602"; // Replace with your ActiveCampaign API Key
+   // const activeCampaignApiUrl =
+    //  "https://geniuscamp.api-us1.com/api/3/contacts";
 
-    const contactResponse = await axios.get(
-      `${activeCampaignApiUrl}?filters[email]=${encodeURIComponent(email)}`,
-      {
-        headers: {
-          "Api-Token": activeCampaignApiKey,
-        },
-      }
-    );
+//    const contactResponse = await axios.get(
+  //    `${activeCampaignApiUrl}?filters[email]=${encodeURIComponent(email)}`,
+    //  {
+      //  headers: {
+       //   "Api-Token": activeCampaignApiKey,
+        //},
+     // }
+    //);
 
     // If contact does not exist, create it
-    if (contactResponse.data.contacts.length === 0) {
-      await axios.post(
-        activeCampaignApiUrl,
-        {
-          contact: {
-            email: email,
-            firstName: user.firstName,
-            lastName: user.lastName,
-            phone: user.phone,
-            mobile: user.phone,
-            fieldValues: [
+    //if (contactResponse.data.contacts.length === 0) {
+     // await axios.post(
+      //  activeCampaignApiUrl,
+       // {
+        //  contact: {
+         //   email: email,
+         //   firstName: user.firstName,
+         //   lastName: user.lastName,
+        //    phone: user.phone,
+          //  mobile: user.phone,
+     //       fieldValues: [
               // Replace with actual field IDs and ensure the values are correctly formatted
-              { field: "3", value: user.city },
-              { field: "34", value: user.country },
-              { field: "6", value: user.postalCode },
+       //       { field: "3", value: user.city },
+       //       { field: "34", value: user.country },
+         //     { field: "6", value: user.postalCode },
 
               // Add other custom fields as necessary
-            ],
-          },
-        },
-        {
-          headers: {
-            "Api-Token": activeCampaignApiKey,
-            "Content-Type": "application/json",
-          },
-        }
-      );
-    }
+           // ],
+     //     },
+    //    },
+      //  {
+        //  headers: {
+        //    "Api-Token": activeCampaignApiKey,
+         //   "Content-Type": "application/json",
+         // },
+      //  }
+    //  );
+  //  }
 
     // Create a PaymentIntent with the order amount, currency, and customer
     const paymentIntent = await stripe.paymentIntents.create({
@@ -247,9 +247,10 @@ const createPaymentIntent = async (req, res) => {
       clientSecret: paymentIntent.client_secret,
     });
   } catch (error) {
+
     return res.status(500).json({
       error: true,
-      message: "Server error!",
+      message: error,
     });
   }
 };

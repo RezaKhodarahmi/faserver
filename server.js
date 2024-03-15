@@ -10,12 +10,12 @@ const { logger } = require("./middlewares/logEvents");
 const cors = require("cors");
 const credentials = require("./middlewares/credentials");
 const rateLimit = require("express-rate-limit");
-// const limiter = rateLimit({
-//   windowMs: 15 * 60 * 1000, // 15 minutes
-//   max: 50000, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
-//   standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
-//   legacyHeaders: false, // Disable the `X-RateLimit-*` headers
-// });
+//const limiter = rateLimit({
+ // windowMs: 15 * 60 * 1000, // 15 minutes
+  //max: 50000, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
+  //standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+  //legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+//});
 
 // CORS middleware configuration
 // CORS middleware configuration
@@ -27,43 +27,46 @@ const corsOptions = {
     "http://localhost:3002",
     "http://idtech.ca",
     "https://idtech.ca",
-    "http://idtech.ca:3100",
-    "https://idtech.ca:3100",
-    "https://idtech.ca:3000",
-    "http://idtech.ca:3000",
     "https://www.idtech.ca",
+"http://idtech.ca:3000",
+"https://idtech.ca:3000",
+"http://idtech.ca:3001",
+"https://idtech.ca:3001",
+"http://fanavaran.ca:3000",
+"https://fanavaran.ca",
     "https://dashboard.idtech.ca",
     "https://www.dashboard.idtech.ca",
-    "https://a.stripecdn.com",
-    "https://api.stripe.com",
-    "https://atlas.stripe.com",
-    "https://auth.stripe.com",
-    "https://b.stripecdn.com",
-    "https://billing.stripe.com",
-    "https://buy.stripe.com",
-    "https://c.stripecdn.com",
-    "https://checkout.stripe.com",
-    "https://climate.stripe.com",
-    "https://connect.stripe.com",
-    "https://dashboard.stripe.com",
-    "https://express.stripe.com",
-    "https://files.stripe.com",
-    "https://hooks.stripe.com",
-    "https://invoice.stripe.com",
-    "https://invoicedata.stripe.com",
-    "https://js.stripe.com",
-    "https://m.stripe.com",
-    "https://m.stripe.network",
-    "https://manage.stripe.com",
-    "https://pay.stripe.com",
-    "https://payments.stripe.com",
-    "https://q.stripe.com",
-    "https://qr.stripe.com",
-    "https://r.stripe.com",
-    "https://verify.stripe.com",
-    "https://stripe.com",
-    "https://terminal.stripe.com",
-    "https://uploads.stripe.com",
+"https://dashboard.stripe.com/",
+"https://a.stripecdn.com",
+  "https://api.stripe.com",
+  "https://atlas.stripe.com",
+  "https://auth.stripe.com",
+  "https://b.stripecdn.com",
+  "https://billing.stripe.com",
+  "https://buy.stripe.com",
+  "https://c.stripecdn.com",
+  "https://checkout.stripe.com",
+  "https://climate.stripe.com",
+  "https://connect.stripe.com",
+  "https://dashboard.stripe.com",
+  "https://express.stripe.com",
+  "https://files.stripe.com",
+  "https://hooks.stripe.com",
+  "https://invoice.stripe.com",
+  "https://invoicedata.stripe.com",
+  "https://js.stripe.com",
+  "https://m.stripe.com",
+  "https://m.stripe.network",
+  "https://manage.stripe.com",
+  "https://pay.stripe.com",
+  "https://payments.stripe.com",
+  "https://q.stripe.com",
+  "https://qr.stripe.com",
+  "https://r.stripe.com",
+  "https://verify.stripe.com",
+  "https://stripe.com",
+  "https://terminal.stripe.com",
+  "https://uploads.stripe.com",
   ],
   credentials: true,
 };
@@ -72,7 +75,11 @@ const corsOptions = {
 app.use(cors(corsOptions));
 // Custom middleware logger
 app.use(logger);
+// parse application/json
+app.use(express.json({ limit: '50mb' }));
 
+// parse application/x-www-form-urlencoded
+app.use(express.urlencoded({ limit: '50mb', extended: true }));
 // Apply the rate limiting middleware to all requests
 // app.use(limiter);
 // const PORT = 3200;
@@ -89,8 +96,8 @@ app.use(logger);
 // app.use(bodyParser.raw({ type: "application/json" }));
 
 // Apply the rate limiting middleware to all requests
-// app.use(limiter);
-const PORT = 3100;
+//app.use(limiter);
+const PORT = 3200;
 
 app.use("/uploads", express.static("uploads"));
 app.use(credentials);
@@ -98,7 +105,7 @@ app.use(express.json());
 app.use(
   "/",
   express.static(
-    path.join(__dirname, "/var/www/fanavaranServer/faserver/public")
+    path.join(__dirname, "/var/www/newserver/faserver/public")
   )
 );
 app.use(bodyParser.raw({ type: "application/json" }));
@@ -121,7 +128,6 @@ app.use("/api/v1/blogtags", require("./routes/api/v1/blogtags"));
 app.use("/api/v1/auth/refresh", require("./routes/refreshToken"));
 app.use("/api/v1/coupon", require("./routes/api/v1/coupon"));
 app.use("/api/v1/transaction", require("./routes/api/v1/transaction"));
-app.use("/api/v1/enrollment", require("./routes/api/v1/enrollment"));
 app.use("/api/v1/webinar", require("./routes/api/v1/webinar"));
 app.use("/api/v1/activecampaing", require("./routes/api/v1/activecampaing"));
 
@@ -177,11 +183,11 @@ app.all("*", (req, res) => {
 //   })
 //   .listen(3200);
 
-// Running server
-// dbConnect.sequelize.sync().then(() => {
-//   app.listen(3200, () => {
-//     console.log(`SERVER IS RUNNING ON PORT 3200`);
-//   });
+//Running server
+ //dbConnect.sequelize.sync().then(() => {
+   //app.listen(3200, () => {
+   //  console.log(`SERVER IS RUNNING ON PORT 3200`);
+  // });
 // });
 
 // Handle 404 errors
@@ -201,7 +207,7 @@ const options = {
   cert: fs.readFileSync("/etc/ssl/certs/idtech.crt"),
 };
 
-// //Running server
+ //Running server
 dbConnect.sequelize.sync().then(() => {
   https.createServer(options, app).listen(3200, () => {
     console.log("Server is running");

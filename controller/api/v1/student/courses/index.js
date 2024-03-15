@@ -129,6 +129,7 @@ const getCourseWithId = async (req, res) => {
           model: Comments,
           as: "comments",
           required: false,
+  where: { published: 1 }, // Add this line to filter comments by status
         },
         {
           model: Categories, // Include Categories model
@@ -364,6 +365,7 @@ const GetCourseCheckEnroll = async (req, res) => {
           model: Comments,
           as: "comments",
           required: false,
+          where: {published: 1},
           include: [
             { model: CommentReplies, as: "replies", required: false },
             {
@@ -489,6 +491,7 @@ const GetCourseCheckEnroll = async (req, res) => {
         return res.json({
           enrolled: false,
           error: false,
+          message:"xs",
           data: existedCourse,
         });
       }
@@ -496,6 +499,7 @@ const GetCourseCheckEnroll = async (req, res) => {
       return res.json({
         enrolled: false,
         error: false,
+        message:"ms",
         data: existedCourse,
       });
     }

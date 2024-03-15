@@ -95,7 +95,7 @@ const createCycle = async (req, res) => {
   } catch (error) {
     return res.status(500).json({
       error: true,
-      message: "Server error",
+      message: error,
     });
   }
 };

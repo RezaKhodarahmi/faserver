@@ -4,8 +4,8 @@ module.exports = {
       name: "my-app",
       script: "server.js",
       env: {
-        BASE_URL: "http://idtech.ca:3200",
-        APP_URL: "http://fanavaran:3001",
+        BASE_URL: "https://idtech.ca:3200",
+        APP_URL: "https://fanavaran.ca",
         DASHBOARD_URL: "http://fanavaran:300",
         // BASE_URL: "http://idtech.ca:3200",
         // APP_URL: "https://idtech.ca",
@@ -26,13 +26,13 @@ module.exports = {
         MAIL_USER: "test@fanavaran.ca",
         MAIL_PASSWORD: "U[@51$24x_%",
         STRIPE_PUBLIC_KEY:
-          "pk_test_51LbfVhFf0hE9RkFdyI7iiw92bWz9Br9uKq2b0PZtF9vPp7M4rIc99ueqsIFaqze24yooMSFQ7WYvmObPsZBEtxXX00G5NRovjZ",
+          "pk_live_51HHFtaG5TuvsK0tsNRhJ7PHgkSK8BblevRKxH1fxgQfdg09Nh1VP86VJx39ZG4wf1YZVNoaicuBD9TbzqSMvpEsN00us1rpu0r",
         STRIPE_SECRET_KEY:
-          "sk_test_51LbfVhFf0hE9RkFdyWzYLwUNLbnxWOqnLsLD4LqUA3MfrMXHT9ga3i5wzGF54GYzjXwys87PsTTQvz2bcNJ2R236009QWo0ovv",
+          "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",
         STRIPE_WEBHOOK_SECRET:
-          "whsec_07749ad39e819587dbd9119a5b34995d71ca832fd3fcb8d74690883d176db173",
+          "we_1OtV25G5TuvsK0tsLM41rRBl",
         REFERRAL_CREDIT: 20.0,
-        STRIPE_MEMBERSHIP_PRICE_ID: "price_1NfMWKFf0hE9RkFd78kU6Ix3",
+        STRIPE_MEMBERSHIP_PRICE_ID: "price_1OttYHG5TuvsK0tsRVUl4GbG",
         STRIPE_PRODUCT_PAYMENT_MODE: "subscription",
         TZ: "America/Toronto",
         NEXTAUTH_SECRET:

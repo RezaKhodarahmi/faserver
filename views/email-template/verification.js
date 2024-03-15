@@ -9,7 +9,7 @@ function getRegistrationEmailTemplate(email, token, NewDate) {
     "complete your registration process." +
     "</p>" +
     "<p>" +
-    `<a href="${process.env.APP_URL}/register/verification/${token}" style="display:block;background-color: #202B8B;padding: 1rem 1.5rem;font-size: 16px;border-radius: 12px;color: #ffffff;margin: 0 auto 2rem;width: 175px;text-decoration:none;text-align:center">` +
+    `<a href="https://fanavaran.ca/register/verification/${token}" style="display:block;background-color: #202B8B;padding: 1rem 1.5rem;font-size: 16px;border-radius: 12px;color: #ffffff;margin: 0 auto 2rem;width: 175px;text-decoration:none;text-align:center">` +
     "Verify Email" +
     '<span style="display: flex;justify-content: center;align-items: center;width: 28px;height: 28px;"><img src="https://cdn.fanavaran.ca/email/right-arrow.png" /></span>' +
     "</a>" +

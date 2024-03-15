@@ -1,5 +1,5 @@
 const Users = require("../../../../../models").Users;
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+const stripe = require("stripe")("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");
 
 const buyVipMembership = async (req, res) => {
   try {
@@ -29,7 +29,7 @@ const buyVipMembership = async (req, res) => {
       payment_method_types: ["card"],
       line_items: [
         {
-          price: process.env.STRIPE_MEMBERSHIP_PRICE_ID,
+          price: "price_1OttYHG5TuvsK0tsRVUl4GbG",
           quantity: 1,
         },
       ],
