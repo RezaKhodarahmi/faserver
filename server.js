@@ -19,48 +19,48 @@ const limiter = rateLimit({
 // Apply the rate limiting middleware to all requests
 app.use(limiter);
 
-
 const corsOptions = {
   origin: [
     "http://localhost:7654",
+    "http://localhost:3000",
     "http://idtech.ca",
     "https://idtech.ca",
     "https://www.idtech.ca",
-"http://idtech.ca:3000",
-"https://idtech.ca:3000",
-"http://idtech.ca:3001",
-"https://fanavaran.ca",
-"https://dashboard.stripe.com/",
-"https://a.stripecdn.com",
-  "https://api.stripe.com",
-  "https://atlas.stripe.com",
-  "https://auth.stripe.com",
-  "https://b.stripecdn.com",
-  "https://billing.stripe.com",
-  "https://buy.stripe.com",
-  "https://c.stripecdn.com",
-  "https://checkout.stripe.com",
-  "https://climate.stripe.com",
-  "https://connect.stripe.com",
-  "https://dashboard.stripe.com",
-  "https://express.stripe.com",
-  "https://files.stripe.com",
-  "https://hooks.stripe.com",
-  "https://invoice.stripe.com",
-  "https://invoicedata.stripe.com",
-  "https://js.stripe.com",
-  "https://m.stripe.com",
-  "https://m.stripe.network",
-  "https://manage.stripe.com",
-  "https://pay.stripe.com",
-  "https://payments.stripe.com",
-  "https://q.stripe.com",
-  "https://qr.stripe.com",
-  "https://r.stripe.com",
-  "https://verify.stripe.com",
-  "https://stripe.com",
-  "https://terminal.stripe.com",
-  "https://uploads.stripe.com",
+    "http://idtech.ca:3000",
+    "https://idtech.ca:3000",
+    "http://idtech.ca:3001",
+    "https://fanavaran.ca",
+    "https://dashboard.stripe.com/",
+    "https://a.stripecdn.com",
+    "https://api.stripe.com",
+    "https://atlas.stripe.com",
+    "https://auth.stripe.com",
+    "https://b.stripecdn.com",
+    "https://billing.stripe.com",
+    "https://buy.stripe.com",
+    "https://c.stripecdn.com",
+    "https://checkout.stripe.com",
+    "https://climate.stripe.com",
+    "https://connect.stripe.com",
+    "https://dashboard.stripe.com",
+    "https://express.stripe.com",
+    "https://files.stripe.com",
+    "https://hooks.stripe.com",
+    "https://invoice.stripe.com",
+    "https://invoicedata.stripe.com",
+    "https://js.stripe.com",
+    "https://m.stripe.com",
+    "https://m.stripe.network",
+    "https://manage.stripe.com",
+    "https://pay.stripe.com",
+    "https://payments.stripe.com",
+    "https://q.stripe.com",
+    "https://qr.stripe.com",
+    "https://r.stripe.com",
+    "https://verify.stripe.com",
+    "https://stripe.com",
+    "https://terminal.stripe.com",
+    "https://uploads.stripe.com",
   ],
   credentials: true,
 };
@@ -70,10 +70,10 @@ app.use(cors(corsOptions));
 // Custom middleware logger
 app.use(logger);
 // parse application/json
-app.use(express.json({ limit: '50mb' }));
+app.use(express.json({ limit: "50mb" }));
 
 // parse application/x-www-form-urlencoded
-app.use(express.urlencoded({ limit: '50mb', extended: true }));
+app.use(express.urlencoded({ limit: "50mb", extended: true }));
 // Apply the rate limiting middleware to all requests
 // app.use(limiter);
 // const PORT = 3200;
@@ -98,12 +98,9 @@ app.use(credentials);
 app.use(express.json());
 app.use(
   "/",
-  express.static(
-    path.join(__dirname, "/var/www/newserver/faserver/public")
-  )
+  express.static(path.join(__dirname, "/var/www/newserver/faserver/public"))
 );
 app.use(bodyParser.raw({ type: "application/json" }));
-
 
 //Dashboard routes
 app.use("/api/v1/auth", require("./routes/auth"));
@@ -153,6 +150,7 @@ app.use(
 );
 app.use("/api/v1/student/webinars", require("./routes/api/v1/student/webinar"));
 app.use("/api/v1/student/comments", require("./routes/api/v1/student/comment"));
+app.use("/api/v1/student/counseling", require("./routes/api/v1/student/counseling"));
 
 // Handle 404 errors
 app.all("*", (req, res) => {
@@ -179,22 +177,20 @@ app.all("*", (req, res) => {
 //   .listen(3200);
 
 //Running server
-// dbConnect.sequelize.sync().then(() => {
-//   app.listen(3200, () => {
-//     console.log(`SERVER IS RUNNING ON PORT 3200`);
-//  });
-// });
-
-
-const options = {
-  key: fs.readFileSync("/etc/ssl/private/fanavaran.key"),
-  cert: fs.readFileSync("/etc/ssl/certs/_.fanavaran.ca.chained.crt"),
-};
-
- //Running server
 dbConnect.sequelize.sync().then(() => {
-  https.createServer(options, app).listen(3200, () => {
-    console.log("Server is running");
+  app.listen(3200, () => {
+    console.log(`SERVER IS RUNNING ON PORT 3200`);
   });
 });
- 
+
+// const options = {
+//   key: fs.readFileSync("/etc/ssl/private/fanavaran.key"),
+//   cert: fs.readFileSync("/etc/ssl/certs/_.fanavaran.ca.chained.crt"),
+// };
+
+//  //Running server
+// dbConnect.sequelize.sync().then(() => {
+//   https.createServer(options, app).listen(3200, () => {
+//     console.log("Server is running");
+//   });
+// });

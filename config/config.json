@@ -1,5 +1,5 @@
 {
-    "d": {
+    "production": {
       "username": "root",
       "password": "",
       "database": "fanavaran_dev",
