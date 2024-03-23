@@ -33,7 +33,7 @@ const buyVipMembership = async (req, res) => {
       payment_method_types: ["card"],
       line_items: [
         {
-          price: "price_1NfMWKFf0hE9RkFd78kU6Ix3",
+          price: "price_1OvbIvG5TuvsK0tsKg2Hmcyf",
           quantity: 1,
         },
       ],
