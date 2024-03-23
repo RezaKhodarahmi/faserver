@@ -1,6 +1,6 @@
 const Users = require("../../../../../models").Users;
-const stripe = require("stripe")("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");
-
+const stripe = require("stripe")("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"); // live
+//const stripe = require("stripe")("sk_test_51HHFtaG5TuvsK0ts3RxFO7ZByoYjwFfMbEfN0M2SSzRgkin8Ksn3j3LHdoO86LJ2G8s2l8ynnCdq8qMSJLJ78NlH006lFPRR06"); // test
 const buyVipMembership = async (req, res) => {
   try {
     const email = req.params.email; // You might want to dynamically fetch this based on the authenticated user
@@ -29,7 +29,7 @@ const buyVipMembership = async (req, res) => {
       payment_method_types: ["card"],
       line_items: [
         {
-          price: "price_1OttYHG5TuvsK0tsRVUl4GbG",
+          price: "price_1OvbIvG5TuvsK0tsKg2Hmcyf",
           quantity: 1,
         },
       ],

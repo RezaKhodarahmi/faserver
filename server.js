@@ -10,32 +10,26 @@ const { logger } = require("./middlewares/logEvents");
 const cors = require("cors");
 const credentials = require("./middlewares/credentials");
 const rateLimit = require("express-rate-limit");
-//const limiter = rateLimit({
- // windowMs: 15 * 60 * 1000, // 15 minutes
-  //max: 50000, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
-  //standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
-  //legacyHeaders: false, // Disable the `X-RateLimit-*` headers
-//});
 
-// CORS middleware configuration
-// CORS middleware configuration
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 800, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
+});
+
+// Apply the rate limiting middleware to all requests
+app.use(limiter);
+
+
 const corsOptions = {
   origin: [
-    "http://localhost:3000",
-    "https://localhost:3000",
-    "http://localhost:3001",
-    "http://localhost:3002",
+    "http://localhost:7654",
     "http://idtech.ca",
     "https://idtech.ca",
     "https://www.idtech.ca",
 "http://idtech.ca:3000",
 "https://idtech.ca:3000",
 "http://idtech.ca:3001",
-"https://idtech.ca:3001",
-"http://fanavaran.ca:3000",
 "https://fanavaran.ca",
-    "https://dashboard.idtech.ca",
-    "https://www.dashboard.idtech.ca",
 "https://dashboard.stripe.com/",
 "https://a.stripecdn.com",
   "https://api.stripe.com",
@@ -109,6 +103,7 @@ app.use(
   )
 );
 app.use(bodyParser.raw({ type: "application/json" }));
+
 
 //Dashboard routes
 app.use("/api/v1/auth", require("./routes/auth"));
@@ -184,27 +179,16 @@ app.all("*", (req, res) => {
 //   .listen(3200);
 
 //Running server
- //dbConnect.sequelize.sync().then(() => {
-   //app.listen(3200, () => {
-   //  console.log(`SERVER IS RUNNING ON PORT 3200`);
-  // });
+// dbConnect.sequelize.sync().then(() => {
+//   app.listen(3200, () => {
+//     console.log(`SERVER IS RUNNING ON PORT 3200`);
+//  });
 // });
 
-// Handle 404 errors
-app.all("*", (req, res) => {
-  res.status(404);
-  if (req.accepts("html")) {
-    res.sendFile(path.join(__dirname, "views", "404.html"));
-  } else if (req.accepts("json")) {
-    res.json({ error: "404 Not Found" });
-  } else {
-    res.type("txt").send("404 Not Found");
-  }
-});
 
 const options = {
-  key: fs.readFileSync("/etc/ssl/private/idtech.key"),
-  cert: fs.readFileSync("/etc/ssl/certs/idtech.crt"),
+  key: fs.readFileSync("/etc/ssl/private/fanavaran.key"),
+  cert: fs.readFileSync("/etc/ssl/certs/_.fanavaran.ca.chained.crt"),
 };
 
  //Running server

@@ -130,21 +130,21 @@ const handelUserLogin = async (req, res) => {
       });
     }
 
-    const activeSession = await UserSessions.findOne({
-      where: { userId: user.id },
-    });
+    //const activeSession = await UserSessions.findOne({
+   //   where: { userId: user.id },
+   // });
 
-    if (activeSession && activeSession.country !== currentCountry) {
-      return res
-        .status(401)
-        .send("Simultaneous login from different countries is not allowed.");
-    }
-    await UserSessions.upsert({
-      userId: user.id,
-      ip: currentIP,
-      country: currentCountry,
-      lastActive: new Date(),
-    });
+   // if (activeSession && activeSession.country !== currentCountry) {
+    //  return res
+    //    .status(401)
+    //    .send("Simultaneous login from different countries is not allowed.");
+   // }
+  //  await UserSessions.upsert({
+    //  userId: user.id,
+    //  ip: currentIP,
+    //  country: currentCountry,
+    //  lastActive: new Date(),
+   // });
     const verifiedPassword = await bcrypt.compare(password, user.password);
 
     if (!verifiedPassword) {

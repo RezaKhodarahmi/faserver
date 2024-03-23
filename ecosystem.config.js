@@ -4,7 +4,7 @@ module.exports = {
       name: "my-app",
       script: "server.js",
       env: {
-        BASE_URL: "https://idtech.ca:3200",
+        BASE_URL: "https://fanavaran.ca:3200",
         APP_URL: "https://fanavaran.ca",
         DASHBOARD_URL: "http://fanavaran:300",
         // BASE_URL: "http://idtech.ca:3200",
@@ -23,8 +23,8 @@ module.exports = {
         ACCESS_TOKEN_EXPIRED_TIME: "100m",
         MAIL_HOST: "mail.fanavaran.ca",
         MAIL_PORT: 465,
-        MAIL_USER: "test@fanavaran.ca",
-        MAIL_PASSWORD: "U[@51$24x_%",
+        MAIL_USER: "register@fanavaran.ca",
+        MAIL_PASSWORD: "2YCrmZJJZ?=?",
         STRIPE_PUBLIC_KEY:
           "pk_live_51HHFtaG5TuvsK0tsNRhJ7PHgkSK8BblevRKxH1fxgQfdg09Nh1VP86VJx39ZG4wf1YZVNoaicuBD9TbzqSMvpEsN00us1rpu0r",
         STRIPE_SECRET_KEY:
@@ -32,7 +32,7 @@ module.exports = {
         STRIPE_WEBHOOK_SECRET:
           "we_1OtV25G5TuvsK0tsLM41rRBl",
         REFERRAL_CREDIT: 20.0,
-        STRIPE_MEMBERSHIP_PRICE_ID: "price_1OttYHG5TuvsK0tsRVUl4GbG",
+        STRIPE_MEMBERSHIP_PRICE_ID: "price_1Ovb8vG5TuvsK0tsB8oSA7Cb",
         STRIPE_PRODUCT_PAYMENT_MODE: "subscription",
         TZ: "America/Toronto",
         NEXTAUTH_SECRET:

@@ -1,6 +1,10 @@
 const Webinars = require("../../../../../models").Webinars;
 const Users = require("../../../../../models").Users;
 const UserWebinars = require("../../../../../models").UserWebinars;
+const { transporter } = require("../../../../../config/mailSender");
+const {
+  enrollWebinarEmailTemplate,
+} = require("../../../../../views/email-template/enrollWebinar");
 
 const getWebinars = async (req, res) => {
   try {
@@ -10,7 +14,6 @@ const getWebinars = async (req, res) => {
       data: webinars,
     });
   } catch (error) {
-    console.log(error);
     return res.status(500).send("Server Error!");
   }
 };
@@ -57,7 +60,6 @@ const getSingleWebinar = async (req, res) => {
       enrolled: false,
     });
   } catch (error) {
-    console.log(error);
     return res.status(500).send("Server Error!");
   }
 };
@@ -71,12 +73,12 @@ const enrollUser = async (req, res) => {
     if (!webinar || !user) {
       return res.status(400).json({
         error: true,
-        message: "Error!",
+        message: "Webinar or user not found.",
       });
     }
 
     const existedEnroll = await UserWebinars.findOne({
-      where: { userId: user.dataValues.id, webinarId: webinar.dataValues.id },
+      where: { userId: user.id, webinarId: webinar.id },
     });
 
     if (existedEnroll) {
@@ -85,23 +87,44 @@ const enrollUser = async (req, res) => {
         message: "You have already registered for this webinar.",
       });
     }
+
     const newRegistered = await UserWebinars.create({
       userId: user.id,
       webinarId: webinar.id,
     });
-    if (newRegistered._options.isNewRecord) {
+
+    // Check if the record is new and then send an email
+    if (newRegistered) {
+      await transporter.sendMail({
+        from: '"Fanavaran" <no-reply@fanavaran.ca>',
+        to: email,
+        subject: "Your registration for the webinar was successful.",
+        text: "", // Optionally, you can have a plain text version of the email here.
+        html: enrollWebinarEmailTemplate(webinar.title, webinar.date, webinar.time, "https://us02web.zoom.us/my/fanavaran4"), // Assuming you pass the zoom link as the last parameter.
+      });
+
+      // Return success response after sending the email
       return res.status(201).json({
         error: false,
         message: "Your registration was successful!",
       });
     }
+
+    // This block will not execute because it's unreachable due to the return statement above
     return res.status(400).json({
       error: true,
       message: "There was a problem registering.",
     });
+
   } catch (error) {
-    return res.status(500).send("There was a problem registering!");
+    console.error(error); // Log the error for debugging purposes
+    return res.status(500).json({
+      error: true,
+      message: "There was a problem registering for the webinar.",
+    });
   }
 };
 
+
 module.exports = { getWebinars, getSingleWebinar, enrollUser };
+
